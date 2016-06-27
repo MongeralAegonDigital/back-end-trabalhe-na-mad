@@ -45,7 +45,7 @@ Obs: Escolha o teste de sua preferência.
 4. *Raciocínio para construir a solução solicitada*
 
 
->  ## Dicas :)
+>  ## Dicas :) ##
 >   Seria muito legal você monstrar suas skills com tecnologias de front-end como  
 >>   * Algum framework Javascript (Angular, Ember e etc…)
 >>   * Pré-Processadores (sass, less e etc...)
