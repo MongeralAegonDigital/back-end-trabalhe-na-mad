@@ -44,6 +44,8 @@ Obs: Escolha o teste de sua preferência.
 3. *Organização do código*
 4. *Raciocínio para construir a solução solicitada*
 
+### Importante 
+O teste tem que ser feito em 3 dias apos o fork
 
 ## Dicas :) 
 >   Seria muito legal você monstrar suas skills com tecnologias de front-end como  
