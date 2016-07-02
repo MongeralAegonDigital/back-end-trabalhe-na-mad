@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+.gmsg-mask-layer{ 
+   position : absolute ;
+   z-index : 1000 ;
+   left : 0;
+   top : 0;
+   width : 100%;
+   height : 100% ;
+   filter:alpha(opacity=40);
+   background:rgba(0, 0, 0, 0.4);
+   display : none ;
+}
+
+.gmsg{
+   border : 1px solid #858585;
+   position: absolute; 
+   background-color : #fff;
+   font-family: 微软雅黑;
+   font-size : 12px; 
+   left : 0px ;
+   top : 0px;
+   z-index : 2000 ;
+   display : none ;
+}
+
+.gmsg.shadow{
+     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1), 0 0 256px
+		rgba(255, 255, 255, 0.3);
+}
+
+.gmsg .gheader{
+   border-bottom: 1px solid #858585 ;
+   padding: 5px;
+   font-size: 12px ;
+}
+.gmsg .gheader .title { 
+  
+}
+.gmsg .gheader .tool {
+	position : absolute;
+	right : 3px;
+	top : 7px;
+}
+.gmsg .gheader .tool span {
+	border-radius: 10px;
+	cursor: pointer;
+	margin-left: -5px;
+	padding: 2px 5px;
+}
+.gmsg .gheader .tool span:hover{
+	background-color: #E8E8E8;
+}
+
+.gmsg .body {
+   padding : 10px ;
+   text-align: center;
+   font-size: 14px;
+   max-width : 200px;
+}
+.gmsg .body i{ 
+   font-size: 30px;
+}
+.gmsg .body .content{
+   position: relative;
+   top : -4px;
+   line-height: 25px;
+    padding-left: 5px;
+}
+
+.gmsg .gfooter {
+	text-align: center ;
+	background-color: #fff;
+	border-top: 1px solid #858585;
+	cursor: pointer;
+	font-family: 微软雅黑;
+	outline: none;
+	font-size: 14px;
+	line-height : 30px;
+}
+
+.padding20{
+	padding : 22px 20px !important;
+	width : 200px;
+}
+
+/* 色块 */
+.fa.info{
+	color : #428BCA;
+}
+.fa.success{
+	color : #5CB85C;
+}
+.fa.warning{
+	color : #F39C12;
+}
+.fa.danger{
+	color : #D9534F;
+}
+.fa.wounded{
+	color : #8E44AD;
+}

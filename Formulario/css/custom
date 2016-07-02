@@ -1,0 +1,4 @@
+<!-- custom css -->
+.left-padding-zero{
+	padding-left: 0px !important;
+}
