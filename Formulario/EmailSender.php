@@ -8,6 +8,7 @@
 
 		private $mail;
 		private $userInfo;
+		
 
 		function __construct($userInfo) {
 			//novo objeto da classe PHPMailer
