@@ -108,6 +108,7 @@
 
 			//codificação para caracteres UTF-8
 			$this->mail->CharSet = 'UTF-8';
+			
    		}
 
 	} //end of class
