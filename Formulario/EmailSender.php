@@ -66,6 +66,8 @@
 					."Empresa: $empresa <br>"
 					."Profissão: $profissao <br>"
 					."Renda R\$: $renda <br>";
+			
+			
 
 			//seta o corpo do e-mail como html
 			$this->mail->msgHTML($body);
