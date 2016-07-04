@@ -16,7 +16,7 @@
 
 			$this->conn = mysql_connect('localhost', 'paulo', '1234');
 
-			mysql_select_db('paulo', $this->conn) or die('Não pode selecionar banco.');
+			mysql_select_db('user_database', $this->conn) or die('Não pode selecionar banco.');
         	return $this->conn;
 		}
 
