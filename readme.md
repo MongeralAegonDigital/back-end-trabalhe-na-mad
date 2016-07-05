@@ -1,6 +1,6 @@
 # Teste para Back-end #
 ---
-### Baseado no conceito S.P.A. (Single Page Application), construa uma página para cadastro das seguintes informações:
+### Baseado no conceito S.P.A. (Single Page Application), construa uma aplicação escolhendo uma das opções abaixo:
 
 #### Teste 1
 
@@ -25,7 +25,7 @@
 3. Criar recursos com diferentes níveis de acesso autenticado
 
 
-Obs: Escolha o teste de sua preferência.
+### Obs: Escolha o teste de sua preferência.
 
 #### Requisitos ####
 * Utilize **PHP >= 5.5** e MySQL como tecnologias
