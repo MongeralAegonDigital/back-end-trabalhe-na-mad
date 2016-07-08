@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html>
     <head>
@@ -24,12 +22,11 @@
         <script type="text/javascript" src="{!! asset('js/jquerymask.js') !!}"></script>
         <script>
             $(document).ready(function(){
-                getProducts(); 
+                getProducts(""); 
              });
         </script>
     </head>
     <body>
-
         <div class="container">
             <div class="jumbotron">
                 <h1>Teste 2 - Michel Lima</h1>
@@ -38,33 +35,27 @@
             <div class="panel panel-default ">
                 <div class="panel-heading">Lista de produtos</div>
                 <div class="panel-body">
-                    
                 </div>
 
-                
                 <table class="table">
                     <thead>
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>Data de fabricação</th>
-                        <th>Tamanho(cm)</th>
-                        <th>Largura(cm)</th>
-                        <th>Peso(cm)</th>
-                        <th>Data de cadastro</th>
-                        <th>Data de modificação</th>
+                    <th><a onclick="return false;" class="order" rel='id' title="Ordenar">ID</a></th>
+                        <th><a onclick="return false;" class="order" rel='nome' title="Ordenar">Nome</a></th>
+                        <th><a onclick="return false;" class="order" rel='data_fabricacao' title="Ordenar">Data de fabricação</a></th>
+                        <th><a onclick="return false;" class="order" rel='tamanho' title="Ordenar">Tamanho(cm)</a></th>
+                        <th><a onclick="return false;" class="order" rel='largura' title="Ordenar">Largura(cm)</a></th>
+                        <th><a onclick="return false;" class="order" rel='peso' title="Ordenar">Peso(cm)</a></th>
+                        <th><a onclick="return false;" class="order" rel='created_at' title="Ordenar">Data de cadastro</a></th>
+                        <th><a onclick="return false;" class="order" rel='updated_at' title="Ordenar">Data de modificação</a></th>
                         <th>Categorias</th>
-                        <th>Ações</th>
-                        
+                        <th colspan="2">Ações</th>
                     </thead>
                     <tbody id="produtosLista">
+                        <td colspan="10" class="center">Nenhum produto encontrado</td>
                     </tbody>
                 </table>
                 @yield('content')
             </div>
         </div>
-
-
-
     </body>
-
 </html>

@@ -16,14 +16,17 @@ class ProdutosController extends Controller
 
     }
     
-
-    
     /**
      * Retorna um json com uma lista de produtos
      * @return Json
      */
     public function listarProdutosJson(){
-        $produtos = \App\Produto::all();
+        if(isset($_REQUEST['ordenar']) && $_REQUEST['ordenar'] != ""){
+            $produtos = \App\Produto::orderBy($_REQUEST['ordenar'], 'asc')->get();
+        }else{
+            $produtos = \App\Produto::all();
+        }
+        $prods = "";
         foreach($produtos as $key => $produto){
             $prods[$key] = $produto;
             

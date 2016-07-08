@@ -1,12 +1,20 @@
 $(document).ready(function(){
-    $(function() {
-        $(".datepicker" ).datepicker();
-        $(".datepicker").datepicker( "option", "dateFormat", "yy-mm-dd");
-        $('.float').mask('00.00');
-        $('.peso').mask('00');
-    });
     
+    $(".order").click(function(){
+       getProducts($(this).attr("rel")); 
+    });
+   
+    //Máscaras
+    $(".datepicker" ).datepicker();
+    $(".datepicker").datepicker( "option", "dateFormat", "yy-mm-dd");
+    $('.float').mask('00.00');
+    $('.peso').mask('00');
+   
     limparCampos();
+    
+    /**
+     * EVENTOS
+     */
     $(".fecharPainelEditar").click(function(){
         fecharPainelEditar();
     });
@@ -37,15 +45,18 @@ $(document).ready(function(){
     });
 });
 
+
+
 /**
  * Faz a requisição dos produtos cadastrados e chama a função de montar a
  * tabela de produtos
  */
-function getProducts() {
+function getProducts(campo) {
     $.ajax({
         url: 'http://localhost:8000/list',
         dataType: "json",
         type: "get",
+        data: {'ordenar':campo},
         beforeSend: function () {
         },
         success: function (data) {
@@ -126,6 +137,10 @@ function deletarProduto(idProduto){
     });
 }
 
+/**
+ * Preenche o formulário de edição de produto.
+ * @param {Obj} $obj
+ */
 function preencherCamposEditar($obj){
     $("input[name='nome']").val($obj.children().children("input[name='produto-nome']").val());
     $("input[name='data_fabricacao']").val($obj.children().children("input[name='produto-data_fabricacao']").val());
@@ -194,6 +209,10 @@ function fecharPainelEditar(){
     
 }
 
+/**
+ * Função de validação de formulário
+ * @param {String} formulario
+ */
 function executarValidacao(formulario){
     retorno = true;
     removeBorda();
