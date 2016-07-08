@@ -70,13 +70,13 @@
                 <table class="table">
                     <thead>
                     <th><a onclick="return false;" class="order" rel='id' title="Ordenar">ID</a></th>
-                        <th><a onclick="return false;" class="order" rel='nome' title="Ordenar">Nome</a></th>
-                        <th><a onclick="return false;" class="order" rel='data_fabricacao' title="Ordenar">Data de fabricação</a></th>
-                        <th><a onclick="return false;" class="order" rel='tamanho' title="Ordenar">Tamanho(cm)</a></th>
-                        <th><a onclick="return false;" class="order" rel='largura' title="Ordenar">Largura(cm)</a></th>
-                        <th><a onclick="return false;" class="order" rel='peso' title="Ordenar">Peso(cm)</a></th>
-                        <th><a onclick="return false;" class="order" rel='created_at' title="Ordenar">Data de cadastro</a></th>
-                        <th><a onclick="return false;" class="order" rel='updated_at' title="Ordenar">Data de modificação</a></th>
+                        <th><a class="order" rel='nome' title="Ordenar">Nome</a></th>
+                        <th><a class="order" rel='data_fabricacao' title="Ordenar">Data de fabricação</a></th>
+                        <th><a class="order" rel='tamanho' title="Ordenar">Tamanho(cm)</a></th>
+                        <th><a class="order" rel='largura' title="Ordenar">Largura(cm)</a></th>
+                        <th><a class="order" rel='peso' title="Ordenar">Peso(cm)</a></th>
+                        <th><a class="order" rel='created_at' title="Ordenar">Data de cadastro</a></th>
+                        <th><a class="order" rel='updated_at' title="Ordenar">Data de modificação</a></th>
                         <th>Categorias</th>
                         <th colspan="2">Ações</th>
                     </thead>

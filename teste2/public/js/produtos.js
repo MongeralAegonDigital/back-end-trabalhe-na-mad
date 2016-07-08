@@ -1,6 +1,7 @@
 $(document).ready(function(){
     
-    $(".order").click(function(){
+    $(".order").click(function(e){
+       e.preventDefault();
        $(".order").css("text-decoration", "none");
        $(this).css("text-decoration", "underline");
        getProducts($(this).attr("rel")); 
@@ -126,7 +127,7 @@ function montarTabelaProdutos(html) {
 
 function cadastrarProduto(){
     $.ajax({
-        url: url + '/admin/produtos/store',
+        url: url + '/admin/produtos',
         dataType: "json",
         type: "post",
         data: $("#create").serialize(),
@@ -151,7 +152,7 @@ function cadastrarProduto(){
  */
 function deletarProduto(idProduto){
     $.ajax({
-        url: url + '/admin/produtos/delete/'+idProduto,
+        url: url + '/admin/produtos/'+idProduto,
         dataType: "json",
         type: "get",
         beforeSend: function () {
@@ -182,9 +183,9 @@ function preencherCamposEditar($obj){
  */
 function editarProduto(idProduto){
     $.ajax({
-        url: url + '/admin/produtos/update/'+idProduto,
+        url: url + '/admin/produtos/'+idProduto,
         dataType: "json",
-        type: "post",
+        type: "put",
         data: $("#edit").serialize(),
         beforeSend: function () {
         },
