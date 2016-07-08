@@ -22,7 +22,7 @@ Route::group(['prefix' => 'admin'], function(){
         Route::get("", ['as' => 'admin.produtos.index', 'uses' => 'ProdutosAdminController@index']);
         Route::post("", ['as' => 'admin.produtos.store', 'uses' => 'ProdutosAdminController@store']);
         Route::put("/{id}", ['as' => 'admin.produtos.update', 'uses' => 'ProdutosAdminController@update']);
-        Route::get("/{id}", ['as' => 'admin.produtos.delete', 'uses' => 'ProdutosAdminController@destroy']);
+        Route::delete("/{id}", ['as' => 'admin.produtos.delete', 'uses' => 'ProdutosAdminController@destroy']);
         Route::get("/{id}/editar", ['as' => 'admin.produtos.edit', 'uses' => 'ProdutosAdminController@edit']);
     });
 });

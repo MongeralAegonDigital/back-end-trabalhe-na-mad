@@ -154,7 +154,8 @@ function deletarProduto(idProduto){
     $.ajax({
         url: url + '/admin/produtos/'+idProduto,
         dataType: "json",
-        type: "get",
+        type: "delete",
+        data: {"_token": $('meta[name="csrf-token"]').attr('content')},
         beforeSend: function () {
         },
         success: function (data) {
