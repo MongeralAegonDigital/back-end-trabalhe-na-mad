@@ -17,4 +17,9 @@ class Produto extends Model
     public function categorias(){
         return $this->belongsToMany("App\Categoria", "produtos_categorias");
     }
+    
+    public function getCategoriaListAttribute() {
+        $categorias = $this->categorias()->lists('nome')->all();
+        return implode(", ", $categorias);
+    }
 }
