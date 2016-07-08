@@ -21,10 +21,33 @@ class ProdutosController extends Controller
      * @return Json
      */
     public function listarProdutosJson(){
+         
+        $clauses = FALSE;
+        if(isset($_REQUEST['nome']) && $_REQUEST['nome'] != ""){
+            $clauses['nome'] = $_REQUEST['nome'];
+        }
+        if(isset($_REQUEST['data_fabricacao']) && $_REQUEST['data_fabricacao'] != ""){
+            $clauses['data_fabricacao'] = $_REQUEST['data_fabricacao'];
+        }
+        if(isset($_REQUEST['tamanho']) && $_REQUEST['tamanho'] != ""){
+            $clauses['tamanho'] = $_REQUEST['tamanho'];
+        }
+        if(isset($_REQUEST['largura']) && $_REQUEST['largura'] != ""){
+            $clauses['largura'] = $_REQUEST['largura'];
+        }
+        if(isset($_REQUEST['peso']) && $_REQUEST['peso'] != ""){
+            $clauses['peso'] = $_REQUEST['peso'];
+        }
+        
         if(isset($_REQUEST['ordenar']) && $_REQUEST['ordenar'] != ""){
-            $produtos = \App\Produto::orderBy($_REQUEST['ordenar'], 'asc')->get();
+            $order = $_REQUEST['ordenar'];
         }else{
-            $produtos = \App\Produto::all();
+            $order = "id";  
+        }
+        if($clauses){
+            $produtos = \App\Produto::orderBy($order, 'asc')->where($clauses)->get();
+        }else{
+            $produtos = \App\Produto::orderBy($order, 'asc')->get();
         }
         $prods = "";
         foreach($produtos as $key => $produto){
@@ -34,7 +57,6 @@ class ProdutosController extends Controller
                 $prods[$key]['categorias'][$keyCat] = $categoria->nome;
             }
         }
-        
         return json_encode($prods);
     }
 }

@@ -1,6 +1,8 @@
 $(document).ready(function(){
     
     $(".order").click(function(){
+       $(".order").css("text-decoration", "none");
+       $(this).css("text-decoration", "underline");
        getProducts($(this).attr("rel")); 
     });
    
@@ -15,6 +17,11 @@ $(document).ready(function(){
     /**
      * EVENTOS
      */
+    
+    $(".filtrar").click(function(){
+        getProducts("");
+    });
+    
     $(".fecharPainelEditar").click(function(){
         fecharPainelEditar();
     });
@@ -45,24 +52,43 @@ $(document).ready(function(){
     });
 });
 
-
-
 /**
  * Faz a requisição dos produtos cadastrados e chama a função de montar a
  * tabela de produtos
  */
 function getProducts(campo) {
     $.ajax({
-        url: 'http://localhost:8000/list',
+        url: url + '/list',
         dataType: "json",
         type: "get",
-        data: {'ordenar':campo},
+        data: {
+            nome: $("input[name='filtroNome']").val(),
+            data_fabricacao: $("input[name='filtroaDataFabricacao']").val(),
+            tamanho: $("input[name='filtroTamanho']").val(),
+            largura: $("input[name='filtroLargura']").val(),
+            peso: $("input[name='filtroPeso']").val(),
+            ordenar:campo
+        },
         beforeSend: function () {
         },
         success: function (data) {
-            montarTabelaProdutos(montarHtmlTabela(data));
+            if(data && data != ""){
+                montarTabelaProdutos(montarHtmlTabela(data));
+            }else{
+                $("#produtosLista").html('<td colspan="10" class="center">Nenhum produto encontrado</td>');
+            }
         }
     });
+}
+
+function getFiltros(){
+    filtros = new Array();
+    $(".filtro").each(function(){
+       if($(this).val().length >0){
+           filtros[$(this).attr("rel")] = $(this).val();
+       } 
+    });
+    return filtros;
 }
 
 /**

@@ -34,9 +34,39 @@
             </div>
             <div class="panel panel-default ">
                 <div class="panel-heading">Lista de produtos</div>
-                <div class="panel-body">
-                </div>
+                {!! Form::open(['method'=>'post', 'id'=>'formFiltro']) !!}
+                    <div class="panel-body row">
+                        <div class="col-md-12"><h3>Filtros</h3></div>
+                        <div class="filtros col-md-3">
+                            <div class="form-group">
+                                {!! Form::label("Nome:") !!}
+                                {!! Form::text('filtroNome', null, ['class' =>'form-control filtro', 'rel'=>'nome']) !!}
+                            </div>
+                            <div class="form-group">
+                                {!! Form::label("Data de fabricação:") !!}
+                                {!! Form::text('filtroDataFabricacao', null, ['class' =>'form-control datepicker','rel'=>'data_fabricacao']) !!}
+                            </div>
+                            <div class="form-group">
+                                {!! Form::label("tamanho: ") !!}
+                                {!! Form::text('filtroTamanho', null, ['class' =>'form-control filtro float', 'rel'=>'tamanho']) !!}
+                            </div>
 
+                        </div>
+                        <div class="filtros col-md-3">
+                            <div class="form-group">
+                                {!! Form::label("Largura:") !!}
+                                {!! Form::text('filtroLargura', null, ['class' =>'form-control filtro float', 'rel'=>'largura']) !!}
+                            </div>
+                            <div class="form-group">
+                                {!! Form::label("Peso:") !!}
+                                {!! Form::text('filtroPeso', null, ['class' =>'form-control filtro peso', 'rel'=>'peso']) !!}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-footer">{!! Form::button('Filtrar', ['id'=>'filtrar', 'class' =>'btn btn-info filtrar']) !!}</div>
+                {!! Form::close() !!}
+                <hr>
                 <table class="table">
                     <thead>
                     <th><a onclick="return false;" class="order" rel='id' title="Ordenar">ID</a></th>
