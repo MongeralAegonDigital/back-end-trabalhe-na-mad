@@ -4,45 +4,98 @@ Admin
 @endsection
 @section("content")
 <hr>
+<div class="panel-footer">
+    <button class="btn btn-info novoProduto" type="button" value="1">Cadastrar novo produto</button>
+</div>
 <hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<h1>Admin</h1>
-<a href="{{ route('admin.produtos.create') }}">Cadastrar novo produto</a>
-<table class="table">
-    <thead>
-        <th>ID</th>
-        <th>Nome</th>
-        <th>Data de fabricação</th>
-        <th>Tamanho(cm)</th>
-        <th>Largura(cm)</th>
-        <th>Peso(cm)</th>
-        <th>Data de cadastro</th>
-        <th>Data de modificação</th>
-        <th>Categorias</th>
-        <th>Ação</th>
-    </thead>
-    <tbody>
-        @foreach($produtos as $produto)
-            <tr>
-                <td>{{$produto->id}}</td>
-                <td>{{$produto->nome}}</td>
-                <td>{{$produto->data_fabricacao}}</td>
-                <td>{{$produto->tamanho}}</td>
-                <td>{{$produto->largura}}</td>
-                <td>{{$produto->peso}}</td>
-                <td>{{$produto->created_at}}</td>
-                <td>{{$produto->updated_at}}</td>
-                <td></td>
-                <td><a href="{{ route('admin.produtos.edit', ['id' => $produto->id]) }}">Editar</a></td>
-                <td><a href="{{ route('admin.produtos.delete', ['id' => $produto->id]) }}">Excluir</a></td>
-            </tr>
-        @endforeach
-    </tbody>
-</table>
 
-{!! $produtos->render() !!}
+<div class="painelCadastrar panel panel-default hidden" style="width: 90%; margin: auto">
+    <div class="panel-heading"><strong>Cadastrar novo produto</strong></div>
+        <div class="panel-body">
+            {!! Form::open(['method'=>'post', 'route' => 'admin.produtos.store', 'id'=>'create']) !!}
+
+            <div class="form-group">
+                {!! Form::label("Nome") !!}
+                {!! Form::text('nome', null, ['class' =>'form-control']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::label("Data de fabricacao") !!}
+                {!! Form::text('data_fabricacao', null, ['class' =>'form-control datepicker']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::label("Tamanho") !!}
+                {!! Form::text('tamanho', null, ['class' =>'form-control float']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::label("Largura") !!}
+                {!! Form::text('largura', null, ['class' =>'form-control float']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::label("Peso") !!}
+                {!! Form::text('peso', null, ['class' =>'form-control peso']) !!}
+            </div>
+
+            <div class='form-group'>
+                {!! Form::label("Categorias(separar por vírgula)") !!}
+                {!! Form::textarea('categorias', null, ['class' =>'form-control']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::button('Salvar', ['id'=>'cadastrar', 'class' =>'btn btn-primary']) !!}
+                {!! Form::button('Cancelar', ['id'=>'cancelar', 'class' =>'btn btn-info fecharPainelCadastrar']) !!}
+            </div>
+
+            {!! Form::close() !!}
+        </div>
+</div>
+
+<div class="painelEditar panel panel-default hidden" style="width: 90%; margin: auto">
+    
+    <div class="panel-heading"><strong>Editar produto</strong></div>
+        <div class="panel-body">
+            {!! Form::open(['method'=>'post', 'route' => 'admin.produtos.edit', 'id'=>'edit']) !!}
+
+            <div class="form-group">
+                {!! Form::label("Nome") !!}
+                {!! Form::text('nome', null, ['class' =>'form-control']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::label("Data de fabricacao") !!}
+                {!! Form::text('data_fabricacao', null, ['class' =>'form-control']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::label("Tamanho") !!}
+                {!! Form::text('tamanho', null, ['class' =>'form-control']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::label("Largura") !!}
+                {!! Form::text('largura', null, ['class' =>'form-control']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::label("Peso") !!}
+                {!! Form::text('peso', null, ['class' =>'form-control']) !!}
+            </div>
+
+            <div class='form-group'>
+                {!! Form::label("Categorias(separar por vírgula)") !!}
+                {!! Form::textarea('categorias', null, ['class' =>'form-control']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::button('Salvar', ['id'=>'editar', 'class' =>'btn btn-primary']) !!}
+                {!! Form::button('Cancelar', ['id'=>'cancelar', 'class' =>'btn btn-info fecharPainelEditar']) !!}
+            </div>
+
+            {!! Form::close() !!}
+        </div>
+    </div>
 
 @endsection

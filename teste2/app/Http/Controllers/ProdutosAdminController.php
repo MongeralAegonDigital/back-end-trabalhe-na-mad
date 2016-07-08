@@ -21,29 +21,22 @@ class ProdutosAdminController extends Controller
         return view('admin.produtos.create');
     }
     
-    public function store(Request $request) {
-        $produto = $this->produto->create($request->all());
-        $produto->categorias()->sync($this->getCategoriasIds($request));
-        
-        return redirect()->route("admin.produtos.index");
-    }
     
     public function edit($id) {
         $produto = $this->produto->find($id);
         return view("admin.produtos.edit", compact("produto"));
     }
     
-    public function update($id, Request $request){
-        $this->produto->find($id)->update($request->all());
-        $produto = $this->produto->find($id);
-        
-        $produto->categorias()->sync($this->getCategoriasIds($request->categorias));
-        return redirect()->route("admin.produtos.index");
-    }
-    
+    /**
+     * Exclui um produto
+     * @param int $id
+     */
     public function destroy($id){
-        $this->produto->find($id)->delete();
-        return redirect()->route("admin.produtos.index");
+        if($this->produto->find($id)->delete()){
+            echo "true";
+        }else{
+            echo "false";
+        }
     }
     
     public function index() {
@@ -51,6 +44,36 @@ class ProdutosAdminController extends Controller
         return view("admin.produtos.index", compact("produtos"));
     }
     
+    /**
+     * Cria um novo produto
+     * @param Request $request
+     */
+    public function store(Request $request) {
+        $produto = $this->produto->create($request->all());
+        if($produto->categorias()->sync($this->getCategoriasIds($request->categorias))){
+            echo "true";
+        }else{
+            echo "false";
+        }
+    }
+    
+    /**
+     * Atualiza um produto
+     * @param int $id
+     * @param Request $request
+     */
+    public function update($id, Request $request){
+        $this->produto->find($id)->update($request->all());
+        $produto = $this->produto->find($id);
+        $produto->categorias()->sync($this->getCategoriasIds($request->categorias));
+        echo "true";
+    }
+    
+    /**
+     * Retorna os ids das categorias do produto
+     * @param Request $categorias
+     * @return Array
+     */
     private function getCategoriasIds($categorias){
         $categoriasList = array_filter(array_map('trim',explode(",", $categorias)));
         $categoriasIds = [];
