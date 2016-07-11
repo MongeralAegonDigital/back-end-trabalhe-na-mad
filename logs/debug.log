@@ -1,0 +1,722 @@
+2016-07-10 23:46:22 Notice: Notice (8): Undefined variable: produto in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 2]
+Request URL: /cadastro/users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-10 23:46:55 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-10 23:47:41 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-10 23:48:13 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-10 23:49:02 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-10 23:49:06 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-10 23:49:23 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/users/add
+Referer URL: http://localhost:8888/cadastro/users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:25:52 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:49:38 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:51:06 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:51:57 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:52:26 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:52:39 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:52:42 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:53:23 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:53:44 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:53:51 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:54:29 Notice: Notice (8): Undefined variable: User in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:56:14 Notice: Strict (2048): Declaration of App\Model\Table\UsersTable::validationDefault() should be compatible with Cake\ORM\Table::validationDefault(Cake\Validation\Validator $validator) in [/Applications/MAMP/htdocs/cadastro/src/Model/Table/UsersTable.php, line 8]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Model/Table/UsersTable.php, line 8
+Composer\Autoload\includeFile - ROOT/vendor/composer/ClassLoader.php, line 412
+Composer\Autoload\ClassLoader::loadClass() - ROOT/vendor/composer/ClassLoader.php, line 301
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Cake\Core\App::_classExistsInBase() - CORE/src/Core/App.php, line 151
+Cake\Core\App::className() - CORE/src/Core/App.php, line 64
+Cake\ORM\Locator\TableLocator::_getClassName() - CORE/src/ORM/Locator/TableLocator.php, line 196
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 154
+Cake\Controller\Controller::loadModel() - CORE/src/Datasource/ModelAwareTrait.php, line 114
+Cake\Controller\Controller::__get() - CORE/src/Controller/Controller.php, line 346
+App\Controller\UsersController::add() - APP/Controller/UsersController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:56:19 Notice: Strict (2048): Declaration of App\Model\Table\UsersTable::validationDefault() should be compatible with Cake\ORM\Table::validationDefault(Cake\Validation\Validator $validator) in [/Applications/MAMP/htdocs/cadastro/src/Model/Table/UsersTable.php, line 8]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Model/Table/UsersTable.php, line 8
+Composer\Autoload\includeFile - ROOT/vendor/composer/ClassLoader.php, line 412
+Composer\Autoload\ClassLoader::loadClass() - ROOT/vendor/composer/ClassLoader.php, line 301
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Cake\Core\App::_classExistsInBase() - CORE/src/Core/App.php, line 151
+Cake\Core\App::className() - CORE/src/Core/App.php, line 64
+Cake\ORM\Locator\TableLocator::_getClassName() - CORE/src/ORM/Locator/TableLocator.php, line 196
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 154
+Cake\Controller\Controller::loadModel() - CORE/src/Datasource/ModelAwareTrait.php, line 114
+Cake\Controller\Controller::__get() - CORE/src/Controller/Controller.php, line 346
+App\Controller\UsersController::add() - APP/Controller/UsersController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:59:16 Notice: Strict (2048): Declaration of App\Model\Table\UsersTable::validationDefault() should be compatible with Cake\ORM\Table::validationDefault(Cake\Validation\Validator $validator) in [/Applications/MAMP/htdocs/cadastro/src/Model/Table/UsersTable.php, line 8]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Model/Table/UsersTable.php, line 8
+Composer\Autoload\includeFile - ROOT/vendor/composer/ClassLoader.php, line 412
+Composer\Autoload\ClassLoader::loadClass() - ROOT/vendor/composer/ClassLoader.php, line 301
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+Cake\Core\App::_classExistsInBase() - CORE/src/Core/App.php, line 151
+Cake\Core\App::className() - CORE/src/Core/App.php, line 64
+Cake\ORM\Locator\TableLocator::_getClassName() - CORE/src/ORM/Locator/TableLocator.php, line 196
+Cake\ORM\Locator\TableLocator::get() - CORE/src/ORM/Locator/TableLocator.php, line 154
+Cake\Controller\Controller::loadModel() - CORE/src/Datasource/ModelAwareTrait.php, line 114
+Cake\Controller\Controller::__get() - CORE/src/Controller/Controller.php, line 346
+App\Controller\UsersController::add() - APP/Controller/UsersController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:01:13 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:01:15 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:04:33 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:05:14 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:07:19 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:21:10 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:21:18 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:21:24 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:21:37 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:21:46 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:21:54 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:22:06 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:27:31 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/index.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/index.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:27:35 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/index.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/index.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:27:40 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/index.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/index.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:27:58 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/index.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/index.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:28:03 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/index.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/index.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:28:18 Notice: Notice (8): Undefined variable: users in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/index.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/index.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:33:04 Notice: Notice (8): Undefined variable: UsersTableTable in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 14]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Controller\UsersController::index() - APP/Controller/UsersController.php, line 14
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:33:44 Notice: Notice (8): Undefined variable: produtos in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 17]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Controller\UsersController::index() - APP/Controller/UsersController.php, line 17
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:33:44 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/index.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/index.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:33:52 Notice: Notice (8): Undefined variable: produtos in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 17]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Controller\UsersController::index() - APP/Controller/UsersController.php, line 17
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:33:52 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/index.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/index.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:37:53 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/add.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/add.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:38:25 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/index.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/index.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 01:40:55 Notice: Notice (8): Undefined variable: user in [/Applications/MAMP/htdocs/cadastro/src/Template/Users/index.ctp, line 6]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+include - APP/Template/Users/index.ctp, line 6
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+

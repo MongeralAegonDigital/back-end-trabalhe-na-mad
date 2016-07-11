@@ -1,0 +1,2276 @@
+2016-07-10 23:44:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Add could not be found.
+Exception Attributes: array (
+  'class' => 'Add',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:45:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Add could not be found.
+Exception Attributes: array (
+  'class' => 'Add',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:45:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Add could not be found.
+Exception Attributes: array (
+  'class' => 'Add',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:45:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Add could not be found.
+Exception Attributes: array (
+  'class' => 'Add',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:46:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/users
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:46:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Users could not be found.
+Exception Attributes: array (
+  'class' => 'Users',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:46:16 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::add() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-10 23:46:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:47:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:48:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:49:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:49:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:49:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:49:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:51:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:51:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:51:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:52:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:52:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:53:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:53:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:53:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:54:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:55:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add/2
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:55:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:56:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:57:04 Error: Fatal Error (1): Class 'App\Controller\ForbiddenException' not found in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 17]
+Request URL: /cadastro/users/add
+Referer URL: http://localhost:8888/cadastro/users/add/2
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-10 23:57:04 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\ForbiddenException' not found
+Request URL: /cadastro/users/add
+Referer URL: http://localhost:8888/cadastro/users/add/2
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 17)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-10 23:57:17 Error: Fatal Error (1): Class 'App\Controller\ForbiddenException' not found in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 17]
+Request URL: /cadastro/users/add
+Referer URL: http://localhost:8888/cadastro/users/add/2
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-10 23:57:17 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\ForbiddenException' not found
+Request URL: /cadastro/users/add
+Referer URL: http://localhost:8888/cadastro/users/add/2
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 17)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-10 23:57:21 Error: Fatal Error (1): Class 'App\Controller\ForbiddenException' not found in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 17]
+Request URL: /cadastro/users/add
+Referer URL: http://localhost:8888/cadastro/users/add/2
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-10 23:57:21 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\ForbiddenException' not found
+Request URL: /cadastro/users/add
+Referer URL: http://localhost:8888/cadastro/users/add/2
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 17)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-10 23:57:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add/2
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:57:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add/2
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:57:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:58:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:59:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-10 23:59:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:00:41 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/Applications/MAMP/htdocs/cadastro/src/Model/Table/AddressesTable.php, line 12]
+Request URL: /cadastro/users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 00:00:41 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/Applications/M...', 12)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 00:00:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:01:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:02:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:04:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:05:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:05:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:06:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:06:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/users/add
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:06:47 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::display() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'display',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-11 00:07:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:07:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:07:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:13:59 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 00:14:17 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 00:14:18 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 00:14:21 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 00:16:34 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 00:18:05 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 00:18:09 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/users/add
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 00:34:28 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 00:38:18 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 12]
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 00:38:18 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ';'
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/Applications/M...', 12)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 00:41:40 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 00:42:31 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 00:42:43 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 00:44:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:44:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:45:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:45:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:47:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:47:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:48:11 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::add() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-11 00:48:29 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::add() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-11 00:48:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:48:47 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::salvar() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'salvar',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cadastro/users/salvar
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-11 00:49:01 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'gross_income' cannot be null
+Request URL: /cadastro/users/salvar
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Log\LoggingStatement->execute()
+#4 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1597): Cake\Database\Query->execute()
+#6 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1513): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#7 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1444): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#8 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Connection.php(559): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1445): Cake\Database\Connection->transactional(Object(Closure))
+#10 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Association/HasOne.php(119): Cake\ORM\Table->save(Object(Cake\ORM\Entity), Array)
+#11 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/AssociationCollection.php(251): Cake\ORM\Association\HasOne->saveAssociated(Object(Cake\ORM\Entity), Array)
+#12 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/AssociationCollection.php(227): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\HasOne), Object(Cake\ORM\Entity), Array, Array)
+#13 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/AssociationCollection.php(192): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\UsersTable), Object(Cake\ORM\Entity), Array, Array, true)
+#14 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1524): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\UsersTable), Object(Cake\ORM\Entity), Array, Array)
+#15 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1444): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#16 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Connection.php(559): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#17 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1445): Cake\Database\Connection->transactional(Object(Closure))
+#18 /Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php(15): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#19 [internal function]: App\Controller\UsersController->salvar()
+#20 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#21 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#22 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#23 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#24 {main}
+
+
+2016-07-11 00:49:10 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::add() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-11 00:49:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:51:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:51:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:52:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:52:28 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'gross_income' cannot be null
+Request URL: /cadastro/users/salvar
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Log\LoggingStatement->execute()
+#4 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1597): Cake\Database\Query->execute()
+#6 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1513): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#7 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1444): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#8 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Connection.php(559): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1445): Cake\Database\Connection->transactional(Object(Closure))
+#10 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Association/HasOne.php(119): Cake\ORM\Table->save(Object(Cake\ORM\Entity), Array)
+#11 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/AssociationCollection.php(251): Cake\ORM\Association\HasOne->saveAssociated(Object(Cake\ORM\Entity), Array)
+#12 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/AssociationCollection.php(227): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\HasOne), Object(Cake\ORM\Entity), Array, Array)
+#13 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/AssociationCollection.php(192): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\UsersTable), Object(Cake\ORM\Entity), Array, Array, true)
+#14 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1524): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\UsersTable), Object(Cake\ORM\Entity), Array, Array)
+#15 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1444): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#16 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Connection.php(559): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#17 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1445): Cake\Database\Connection->transactional(Object(Closure))
+#18 /Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php(17): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#19 [internal function]: App\Controller\UsersController->salvar()
+#20 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#21 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#22 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#23 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#24 {main}
+
+
+2016-07-11 00:52:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:52:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:53:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:53:29 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::add() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-11 00:53:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:53:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:54:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:54:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:54:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:54:41 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'gross_income' cannot be null
+Request URL: /cadastro/users/salvar
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Log\LoggingStatement->execute()
+#4 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1597): Cake\Database\Query->execute()
+#6 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1513): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#7 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1444): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#8 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Connection.php(559): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1445): Cake\Database\Connection->transactional(Object(Closure))
+#10 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Association/HasOne.php(119): Cake\ORM\Table->save(Object(Cake\ORM\Entity), Array)
+#11 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/AssociationCollection.php(251): Cake\ORM\Association\HasOne->saveAssociated(Object(Cake\ORM\Entity), Array)
+#12 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/AssociationCollection.php(227): Cake\ORM\AssociationCollection->_save(Object(Cake\ORM\Association\HasOne), Object(Cake\ORM\Entity), Array, Array)
+#13 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/AssociationCollection.php(192): Cake\ORM\AssociationCollection->_saveAssociations(Object(App\Model\Table\UsersTable), Object(Cake\ORM\Entity), Array, Array, true)
+#14 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1524): Cake\ORM\AssociationCollection->saveChildren(Object(App\Model\Table\UsersTable), Object(Cake\ORM\Entity), Array, Array)
+#15 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1444): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#16 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Connection.php(559): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#17 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1445): Cake\Database\Connection->transactional(Object(Closure))
+#18 /Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php(22): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#19 [internal function]: App\Controller\UsersController->salvar()
+#20 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#21 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#22 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#23 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#24 {main}
+
+
+2016-07-11 00:55:19 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users/salvar.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/salvar.ctp',
+)
+Request URL: /cadastro/users/salvar
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 00:55:50 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '05843076750' for key 'cpf_UNIQUE'
+Request URL: /cadastro/users/salvar
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Log\LoggingStatement->execute()
+#4 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1597): Cake\Database\Query->execute()
+#6 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1513): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#7 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1444): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#8 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Connection.php(559): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Table.php(1445): Cake\Database\Connection->transactional(Object(Closure))
+#10 /Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php(22): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#11 [internal function]: App\Controller\UsersController->salvar()
+#12 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#13 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#15 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-07-11 00:56:15 Warning: Warning (4096): Argument 1 passed to App\Model\Table\UsersTable::validationDefault() must be an instance of App\Model\Table\Validator, instance of Cake\Validation\Validator given, called in /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Validation/ValidatorAwareTrait.php on line 108 and defined in [/Applications/MAMP/htdocs/cadastro/src/Model/Table/UsersTable.php, line 27]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Model\Table\UsersTable::validationDefault() - APP/Model/Table/UsersTable.php, line 27
+Cake\ORM\Table::validator() - CORE/src/Validation/ValidatorAwareTrait.php, line 108
+Cake\View\Form\EntityContext::_getValidator() - CORE/src/View/Form/EntityContext.php, line 410
+Cake\View\Form\EntityContext::isRequired() - CORE/src/View/Form/EntityContext.php, line 356
+Cake\View\Helper\FormHelper::_magicOptions() - CORE/src/View/Helper/FormHelper.php, line 1254
+Cake\View\Helper\FormHelper::_parseOptions() - CORE/src/View/Helper/FormHelper.php, line 1155
+Cake\View\Helper\FormHelper::input() - CORE/src/View/Helper/FormHelper.php, line 1009
+include - APP/Template/Users/add.ctp, line 7
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:56:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:56:19 Warning: Warning (4096): Argument 1 passed to App\Model\Table\UsersTable::validationDefault() must be an instance of App\Model\Table\Validator, instance of Cake\Validation\Validator given, called in /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Validation/ValidatorAwareTrait.php on line 108 and defined in [/Applications/MAMP/htdocs/cadastro/src/Model/Table/UsersTable.php, line 27]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 146
+App\Model\Table\UsersTable::validationDefault() - APP/Model/Table/UsersTable.php, line 27
+Cake\ORM\Table::validator() - CORE/src/Validation/ValidatorAwareTrait.php, line 108
+Cake\View\Form\EntityContext::_getValidator() - CORE/src/View/Form/EntityContext.php, line 410
+Cake\View\Form\EntityContext::isRequired() - CORE/src/View/Form/EntityContext.php, line 356
+Cake\View\Helper\FormHelper::_magicOptions() - CORE/src/View/Helper/FormHelper.php, line 1254
+Cake\View\Helper\FormHelper::_parseOptions() - CORE/src/View/Helper/FormHelper.php, line 1155
+Cake\View\Helper\FormHelper::input() - CORE/src/View/Helper/FormHelper.php, line 1009
+include - APP/Template/Users/add.ctp, line 7
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 995
+Cake\View\View::_render() - CORE/src/View/View.php, line 955
+Cake\View\View::render() - CORE/src/View/View.php, line 587
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 611
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2016-07-11 00:56:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:56:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:57:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:58:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:58:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:58:33 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/users/salvar
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->salvar()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 00:58:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:59:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:59:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:59:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 00:59:59 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::add() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-11 01:00:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 01:00:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 01:06:45 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/users/salvar
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->salvar()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 01:06:46 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/users/salvar
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->salvar()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 01:08:00 Error: [InvalidArgumentException] Users is not associated with Addresses
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(252): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\UsersTable), 'Addresses', Array, Array)
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(377): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\UsersTable))
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(348): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\UsersTable))
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Query.php(964): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\UsersTable), true)
+#4 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Query.php(918): Cake\ORM\Query->_transformQuery()
+#5 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(121): Cake\ORM\Query->sql()
+#6 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Connection.php(218): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Connection.php(270): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Query.php(938): Cake\Database\Query->execute()
+#10 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(272): Cake\ORM\Query->_execute()
+#11 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/ORM/Query.php(888): Cake\ORM\Query->_all()
+#12 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(171): Cake\ORM\Query->all()
+#13 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsersTable), Array)
+#14 /Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php(14): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsersTable))
+#15 [internal function]: App\Controller\UsersController->add()
+#16 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#17 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#19 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2016-07-11 01:08:21 Error: Fatal Error (4): syntax error, unexpected 'public' (T_PUBLIC) in [/Applications/MAMP/htdocs/cadastro/src/Model/Table/UsersTable.php, line 27]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 01:08:21 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'public' (T_PUBLIC)
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/Applications/M...', 27)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 01:11:40 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::add() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-11 01:19:48 Error: Fatal Error (1): Class 'App\Controller\ForbiddenException' not found in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 25]
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 01:19:48 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\ForbiddenException' not found
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 25)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 01:19:56 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 01:20:02 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 01:20:03 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 01:20:47 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 01:20:56 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 01:23:44 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/add.ctp',
+)
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 01:24:00 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::add() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-11 01:24:21 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/add.ctp',
+)
+Request URL: /cadastro/
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 01:24:53 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2016-07-11 01:25:49 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/users/add
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 01:27:06 Error: Fatal Error (1): Call to a member function find() on boolean in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 11]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 01:27:06 Error: [Cake\Error\FatalErrorException] Call to a member function find() on boolean
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 01:27:14 Error: Fatal Error (1): Call to a member function find() on boolean in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 11]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 01:27:14 Error: [Cake\Error\FatalErrorException] Call to a member function find() on boolean
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 01:32:24 Error: Fatal Error (1): Class 'App\Controller\TableRegistry' not found in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 11]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 01:32:24 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\TableRegistry' not found
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 01:32:56 Error: Fatal Error (1): Class 'App\Controller\TableRegistry' not found in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 11]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 01:32:57 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\TableRegistry' not found
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 01:33:04 Error: Fatal Error (1): Call to a member function find() on null in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 14]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 01:33:04 Error: [Cake\Error\FatalErrorException] Call to a member function find() on null
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/Applications/M...', 14)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 01:33:33 Error: Fatal Error (1): Class 'App\Controller\TableRegistry' not found in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 11]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 01:33:33 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\TableRegistry' not found
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 01:33:35 Error: Fatal Error (1): Class 'App\Controller\TableRegistry' not found in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 11]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 01:33:35 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\TableRegistry' not found
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 01:36:46 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/View/View.php(584): Cake\View\View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(611): Cake\View\View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 01:41:27 Error: Fatal Error (1): Class 'App\Controller\TableRegistry' not found in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 11]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 01:41:27 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\TableRegistry' not found
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 01:41:58 Error: Fatal Error (1): Class 'App\Controller\TableRegistry' not found in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 11]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 01:41:58 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\TableRegistry' not found
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 13:17:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 13:17:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/css/base.css
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 13:17:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/css/cake.css
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 13:18:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 13:18:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/css/base.css
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 13:18:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/css/cake.css
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 13:18:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 13:18:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/css/cake.css
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 13:18:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/css/base.css
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 13:19:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/css/cake.css
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 13:19:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/js/cep.js
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 13:19:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /cadastro/css/base.css
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-07-11 13:28:16 Error: Fatal Error (1): Class 'CakePlugin' not found in [/Applications/MAMP/htdocs/cadastro/config/bootstrap.php, line 194]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 13:28:16 Error: [Cake\Error\FatalErrorException] Class 'CakePlugin' not found
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'CakePlug...', '/Applications/M...', 194)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 15:08:54 Error: Fatal Error (1): Class 'App\Controller\Email' not found in [/Applications/MAMP/htdocs/cadastro/src/Controller/UsersController.php, line 38]
+Request URL: /cadastro/users/add
+Referer URL: http://localhost:8888/cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 15:08:54 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\Email' not found
+Request URL: /cadastro/users/add
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 38)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 15:09:18 Error: [Cake\Network\Exception\ForbiddenException] Este usuario não pode ser salvo
+Request URL: /cadastro/users/add
+Referer URL: http://localhost:8888/cadastro/
+Stack Trace:
+#0 [internal function]: App\Controller\UsersController->add()
+#1 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#2 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#4 /Applications/MAMP/htdocs/cadastro/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2016-07-11 18:55:51 Error: [Cake\Core\Exception\MissingPluginException] Plugin Bootstrap could not be found.
+Exception Attributes: array (
+  'plugin' => 'Bootstrap',
+)
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/config/bootstrap.php(194): Cake\Core\Plugin::load('Bootstrap')
+#1 /Applications/MAMP/htdocs/cadastro/webroot/index.php(27): require('/Applications/M...')
+#2 {main}
+
+
+2016-07-11 18:56:23 Error: [Cake\Core\Exception\MissingPluginException] Plugin Bootstrap could not be found.
+Exception Attributes: array (
+  'plugin' => 'Bootstrap',
+)
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/config/bootstrap.php(194): Cake\Core\Plugin::load('Bootstrap')
+#1 /Applications/MAMP/htdocs/cadastro/webroot/index.php(27): require('/Applications/M...')
+#2 {main}
+
+
+2016-07-11 18:56:25 Error: [Cake\Core\Exception\MissingPluginException] Plugin Bootstrap could not be found.
+Exception Attributes: array (
+  'plugin' => 'Bootstrap',
+)
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/config/bootstrap.php(194): Cake\Core\Plugin::load('Bootstrap')
+#1 /Applications/MAMP/htdocs/cadastro/webroot/index.php(27): require('/Applications/M...')
+#2 {main}
+
+
+2016-07-11 18:56:29 Error: [Cake\Core\Exception\MissingPluginException] Plugin Bootstrap could not be found.
+Exception Attributes: array (
+  'plugin' => 'Bootstrap',
+)
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/config/bootstrap.php(194): Cake\Core\Plugin::load('Bootstrap')
+#1 /Applications/MAMP/htdocs/cadastro/webroot/index.php(27): require('/Applications/M...')
+#2 {main}
+
+
+2016-07-11 18:56:44 Error: [Cake\Core\Exception\MissingPluginException] Plugin Bootstrap could not be found.
+Exception Attributes: array (
+  'plugin' => 'Bootstrap',
+)
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/config/bootstrap.php(194): Cake\Core\Plugin::load('Bootstrap')
+#1 /Applications/MAMP/htdocs/cadastro/webroot/index.php(27): require('/Applications/M...')
+#2 {main}
+
+
+2016-07-11 19:05:24 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/Applications/MAMP/htdocs/cadastro/src/Template/Layout/default.ctp, line 24]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 19:05:24 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/Applications/M...', 24)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 19:05:33 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/Applications/MAMP/htdocs/cadastro/src/Template/Layout/default.ctp, line 24]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 19:05:33 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/Applications/M...', 24)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 19:06:02 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/Applications/MAMP/htdocs/cadastro/src/Template/Layout/default.ctp, line 24]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 19:06:02 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/Applications/M...', 24)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-07-11 19:06:56 Error: Fatal Error (4): syntax error, unexpected '?>' in [/Applications/MAMP/htdocs/cadastro/src/Template/Layout/default.ctp, line 24]
+Request URL: /cadastro/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 215
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-07-11 19:06:56 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '?>'
+Request URL: /cadastro/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/cadastro/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/Applications/M...', 24)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
