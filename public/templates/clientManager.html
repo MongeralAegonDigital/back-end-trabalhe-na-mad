@@ -6,30 +6,30 @@
     <h1>Dados do cliente</h1>
     <section class="form-inline">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="CPF" ng-model="client.cpf">
+            <input type="text" class="form-control" placeholder="CPF" ng-model="client.cpf" required maxlength="14" onkeyup="mascara(this, mcpf)">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Nome" ng-model="client.nome">
-        </div>
-    </section>
-
-    <section class="form-inline">
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Senha" ng-model="client.senha">
-        </div>
-
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Email" ng-model="client.email">
+            <input type="text" class="form-control" placeholder="Nome" ng-model="client.nome" required>
         </div>
     </section>
 
     <section class="form-inline">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Telefone" ng-model="client.telefone">
+            <input type="text" class="form-control" placeholder="Senha" ng-model="client.senha" required>
         </div>
 
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Data de nascimento" ng-model="client.dataNascimento">
+            <input type="email" class="form-control" placeholder="Email" ng-model="client.email" required>
+        </div>
+    </section>
+
+    <section class="form-inline">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Telefone" ng-model="client.telefone" required maxlength="15" onkeyup="mascara(this, mtel)">
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Data de nascimento" ng-model="client.dataNascimento" required maxlength="10" onkeyup="mascara(this, mdata)">
         </div>
     </section>
 
@@ -38,39 +38,40 @@
 <form>
     <h1>Endereço</h1>
     <section class="form-inline">
+        <div class="alert alert-danger" ng-show="cepIncorreto">CEP incorreto</div>
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="CEP" ng-model="client.cep" onkeyup="mascara(this, mcep)" maxlength="9" ng-maxlength="9">
+            <input type="text" class="form-control" placeholder="CEP" ng-model="client.endereco.cep" required onkeyup="mascara(this, mcep)" maxlength="9" ng-maxlength="9">
             <span class="btn input-group-addon" ng-click="cepSearch()">Buscar</span>
         </div>
     </section>
 
     <section class="form-inline" ng-show="cepValido">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Logradouro" ng-model="client.logradouro">
+            <input type="text" class="form-control" placeholder="Logradouro" ng-model="client.endereco.logradouro">
         </div>
 
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Número" ng-model="client.numero">
-        </div>
-    </section>
-
-    <section class="form-inline" ng-show="cepValido">
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Complemento" ng-model="client.complemento">
-        </div>
-
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Bairro" ng-model="client.bairro">
+            <input type="text" class="form-control" placeholder="Número" ng-model="client.endereco.numero" onkeyup="mascara(this, mnum)">
         </div>
     </section>
 
     <section class="form-inline" ng-show="cepValido">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Cidade" ng-model="client.cidade">
+            <input type="text" class="form-control" placeholder="Complemento" ng-model="client.endereco.complemento">
         </div>
 
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Estado" ng-model="client.uf">
+            <input type="text" class="form-control" placeholder="Bairro" ng-model="client.endereco.bairro">
+        </div>
+    </section>
+
+    <section class="form-inline" ng-show="cepValido">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Cidade" ng-model="client.endereco.cidade">
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Estado" ng-model="client.endereco.uf">
         </div>
     </section>
 
@@ -81,30 +82,30 @@
     <h1>Dados pessoais e profissionais</h1>
     <section class="form-inline">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="RG" ng-model="client.rg">
+            <input type="text" class="form-control" placeholder="RG" ng-model="client.rg" required>
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Número" ng-model="client.numeroRg">
-        </div>
-    </section>
-
-    <section class="form-inline">
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Data da expedição" ng-model="client.dataRg">
-        </div>
-
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Orgão expedidor" ng-model="client.orgaoRG">
+            <input type="text" class="form-control" placeholder="Número" ng-model="client.numeroRg" required maxlength="10" onkeyup="mascara(this, mnum)">
         </div>
     </section>
 
     <section class="form-inline">
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Estado civil" ng-model="client.estadoCivil">
+            <input type="text" class="form-control" placeholder="Data da expedição" ng-model="client.dataRg" required maxlength="10" onkeyup="mascara(this, mdata)">
         </div>
 
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Renda bruta" ng-model="client.renda">
+            <input type="text" class="form-control" placeholder="Orgão expedidor" ng-model="client.orgaoRG" required>
+        </div>
+    </section>
+
+    <section class="form-inline">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Estado civil" ng-model="client.estadoCivil" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Renda bruta" ng-model="client.renda" required maxlength="12" onkeyup="mascara(this, mvalor)">
         </div>
     </section>
 
@@ -114,19 +115,30 @@
         </div>
 
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Profissão" ng-model="client.profissao">
+            <input type="text" class="form-control" placeholder="Profissão" ng-model="client.profissao" required>
         </div>
     </section>
 
     <section class="form-inline">
         <div class="form-group">
             <select class="form-control" ng-model="client.categoria">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected value="">Categoria</option>
+                <option value="Empregado">Empregado</option>
+                <option value="Empregador">Empregador</option>
+                <option value="Autônomo">Autônomo</option>
+                <option value="Outros">Outros</option>
             </select>
         </div>
     </section>
 
 </form>
+
+<hr/>
+
+<div class="">
+    <div class="btn btn-primary" ng-click="submit()">
+        Enviar
+    </div>
+</div>
+
+<footer class="panel-footer"></footer>
