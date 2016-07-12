@@ -1,44 +1,27 @@
 angular.module('Mongeral')
 .controller('ClientController', function($scope, ClientService, CepSearch){
-    $scope.cepValido = false;
     $scope.client = {};
     
     $scope.cepSearch = function(){
-        $scope.cepIncorreto = false;
-
-        if($scope.client.endereco === undefined){
-            return;
-        }
+        if($scope.client.endereco === undefined) return;
 
         CepSearch.execute($scope.client.endereco.cep).success(function(data, status){
-            console.log(status);
             if(status === 200){
-                addInfoCep(data);
+                ClientService.addInfoCep($scope, data);
             }
         }).error(function () {
-            $scope.cepIncorreto = true;
-            clearInfoCep();
+            ClientService.clearInfoCep($scope);
         });
     };
 
     $scope.submit = function(){
         ClientService.execute($scope.client).success(function(data, status){
+            console.log(data);
+            console.log(status);
+        }).error(function () {
 
         });
     };
 
-    var addInfoCep = function(data){
-        $scope.client.endereco.logradouro = data.logradouro;
-        $scope.client.endereco.bairro = data.bairro;
-        $scope.client.endereco.cidade = data.cidade;
-        $scope.client.endereco.uf = data.estado;
 
-        if(data.complemento!==undefined) $scope.client.endereco.complemento = data.complemento;
-        $scope.cepValido = true;
-    };
-    
-    var clearInfoCep = function(){
-        $scope.cepValido = false;
-        $scope.client.endereco = {};
-    };
 });
