@@ -39,10 +39,9 @@
     <h1>Endereço</h1>
     <section class="form-inline">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="CEP" ng-model="client.cep">
-            <span class="btn input-group-addon">Buscar</span>
+            <input type="text" class="form-control" placeholder="CEP" ng-model="client.cep" onkeyup="mascara(this, mcep)" maxlength="9" ng-maxlength="9">
+            <span class="btn input-group-addon" ng-click="cepSearch()">Buscar</span>
         </div>
-
     </section>
 
     <section class="form-inline" ng-show="cepValido">
