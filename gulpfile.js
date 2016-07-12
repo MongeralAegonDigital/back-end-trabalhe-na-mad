@@ -5,7 +5,8 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
 var runSequence = require('run-sequence');
-
+var watch = require('gulp-watch');
+var batch = require('gulp-batch');
 
 
 // limpar a pasta de origem para nao dar conflito
@@ -59,6 +60,14 @@ gulp.task('htmlmin', function(){
     return gulp.src('public/templates/**/*.html')
         .pipe(htmlmin( {collapseWhitespace: true} ))
         .pipe(gulp.dest('public/assets/templates/'));
+});
+
+
+gulp.task('watch', function () {
+    watch(['public/app.js', 'public/services/**/*.js', 'public/templates/**/*.html', 'public/controllers/**/*.js'],
+        batch(function (events, done) {
+        gulp.start(['htmlmin'], done);
+    }));
 });
 
 
