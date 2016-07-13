@@ -32,6 +32,7 @@ angular.module('Mongeral')
         client.endereco.complemento = _verifyExist(client.endereco.complemento);
         client.cpf = _formatCpf(client.cpf);
         client.renda = _formatCurrency(client.renda);
+        client.categoria = _verifyCategory(client.categoria);
         return client;
     };
 
@@ -40,9 +41,8 @@ angular.module('Mongeral')
     };
     
     var _verifyNumber = function(numero){
-        if(numero === undefined){
+        if(numero === undefined)
             numero = 'S/N';
-        }
         return numero;
     };
 
@@ -58,6 +58,12 @@ angular.module('Mongeral')
         if(complemento === undefined)
             complemento = 'S/C';
         return complemento;
+    };
+
+    var _verifyCategory = function (categoria) {
+        if(categoria === undefined)
+            categoria = 'Outros';
+        return categoria;
     };
     
     var _clearForm = function($scope){
