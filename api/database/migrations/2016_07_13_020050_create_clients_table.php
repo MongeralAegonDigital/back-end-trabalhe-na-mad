@@ -34,8 +34,8 @@ class CreateClientsTable extends Migration
             $table->string('orgaoRg', 15);
             $table->string('estadoCivil', 10);
             $table->string('categoria', 15);
-            $table->string('empresa', 50);
-            $table->string('profissao', 50)->nullable();
+            $table->string('empresa', 50)->nullable();
+            $table->string('profissao', 50);
             $table->float('renda');
             
             $table->timestamps();

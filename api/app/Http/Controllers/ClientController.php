@@ -10,6 +10,7 @@ use App\Http\Requests;
 class ClientController extends Controller
 {
     public function create(Request $request){
+
         $this->sendEmailReminder();
         return $request->input();
     }
@@ -18,8 +19,8 @@ class ClientController extends Controller
     {
         $client = Client::find(13914411767);
 
-        Mail::send('emails.newClient', ['user' => $client], function ($m) use ($client) {
-            $m->from('marques.m05@gmail.com', 'Test Mongeral');
+        Mail::send('emails.newClient', ['client' => $client->nome], function ($m) use ($client) {
+            $m->from('277c86c0d8-4bfc88@inbox.mailtrap.io', 'Test Mongeral');
 
             $m->to('marques.m05@gmail.com', $client->nome)->subject('Bem vindo');
         });

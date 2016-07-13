@@ -5,6 +5,6 @@
 
 </head>
 <body>
-    <h1>Seja bem vindo(a), {! user.nome !}</h1>
+    <h1>Seja bem vindo(a), {{ $client }}</h1>
 </body>
 </html>

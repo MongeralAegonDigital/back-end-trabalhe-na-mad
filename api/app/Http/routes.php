@@ -1,5 +1,5 @@
 <?php
 
 Route::group(['prefix' => 'client'], function(){
-    Route::post('/', ['as' => 'create', 'uses' => 'ClientController@create']);
+    Route::post('/', ['middleware' => 'createClient', 'as' => 'create', 'uses' => 'ClientController@create']);
 });
