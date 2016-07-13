@@ -29,12 +29,10 @@ class SendMailToNewClient
     {
         $params = $event->getParams();
 
-        $client = $params;
-
-        Mail::send('emails.newClient', ['client' => $client], function ($m) use ($client) {
+        Mail::send('emails.newClient', ['client' => $params], function ($m) use ($params) {
             $m->from('277c86c0d8-4bfc88@inbox.mailtrap.io', 'Test Mongeral');
 
-            $m->to($client->email, $client->nome)->subject('Bem vindo');
+            $m->to($params['email'], $params['nome'])->subject('Bem vindo');
         });
     }
 }

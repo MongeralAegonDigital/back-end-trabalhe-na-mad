@@ -17,7 +17,7 @@ class CreateClientsTable extends Migration
             $table->string('nome', 100);
             $table->string('senha', 256);
             $table->string('telefone', 15);
-            $table->string('email', 150)->unique();
+            $table->string('email', 150);
             $table->date('dataNascimento');
 
             $table->string('cep', 9);
