@@ -19,7 +19,7 @@ angular.module('Mongeral')
             console.log(data);
             console.log(status);
         }).error(function () {
-
+            
         });
     };
 
