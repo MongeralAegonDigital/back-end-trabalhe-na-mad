@@ -1,11 +1,11 @@
 angular.module('Mongeral')
 .factory('ClientService', function ($http, HOST) {
-    var _execute = function(client){
+    var _execute = function(params){
         var url = HOST + '/client';
 
-        client = _clientValidation(client);
+        params = _clientValidation(params);
 
-        return $http.post(url, client);
+        return $http.post(url, params);
     };
 
     var _addInfoCep = function($scope, data){
@@ -28,7 +28,10 @@ angular.module('Mongeral')
     var _clientValidation = function(client){
         client.dataNascimento = _formatDate(client.dataNascimento);
         client.dataRg = _formatDate(client.dataRg);
-        client.endereco.number = _verifyNumber(client.endereco.number);
+        client.endereco.numero = _verifyNumber(client.endereco.numero);
+        client.endereco.complemento = _verifyExist(client.endereco.complemento);
+        client.cpf = _formatCpf(client.cpf);
+        client.renda = _formatCurrency(client.renda);
         return client;
     };
 
@@ -36,16 +39,35 @@ angular.module('Mongeral')
         return new Date(data).toISOString();
     };
     
-    var _verifyNumber = function(number){
-        if(number === undefined){
-            number = 'S/N';
+    var _verifyNumber = function(numero){
+        if(numero === undefined){
+            numero = 'S/N';
         }
-        return number;
+        return numero;
+    };
+
+    var _formatCpf = function(cpf){
+        return cpf.replace(/\.|\-/g, '');
+    };
+
+    var _formatCurrency = function(renda){
+        return renda.replace(/\./g, '');
+    };
+
+    var _verifyExist = function(complemento){
+        if(complemento === undefined)
+            complemento = 'S/C';
+        return complemento;
+    };
+    
+    var _clearForm = function($scope){
+        $scope.client = {};
     };
 
     return {
         execute: _execute,
         addInfoCep: _addInfoCep,
-        clearInfoCep: _clearInfoCep
+        clearInfoCep: _clearInfoCep,
+        clearForm: _clearForm
     };
 });

@@ -15,12 +15,17 @@ angular.module('Mongeral')
     };
 
     $scope.submit = function(){
-        ClientService.execute($scope.client).success(function(data, status){
-            console.log(data);
-            console.log(status);
-        }).error(function (data, status) {
-            console.log(data);
-            console.log(status);
+        var params = angular.copy($scope.client);
+        ClientService.execute(params).success(function(data, status){
+            if(status === 200){
+                $scope.createClienteSuccess = true;
+                $scope.createClienteError = false;
+            }
+
+            ClientService.clearForm($scope);
+        }).error(function () {
+            $scope.createClienteSuccess = false;
+            $scope.createClienteError = true;
         });
     };
 

@@ -36,7 +36,7 @@ class CreateClientsTable extends Migration
             $table->string('categoria', 15);
             $table->string('empresa', 50)->nullable();
             $table->string('profissao', 50);
-            $table->float('renda');
+            $table->decimal('renda', 15,2);
             
             $table->timestamps();
         });
