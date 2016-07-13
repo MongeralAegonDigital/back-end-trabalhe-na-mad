@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::post('/client', function () {
+    return ['teste' => 'only teste'];
 });
