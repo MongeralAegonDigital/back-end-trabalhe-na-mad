@@ -3,7 +3,7 @@ angular.module('Mongeral')
     var _execute = function(client){
         var url = HOST + '/client';
 
-        console.log(client);
+        client = _clientValidation(client);
 
         return $http.post(url, client);
     };
@@ -23,6 +23,24 @@ angular.module('Mongeral')
         $scope.cepIncorreto = true;
         $scope.cepValido = false;
         $scope.client.endereco = {};
+    };
+
+    var _clientValidation = function(client){
+        client.dataNascimento = _formatDate(client.dataNascimento);
+        client.dataRg = _formatDate(client.dataRg);
+        client.endereco.number = _verifyNumber(client.endereco.number);
+        return client;
+    };
+
+    var _formatDate = function(data){
+        return new Date(data).toISOString();
+    };
+    
+    var _verifyNumber = function(number){
+        if(number === undefined){
+            number = 'S/N';
+        }
+        return number;
     };
 
     return {

@@ -22,7 +22,7 @@ class CreateClientsTable extends Migration
 
             $table->string('cep', 9);
             $table->string('logradouro', 100);
-            $table->string('numero', 10);
+            $table->string('numero', 10)->default('S/N');
             $table->string('complemento', 100)->nullable();
             $table->string('bairro', 50);
             $table->string('cidade', 50);

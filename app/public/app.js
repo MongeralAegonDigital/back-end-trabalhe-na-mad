@@ -1,6 +1,6 @@
 angular.module('Mongeral', ['ngRoute'])
 
-    .constant('HOST', 'http://localhost:8000')
+    .constant('HOST', 'http://localhost:8000/api/public')
     
     .config(function($routeProvider) {
         $routeProvider

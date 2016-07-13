@@ -18,8 +18,9 @@ angular.module('Mongeral')
         ClientService.execute($scope.client).success(function(data, status){
             console.log(data);
             console.log(status);
-        }).error(function () {
-            
+        }).error(function (data, status) {
+            console.log(data);
+            console.log(status);
         });
     };
 
