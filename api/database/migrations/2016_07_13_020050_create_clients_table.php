@@ -13,7 +13,7 @@ class CreateClientsTable extends Migration
     public function up()
     {
         Schema::create('clients', function (Blueprint $table) {
-            $table->integer('cpf')->primary();
+            $table->bigInteger('cpf')->primary();
             $table->string('nome', 100);
             $table->string('senha', 256);
             $table->string('telefone', 15);
@@ -23,20 +23,20 @@ class CreateClientsTable extends Migration
             $table->string('cep', 9);
             $table->string('logradouro', 100);
             $table->string('numero', 10);
-            $table->string('complemento', 100);
+            $table->string('complemento', 100)->nullable();
             $table->string('bairro', 50);
             $table->string('cidade', 50);
-            $table->string('uf', 2);
+            $table->char('uf', 2);
 
-            $table->char('rg', 4);
+            $table->string('rg', 4);
             $table->string('numeroRg', 9);
             $table->date('dataRg');
-            $table->string('orgaoRG', 15);
+            $table->string('orgaoRg', 15);
             $table->string('estadoCivil', 10);
             $table->string('categoria', 15);
             $table->string('empresa', 50);
-            $table->text('proficao', 50)->nullable();
-            $table->double('renda');
+            $table->string('profissao', 50)->nullable();
+            $table->float('renda');
             
             $table->timestamps();
         });
