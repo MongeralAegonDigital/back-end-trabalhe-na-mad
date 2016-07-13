@@ -10,17 +10,18 @@ use App\Http\Requests;
 class ClientController extends Controller
 {
     public function create(Request $request){
+        $this->sendEmailReminder();
         return $request->input();
     }
 
-    public function sendEmailReminder(Request $request, $id)
+    public function sendEmailReminder()
     {
-        $user = User::findOrFail($id);
+        $client = Client::find(13914411767);
 
-        Mail::send('emails.reminder', ['user' => $user], function ($m) use ($user) {
-            $m->from('hello@app.com', 'Your Application');
+        Mail::send('emails.newClient', ['user' => $client], function ($m) use ($client) {
+            $m->from('marques.m05@gmail.com', 'Test Mongeral');
 
-            $m->to($user->email, $user->name)->subject('Your Reminder!');
+            $m->to('marques.m05@gmail.com', $client->nome)->subject('Bem vindo');
         });
     }
 }
