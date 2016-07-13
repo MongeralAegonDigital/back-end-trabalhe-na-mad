@@ -20,6 +20,6 @@
 5. *Acesse o diretório "app" e instale as dependências executando o comando: [npm install && bower install]*
 6. *Ainda no diretório "app", execute o automatizador de tarefas com o comando[gulp]*
 7. *Acesse o diretório raiz da aplicação e inicie o servidor do PHP com o comando [php -S localhost:8000]*
-8. *Abra o formulário acssando (http://localhost:8000/app/public/#/)*
+8. *Abra o formulário acssando [http://localhost:8000/app/public/#/](http://localhost:8000/app/public/#/)*
 
 
