@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Profile extends Model
 {
     protected $primaryKey = 'cpf';
-    protected $incrementing = false;
+    public $incrementing = false;
     protected $fillable = [
-        'cpf', 'rg', 'numeroRg', 'dataRg', 'orgaoRg', 'estadoCivil', 'categoria', 'empresa', 'profissao', 'renda'
+        'client_cpf', 'rg', 'numeroRg', 'dataRg', 'orgaoRg', 'estadoCivil', 'categoria', 'empresa', 'profissao', 'renda'
     ];
 }

@@ -15,6 +15,8 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         'App\Events\CreateClient' => [
             'App\Listeners\InsertNewClient',
+            'App\Listeners\InsertNewClientAddress',
+            'App\Listeners\InsertNewClientProfile',
             'App\Listeners\SendMailToNewClient',
         ],
     ];

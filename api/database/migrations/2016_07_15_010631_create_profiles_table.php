@@ -13,7 +13,7 @@ class CreateProfilesTable extends Migration
     public function up()
     {
         Schema::create('profiles', function (Blueprint $table) {
-            $table->bigInteger('client_cpf')->primary();
+            $table->bigInteger('client_cpf');
             $table->string('rg', 4);
             $table->string('numeroRg', 9);
             $table->date('dataRg');

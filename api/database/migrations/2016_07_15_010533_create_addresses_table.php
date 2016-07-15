@@ -13,7 +13,7 @@ class CreateAddressesTable extends Migration
     public function up()
     {
         Schema::create('addresses', function (Blueprint $table) {
-            $table->bigInteger('client_cpf')->primary();
+            $table->bigInteger('client_cpf');
             $table->string('cep', 9);
             $table->string('logradouro', 100);
             $table->string('numero', 10)->default('S/N');
