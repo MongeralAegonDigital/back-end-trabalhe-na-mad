@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var clean = require('gulp-clean');
 var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
+var minify = require('gulp-minify');
 var htmlmin = require('gulp-htmlmin');
 var runSequence = require('run-sequence');
 var watch = require('gulp-watch');
@@ -24,6 +24,17 @@ gulp.task('jshint', function(){
 });
 
 
+gulp.task('compress', function() {
+    gulp.src(['public/**/*.js'])
+        .pipe(minify({
+            ext:{
+                min:'.js'
+            },
+            ignoreFiles: ['app.js']
+        }))
+        .pipe(gulp.dest('public/assets/js/'));
+});
+
 // concatenar todos os JS
 // uglificar todos os JS
 gulp.task('uglify', function(){
@@ -44,6 +55,13 @@ gulp.task('addAngular', function(){
 // copiar o Angular-route
 gulp.task('addAngularRoute', function(){
     return gulp.src(['bower_components/angular-route/angular-route.min.js'])
+        .pipe(gulp.dest('public/assets/js/'));
+});
+
+
+// copiar o Angular-messages
+gulp.task('addAngularMessages', function(){
+    return gulp.src(['bower_components/angular-messages/angular-messages.min.js'])
         .pipe(gulp.dest('public/assets/js/'));
 });
 
@@ -72,5 +90,5 @@ gulp.task('watch', function () {
 
 
 gulp.task('default', function(cb){
-    return runSequence('clean', ['jshint', 'uglify', 'addAngular', 'addAngularRoute', 'addBootstrap', 'htmlmin'], cb);
+    return runSequence('clean', ['jshint', 'compress', 'addAngular', 'addAngularRoute', 'addAngularMessages', 'addBootstrap', 'htmlmin'], cb);
 });
