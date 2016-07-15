@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
+var minify = require('gulp-minify');
 var clean = require('gulp-clean');
 var concat = require('gulp-concat');
-var minify = require('gulp-minify');
 var htmlmin = require('gulp-htmlmin');
 var runSequence = require('run-sequence');
 var watch = require('gulp-watch');
@@ -24,14 +24,10 @@ gulp.task('jshint', function(){
 });
 
 
-gulp.task('compress', function() {
-    gulp.src(['public/**/*.js'])
-        .pipe(minify({
-            ext:{
-                min:'.js'
-            },
-            ignoreFiles: ['app.js']
-        }))
+gulp.task('minifyJS', function() {
+    return gulp.src(['public/controllers/**/*.js', 'public/services/**/*.js','public/directives/**/*.js','public/helpers/**/*.js'])
+        .pipe(minify())
+        .pipe(concat('all.js'))
         .pipe(gulp.dest('public/assets/js/'));
 });
 
@@ -90,5 +86,5 @@ gulp.task('watch', function () {
 
 
 gulp.task('default', function(cb){
-    return runSequence('clean', ['jshint', 'compress', 'addAngular', 'addAngularRoute', 'addAngularMessages', 'addBootstrap', 'htmlmin'], cb);
+    return runSequence('clean', ['jshint', 'minifyJS', 'addAngular', 'addAngularRoute', 'addAngularMessages', 'addBootstrap', 'htmlmin'], cb);
 });
