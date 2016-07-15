@@ -8,7 +8,7 @@ class Client extends Model
 {
     protected $primaryKey = 'cpf';
     protected $fillable = [
-        'cpf', 'nome', 'senha', 'telefone', 'email', 'dataNascimento', 'cep', 'logradouro', 'numero', 'complemento', 'bairro', 'cidade', 'uf', 'rg', 'numeroRg', 'dataRg', 'orgaoRg', 'estadoCivil', 'categoria', 'empresa', 'profissao', 'renda'
+        'cpf', 'nome', 'senha', 'telefone', 'email', 'dataNascimento'
     ];
     protected $hidden = ['senha'];
 }
