@@ -30,3 +30,10 @@ $factory->define(MongeralAegonApi\Models\Produto::class, function(Faker\Generato
 		'peso' => 100
 	];
 });
+
+//gera algumas categorias para teste
+$factory->define(MongeralAegonApi\Models\Categoria::class, function(Faker\Generator $faker){
+	return [
+		'nome' => $faker->colorName	
+	];
+});

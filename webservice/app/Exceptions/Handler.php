@@ -47,18 +47,13 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
-    	dd($e->getTraceAsString());
     	//pega todas as exceptions ocorridas
     	//e retorna um json com a mensagem de erro, 
     	//e seta o status da requisição para 500
     	if($e instanceof \Exception) {
     		return response()->json("Ocorreu um erro: {$e->getMessage()}", 500);
     	}
-    	
-    	if($e instanceof NotFoundHttpException) {
-    		return response()->json("Ocorreu um erro: {$e->getMessage()}", 404);
-    	}
-    	
+   
         return parent::render($request, $e);
     }
 }

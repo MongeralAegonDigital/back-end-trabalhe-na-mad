@@ -3,8 +3,8 @@ namespace MongeralAegonApi\Services;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
-use Validator;
 use MongeralAegonApi\Services\Contracts\ProdutoServiceInterface;
+use Validator;
 
 /**
  * Classe que implementa a interface ProdutoServiceInterface
@@ -28,35 +28,46 @@ class ProdutoService implements ProdutoServiceInterface {
 	
 	public function index() 
 	{
-		return response()->json($this->_model->all());
+		return response()->json($this->_model->paginate(15));
 	}
 	
 	public function store(Request $request)
 	{
 		// regras para validação dos campos do formulário
 		$rules = [
-				'nome' => 'required',
-				'data_fabricacao' => 'required',
-				'tamanho' => 'required',
-				'largura' => 'required',
-				'peso' => 'required'
+			'nome' => 'required',
+			'data_fabricacao' => 'required',
+			'tamanho' => 'required',
+			'largura' => 'required',
+			'peso' => 'required',
+			'categorias.*.categoria_id' => 'required'
 		];
-		
+				
 		// realiza a validação dos campos
-		$validator = Validator::make ( $request->all (), $rules );
+		$validator = Validator::make($request->all(), $rules);
 		
 		// verifica se os campos são válidos
-		if ($validator->fails ()) {
+		if ($validator->fails()) {
 			// retorna um json com os campos que não passaram na validação
 			// e seta o status da requisição http para 422
-			return response ()->json ( $validator->errors (), 422 );
+			return response()->json($validator->errors (), 422);
 		} else {
-				
+			
+			//previne a inclusão do produto sem uma categoria
+			if(!is_array($request->input('categorias')) && count($request->input('categorias')) == 0) {
+				return response()->json("Selecione algumas categorias para o produto.", 400);
+			}
+						
 			//Cria um produto no banco de dados usando Mass Assignment
-			$this->_model->create($request->all());
+			$produto = $this->_model->create($request->all());
+			
+			//inseri as categorias do produto via Mass Assignment
+			foreach($request->input('categorias') as $categoria) {
+				$produto->categorias()->create($categoria);
+			}
 				
 			// retorna um json com a mensagem de sucesso
-			return response ()->json ( "Produto criado com sucesso." );
+			return response()->json("Produto criado com sucesso.");
 		}
 	}
 	
@@ -69,30 +80,43 @@ class ProdutoService implements ProdutoServiceInterface {
 	{
 		// regras para validação dos campos do formulário
 		$rules = [
-				'nome' => 'required',
-				'data_fabricacao' => 'required',
-				'tamanho' => 'required',
-				'largura' => 'required',
-				'peso' => 'required'
+			'nome' => 'required',
+			'data_fabricacao' => 'required',
+			'tamanho' => 'required',
+			'largura' => 'required',
+			'peso' => 'required',
+			'categorias.*.categoria_id' => 'required'
 		];
 		
 		// realiza a validação dos campos
-		$validator = Validator::make ( $request->all (), $rules );
+		$validator = Validator::make($request->all(), $rules);
 		
 		// verifica se os campos são válidos
 		if ($validator->fails()) {
 			// retorna um json com os campos que não passaram na validação
 			// e seta o status da requisição http para 422
-			return response()->json( $validator->errors (), 422 );
+			return response()->json($validator->errors(), 422);
 		} else {
+			
+			//previne a atualização do produto sem uma categoria
+			if(!is_array($request->input('categorias')) && count($request->input('categorias')) == 0) {
+				return response()->json("Selecione algumas categorias para o produto.", 400);
+			}
 				
 			// Encontra o produto com o id especificado na requisição
 			// e atualiza os dados do produto com os dados que foram enviados na requisição
 			$produto = $this->_model->find($id);
 			$produto->update($request->all());
+			
+			//remove as categorias existentes para inserção de novas
+			$produto->categorias()->delete();
+			
+			foreach($request->input('categorias') as $categoria) {
+				$produto->categorias()->create($categoria);
+			}
 				
 			// retorna um json com a mensagem de sucesso
-			return response ()->json ( "Produto atualizado com sucesso." );
+			return response()->json("Produto atualizado com sucesso.");
 		}
 	}
 	

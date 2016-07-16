@@ -4,7 +4,6 @@ namespace MongeralAegonApi\Http\Controllers;
 use Illuminate\Http\Request;
 use MongeralAegonApi\Services\Contracts\ProdutoServiceInterface;
 
-
 class ProdutoController extends Controller {
 	
 	/**
