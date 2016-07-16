@@ -119,6 +119,3 @@ function validarCPF(cpf) {
         return error();       
     return true;   
 }
-   
-
-

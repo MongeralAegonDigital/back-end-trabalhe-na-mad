@@ -1,55 +1,26 @@
-# Teste para Back-end #
----
-### Baseado no conceito S.P.A. (Single Page Application), construa uma aplicação escolhendo uma das opções abaixo:
+# CakePHP Application Skeleton
 
-#### Teste 1
+[![Build Status](https://img.shields.io/travis/cakephp/app/master.svg?style=flat-square)](https://travis-ci.org/cakephp/app)
+[![License](https://img.shields.io/packagist/l/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
 
-1. Dados do cliente: CPF (identificador do cliente no sistema), Senha, Nome, Telefone, E-mail, Data de Nascimento
-2. Endereço do cliente: CEP, Logradouro, Número, Complemento, Bairro, Cidade, Estado
-3. Dados pessoais e profissionais do cliente: RG, Número, Data Expedição, Órgão Expedidor, Estado Civil, Categoria (Empregado, Empregador, Autônomo, Outros), Empresa em que trabalha (opcional), Profissão, Renda Bruta
-4. Enviar um email para o cliente  apos o cadastro.
+A skeleton for creating applications with [CakePHP](http://cakephp.org) 3.x.
 
-> Para ajudar nosso usuário, no momento que ele terminar o digitar o CEP, preencha os campos do formulário utilizando uma API. Aqui vai algumas sugestões de API's disponíveis para serem usadas:
->[PostMon](http://postmon.com.br/) | [Cep](http://cep.correiocontrol.com.br/XXXXXXXX.json) | [BuscaCep](http://www.buscacep.correios.com.br/sistemas/buscacep/)
+The framework source code can be found here: [cakephp/cakephp](https://github.com/cakephp/cakephp).
 
-#### Teste 2
+## Installation
 
-1.  Cria um cadastro de produtos com : Nome, data de fabicação, tamanho, largura, peso e categoria.
-2.  O produto pode ter uma ou mais categorias.
-3.  Criar um filtro que traga os produtos pelo  campos que foram pedidos no item um e ter um sort por colunas.
+1. Download [Composer](http://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
+2. Run `php composer.phar create-project --prefer-dist cakephp/app [app_name]`.
 
-### Teste 3
+If Composer is installed globally, run
+```bash
+composer create-project --prefer-dist cakephp/app [app_name]
+```
 
-1. Criar uma API com controle de acesso OAuth2
-2. Criar um cadastro de clientes de acesso a API
-3. Criar recursos com diferentes níveis de acesso autenticado
+You should now be able to visit the path to where you installed the app and see
+the setup traffic lights.
 
+## Configuration
 
-### Obs: Escolha o teste de sua preferência.
-
-#### Requisitos ####
-* Utilize **PHP >= 5.5** e MySQL como tecnologias
-* Uso de um Framework (MVC)
-* RestFull
-
-***Diferencial***
-*   Uso de Design Patterns
-*   SOLID
-*   Teste unitário (ex. TDD)
-*   Comentar os métodos
-
-### O que será avaliado
-1. *Domínio da linguagem PHP*
-2. *Domínio do uso de Webservices*
-3. *Organização do código*
-4. *Raciocínio para construir a solução solicitada*
-
-### Importante 
-O teste tem que ser feito em 3 dias apos o fork
-
-## Dicas :) 
->   Seria muito legal você monstrar suas skills com tecnologias de front-end como  
->>   * Algum framework Javascript (Angular, Ember e etc…)
->>   * Pré-Processadores (sass, less e etc...)
->>   * Task Runner (gulp, grunt e etc...)
->>   * ES6
+Read and edit `config/app.php` and setup the 'Datasources' and any other
+configuration relevant for your application.

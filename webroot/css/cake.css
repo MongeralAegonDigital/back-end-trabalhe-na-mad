@@ -14,10 +14,12 @@ a {
 .side-nav li a:not(.button) {
     color: #15848F;
 }
-#tudo{
- width: 500px;
- margin:0 auto;
-}
+
+#tudo {
+  width: 400px;
+  margin:0 auto;            
+ }
+
 
 .side-nav li a:not(.button):hover {
     color: #15848F;
@@ -181,7 +183,11 @@ input[type=radio] {
 .datetime select {
     display: inline;
     width: auto;
-    margin-right: 10px;
+    height: 33px;
+    margin-right: 4px;
+    padding-right:17px;
+    border-radius: 4px;
+    font-size: 12px;
 }
 
 .error label,
