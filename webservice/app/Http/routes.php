@@ -8,8 +8,11 @@ Route::get('/', function () {
 //Define a rota para a API
 Route::group(['prefix'=>'api', 'as'=>'api::'], function(){
 	
-	//Defina a rota para área de produto
+	//Define a rota para área de produto
 	//Mais detalhes acesse o link: https://laravel.com/docs/5.2/controllers#restful-resource-controllers
-	Route::resource('produto','ProdutoController');
+	Route::resource('produto', 'ProdutoController');
+	
+	//Define a rota para área de categorias
+	Route::resource('categoria', 'CategoriaController');
 	
 });

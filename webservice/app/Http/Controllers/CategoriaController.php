@@ -45,6 +45,6 @@ class CategoriaController extends Controller
     public function destroy($id)
     {
     	//delega a tratamento da requisição para a classe CategoriaService
-        $this->_categoriaService->destroy($id);
+        return $this->_categoriaService->destroy($id);
     }
 }

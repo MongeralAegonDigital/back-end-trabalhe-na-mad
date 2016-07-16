@@ -14,4 +14,12 @@ class Produto extends Model
     {
     	return $this->hasMany(ProdutoCategoria::class);
     }
+    
+    //converta a data de fabricação para o formate MySQL 
+    public function setDataFabricacaoAttribute($value)
+    {
+    	$dataFabricaco = str_replace('/', '-', $value);
+    	$dateTime = new \DateTime($dataFabricaco);
+    	$this->attributes['data_fabricacao'] = $dateTime->format("Y-m-d");
+    }
 }

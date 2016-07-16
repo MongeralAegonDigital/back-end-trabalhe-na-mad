@@ -16,6 +16,7 @@ class ProdutoService implements ProdutoServiceInterface {
 	 * @var Model
 	 */
 	private $_model;
+	private $_paginacao = 15;
 	
 	/**
 	 * Construtor da classe
@@ -28,18 +29,19 @@ class ProdutoService implements ProdutoServiceInterface {
 	
 	public function index() 
 	{
-		return response()->json($this->_model->paginate(15));
+		//retorna um json com uma lista de produtos e paginação
+		return response()->json($this->_model->paginate($this->_paginacao));
 	}
 	
 	public function store(Request $request)
 	{
 		// regras para validação dos campos do formulário
 		$rules = [
-			'nome' => 'required',
-			'data_fabricacao' => 'required',
-			'tamanho' => 'required',
-			'largura' => 'required',
-			'peso' => 'required',
+			'nome' => 'required|min:6',
+			'data_fabricacao' => 'required|date_format:d/m/Y',
+			'tamanho' => 'required|numeric',
+			'largura' => 'required|numeric',
+			'peso' => 'required|numeric',
 			'categorias.*.categoria_id' => 'required'
 		];
 				
@@ -73,6 +75,7 @@ class ProdutoService implements ProdutoServiceInterface {
 	
 	public function show($id)
 	{
+		//retorna um json com os dados de um produto específico
 		return response()->json($this->_model->find($id));
 	}
 	
@@ -80,11 +83,11 @@ class ProdutoService implements ProdutoServiceInterface {
 	{
 		// regras para validação dos campos do formulário
 		$rules = [
-			'nome' => 'required',
-			'data_fabricacao' => 'required',
-			'tamanho' => 'required',
-			'largura' => 'required',
-			'peso' => 'required',
+			'nome' => 'required|min:6',
+			'data_fabricacao' => 'required|date_format:d/m/Y',
+			'tamanho' => 'required|numeric',
+			'largura' => 'required|numeric',
+			'peso' => 'required|numeric',
 			'categorias.*.categoria_id' => 'required'
 		];
 		
