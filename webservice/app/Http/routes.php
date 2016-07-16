@@ -2,7 +2,7 @@
 
 //Define a rota para a página inicial da API
 Route::get('/', function () {
-    return "Bem Vindo a API!";
+    return view('welcome');
 });
 
 //Define a rota para a API
