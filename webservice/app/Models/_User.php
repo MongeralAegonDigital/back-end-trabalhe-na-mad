@@ -1,10 +1,10 @@
 <?php
 
-namespace MongeralAegonApi;
+namespace MongeralAegonApi\Models;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Foundation\Auth\_User as Authenticatable;
 
-class User extends Authenticatable
+class _User extends Authenticatable
 {
     /**
      * The attributes that are mass assignable.

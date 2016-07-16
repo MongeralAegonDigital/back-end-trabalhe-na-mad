@@ -11,11 +11,22 @@
 |
 */
 
-$factory->define(MongeralAegonApi\User::class, function (Faker\Generator $faker) {
+/* $factory->define(MongeralAegonApi\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->safeEmail,
         'password' => bcrypt(str_random(10)),
         'remember_token' => str_random(10),
     ];
+}); */
+
+//Gera dados aleatórios na tabela produtos  
+$factory->define(MongeralAegonApi\Models\Produto::class, function(Faker\Generator $faker){
+	return [
+		'nome' => $faker->name,
+		'data_fabricacao' => $faker->dateTime,
+		'tamanho' => 10.25,
+		'largura' => 1.5,
+		'peso' => 100
+	];
 });

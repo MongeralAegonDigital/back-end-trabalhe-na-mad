@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => MongeralAegonApi\User::class,
+            'model' => MongeralAegonApi\Models\User::class,
         ],
 
         // 'users' => [
