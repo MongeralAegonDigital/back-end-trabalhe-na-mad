@@ -138,8 +138,13 @@
 <div class="">
     <div class="alert alert-success" ng-show="createClienteSuccess">Cliente cadastrado com sucesso.</div>
     <div class="alert alert-danger" ng-show="createClienteError">Erro ao cadastrar cliente.</div>
-    <div class="btn btn-primary" ng-click="submit()">
+
+    <div class="btn btn-primary" ng-click="submit()"  ng-hide="sending">
         Enviar
+    </div>
+
+    <div class="btn btn-primary" ng-show="sending">
+        Enviando...
     </div>
 </div>
 

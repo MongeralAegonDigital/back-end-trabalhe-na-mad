@@ -80,7 +80,7 @@ gulp.task('htmlmin', function(){
 gulp.task('watch', function () {
     watch(['public/app.js', 'public/services/**/*.js', 'public/templates/**/*.html', 'public/controllers/**/*.js'],
         batch(function (events, done) {
-        gulp.start(['htmlmin'], done);
+        gulp.start(['htmlmin', 'minifyJS'], done);
     }));
 });
 

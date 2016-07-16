@@ -1,7 +1,7 @@
 angular.module('Mongeral')
 .controller('ClientController', function($scope, ClientService, CepSearch){
     $scope.client = {};
-    
+
     $scope.cepSearch = function(){
         if($scope.client.endereco === undefined) return;
 
@@ -16,7 +16,7 @@ angular.module('Mongeral')
 
     $scope.submit = function(){
         var params = angular.copy($scope.client);
-        ClientService.execute(params).success(function(data, status){
+        ClientService.execute(params, $scope).success(function(data, status){
             if(status === 200){
                 $scope.createClienteSuccess = true;
                 $scope.createClienteError = false;

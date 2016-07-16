@@ -1,6 +1,8 @@
 angular.module('Mongeral')
 .factory('ClientService', function ($http, HOST) {
-    var _execute = function(params){
+    var _execute = function(params, $scope){
+        $scope.sending = true;
+        
         var url = HOST + '/client';
 
         params = _clientValidation(params);
@@ -67,6 +69,7 @@ angular.module('Mongeral')
     };
     
     var _clearForm = function($scope){
+        $scope.sending = false;
         $scope.client = {};
     };
 

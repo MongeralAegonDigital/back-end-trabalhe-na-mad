@@ -1,8 +1,8 @@
-angular.module("Mongeral").controller("ClientController",function(e,c,n){e.client={},e.cepSearch=function(){void 0!==e.client.endereco&&n.execute(e.client.endereco.cep).success(function(n,r){200===r&&c.addInfoCep(e,n)}).error(function(){c.clearInfoCep(e)})},e.submit=function(){var n=angular.copy(e.client);c.execute(n).success(function(n,r){200===r&&(e.createClienteSuccess=!0,e.createClienteError=!1),c.clearForm(e)}).error(function(){e.createClienteSuccess=!1,e.createClienteError=!0})}});
+angular.module("Mongeral").controller("ClientController",function(e,c,n){e.client={},e.cepSearch=function(){void 0!==e.client.endereco&&n.execute(e.client.endereco.cep).success(function(n,r){200===r&&c.addInfoCep(e,n)}).error(function(){c.clearInfoCep(e)})},e.submit=function(){var n=angular.copy(e.client);c.execute(n,e).success(function(n,r){200===r&&(e.createClienteSuccess=!0,e.createClienteError=!1),c.clearForm(e)}).error(function(){e.createClienteSuccess=!1,e.createClienteError=!0})}});
 angular.module('Mongeral')
 .controller('ClientController', function($scope, ClientService, CepSearch){
     $scope.client = {};
-    
+
     $scope.cepSearch = function(){
         if($scope.client.endereco === undefined) return;
 
@@ -17,7 +17,7 @@ angular.module('Mongeral')
 
     $scope.submit = function(){
         var params = angular.copy($scope.client);
-        ClientService.execute(params).success(function(data, status){
+        ClientService.execute(params, $scope).success(function(data, status){
             if(status === 200){
                 $scope.createClienteSuccess = true;
                 $scope.createClienteError = false;
@@ -58,10 +58,12 @@ angular.module('Mongeral')
     };
     
 });
-angular.module("Mongeral").factory("ClientService",function(e,n){var o=function(o){var r=n+"/client";return o=t(o),e.post(r,o)},r=function(e,n){e.client.endereco.logradouro=n.logradouro,e.client.endereco.bairro=n.bairro,e.client.endereco.cidade=n.cidade,e.client.endereco.uf=n.estado,void 0!==n.complemento&&(e.client.endereco.complemento=n.complemento),e.cepIncorreto=!1,e.cepValido=!0},c=function(e){e.cepIncorreto=!0,e.cepValido=!1,e.client.endereco={}},t=function(e){return e.dataNascimento=a(e.dataNascimento),e.dataRg=a(e.dataRg),e.endereco.numero=i(e.endereco.numero),e.endereco.complemento=l(e.endereco.complemento),e.cpf=d(e.cpf),e.renda=u(e.renda),e.categoria=f(e.categoria),e},a=function(e){return new Date(e).toISOString()},i=function(e){return void 0===e&&(e="S/N"),e},d=function(e){return e.replace(/\.|\-/g,"")},u=function(e){return e.replace(/\./g,"")},l=function(e){return void 0===e&&(e="S/C"),e},f=function(e){return void 0===e&&(e="Outros"),e},m=function(e){e.client={}};return{execute:o,addInfoCep:r,clearInfoCep:c,clearForm:m}});
+angular.module("Mongeral").factory("ClientService",function(e,n){var o=function(o,r){r.sending=!0;var c=n+"/client";return o=t(o),e.post(c,o)},r=function(e,n){e.client.endereco.logradouro=n.logradouro,e.client.endereco.bairro=n.bairro,e.client.endereco.cidade=n.cidade,e.client.endereco.uf=n.estado,void 0!==n.complemento&&(e.client.endereco.complemento=n.complemento),e.cepIncorreto=!1,e.cepValido=!0},c=function(e){e.cepIncorreto=!0,e.cepValido=!1,e.client.endereco={}},t=function(e){return e.dataNascimento=i(e.dataNascimento),e.dataRg=i(e.dataRg),e.endereco.numero=a(e.endereco.numero),e.endereco.complemento=l(e.endereco.complemento),e.cpf=d(e.cpf),e.renda=u(e.renda),e.categoria=f(e.categoria),e},i=function(e){return new Date(e).toISOString()},a=function(e){return void 0===e&&(e="S/N"),e},d=function(e){return e.replace(/\.|\-/g,"")},u=function(e){return e.replace(/\./g,"")},l=function(e){return void 0===e&&(e="S/C"),e},f=function(e){return void 0===e&&(e="Outros"),e},m=function(e){e.sending=!1,e.client={}};return{execute:o,addInfoCep:r,clearInfoCep:c,clearForm:m}});
 angular.module('Mongeral')
 .factory('ClientService', function ($http, HOST) {
-    var _execute = function(params){
+    var _execute = function(params, $scope){
+        $scope.sending = true;
+        
         var url = HOST + '/client';
 
         params = _clientValidation(params);
@@ -128,6 +130,7 @@ angular.module('Mongeral')
     };
     
     var _clearForm = function($scope){
+        $scope.sending = false;
         $scope.client = {};
     };
 
