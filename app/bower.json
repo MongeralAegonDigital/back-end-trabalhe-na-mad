@@ -1,0 +1,23 @@
+{
+  "name": "back-end-trabalhe-na-mad",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Mateus Marques <marques.m05@live.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mmgoncalves/back-end-trabalhe-na-mad",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "angular-messages": "^1.5.7"
+  }
+}

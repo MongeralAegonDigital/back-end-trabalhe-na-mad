@@ -1,6 +1,4 @@
-# Teste para Back-end #
----
-### Baseado no conceito S.P.A. (Single Page Application), construa uma aplicação escolhendo uma das opções abaixo:
+# Teste para Mongeral Aegon
 
 #### Teste 1
 
@@ -12,44 +10,16 @@
 > Para ajudar nosso usuário, no momento que ele terminar o digitar o CEP, preencha os campos do formulário utilizando uma API. Aqui vai algumas sugestões de API's disponíveis para serem usadas:
 >[PostMon](http://postmon.com.br/) | [Cep](http://cep.correiocontrol.com.br/XXXXXXXX.json) | [BuscaCep](http://www.buscacep.correios.com.br/sistemas/buscacep/)
 
-#### Teste 2
 
-1.  Cria um cadastro de produtos com : Nome, data de fabicação, tamanho, largura, peso e categoria.
-2.  O produto pode ter uma ou mais categorias.
-3.  Criar um filtro que traga os produtos pelo  campos que foram pedidos no item um e ter um sort por colunas.
+## Passos para instalação da aplicação
 
-### Teste 3
+1. *Clone o projeto*
+2. *Acesse o diretório "api" e instale os pacotes executando o comando: [compser install]*
+3. *Acesse o arquivo .env dentro do diretório "api" e insira as informações do banco de dados*
+4. *Crie as tabelas no banco de dados executando o seguinte comando: [php artisan migrate]*
+5. *Acesse o diretório "app" e instale as dependências executando o comando: [npm install && bower install]*
+6. *Ainda no diretório "app", execute o automatizador de tarefas com o comando[gulp]*
+7. *Acesse o diretório raiz da aplicação e inicie o servidor do PHP com o comando [php -S localhost:8000]*
+8. *Abra o formulário acssando [http://localhost:8000/app/public/#/](http://localhost:8000/app/public/#/)*
 
-1. Criar uma API com controle de acesso OAuth2
-2. Criar um cadastro de clientes de acesso a API
-3. Criar recursos com diferentes níveis de acesso autenticado
 
-
-### Obs: Escolha o teste de sua preferência.
-
-#### Requisitos ####
-* Utilize **PHP >= 5.5** e MySQL como tecnologias
-* Uso de um Framework (MVC)
-* RestFull
-
-***Diferencial***
-*   Uso de Design Patterns
-*   SOLID
-*   Teste unitário (ex. TDD)
-*   Comentar os métodos
-
-### O que será avaliado
-1. *Domínio da linguagem PHP*
-2. *Domínio do uso de Webservices*
-3. *Organização do código*
-4. *Raciocínio para construir a solução solicitada*
-
-### Importante 
-O teste tem que ser feito em 3 dias apos o fork
-
-## Dicas :) 
->   Seria muito legal você monstrar suas skills com tecnologias de front-end como  
->>   * Algum framework Javascript (Angular, Ember e etc…)
->>   * Pré-Processadores (sass, less e etc...)
->>   * Task Runner (gulp, grunt e etc...)
->>   * ES6
