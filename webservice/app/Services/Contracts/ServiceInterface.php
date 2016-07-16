@@ -1,0 +1,51 @@
+<?php
+namespace MongeralAegonApi\Services\Contracts;
+use Illuminate\Http\Request;
+
+/**
+ * Contrato para implementação de serviços
+ * @author Marcus Mendes
+ */
+interface ServiceInterface {
+	
+	/**
+	 * Método que lista todos os produtos
+	 *
+	 * @return \Illuminate\Http\Response
+	 */
+	public function index();
+	
+	/**
+	 * Método que cria um novo produto
+	 *
+	 * @param \Illuminate\Http\Request $request
+	 * @return \Illuminate\Http\Response
+	 */
+	public function store(Request $request);
+	
+	/**
+	 * Método que mostra as informações de um produto específico
+	 *
+	 * @param int $id
+	 * @return \Illuminate\Http\Response
+	 */
+	public function show($id);
+	
+	/**
+	 * Método que atualiza um produto específico
+	 *
+	 * @param \Illuminate\Http\Request $request
+	 * @param int $id
+	 * @return \Illuminate\Http\Response
+	 */
+	public function update(Request $request, $id);
+	
+	/**
+	 * Método que remove um produto
+	 *
+	 * @param int $id
+	 * @return \Illuminate\Http\Response
+	 */
+	public function destroy($id);
+	
+}

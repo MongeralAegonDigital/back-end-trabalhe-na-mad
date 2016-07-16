@@ -4,13 +4,13 @@ namespace MongeralAegonApi\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Produto extends Model
+class Categoria extends Model
 {
 	//deterimina os campos que podem ser inseridor por Mass Assignment
-    protected $fillable = ['nome','data_fabricacao','tamanho','largura','peso'];
+    protected $fillable = ['nome','imagem'];
     
-    //obtém as categorias de um Produto
-    public function categorias()
+    //obtém os produtos de uma Categoria
+    public function produtos()
     {
     	return $this->hasMany(ProdutoCategoria::class);
     }

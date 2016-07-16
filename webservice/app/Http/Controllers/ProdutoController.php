@@ -1,64 +1,45 @@
 <?php
 
 namespace MongeralAegonApi\Http\Controllers;
-
 use Illuminate\Http\Request;
-use MongeralAegonApi\Models\Produto;
+use MongeralAegonApi\Services\Contracts\ProdutoServiceInterface;
 
-class ProdutoController extends Controller
-{
-    /**
-     * Método que lista todos os produtos
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        return response()->json(Produto::all());
-    }
 
-    /**
-     * Método que cria um novo produto
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Método que mostra as informações de um produto específico
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        return response()->json(Produto::find(1));
-    }
-
-    /**
-     * Método que atualiza um produto específico
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Método que remove um produto
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+class ProdutoController extends Controller {
+	
+	/**
+	 * @var ProdutoServiceInterface
+	 */
+	private $_produtoService;
+	
+	public function __construct(ProdutoServiceInterface $service)
+	{
+		//recebe a instância da classe concreta que implementa ProdutoServiceInterface
+		$this->_produtoService = $service;
+	}
+	
+	public function index() {
+		//delega a tratamento da requisição para a classe ProdutoService
+		return $this->_produtoService->index();
+	}
+	
+	public function store(Request $request) {
+		//delega a tratamento da requisição para a classe ProdutoService
+		return $this->_produtoService->store($request);
+	}
+	
+	public function show($id) {
+		//delega a tratamento da requisição para a classe ProdutoService
+		return $this->_produtoService->show($id);
+	}
+	
+	public function update(Request $request, $id) {
+		//delega a tratamento da requisição para a classe ProdutoService
+		return $this->_produtoService->update($request, $id);
+	}
+	
+	public function destroy($id) {
+		//delega a tratamento da requisição para a classe ProdutoService
+		return $this->_produtoService->destroy($id);
+	}
 }
