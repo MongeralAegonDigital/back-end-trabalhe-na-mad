@@ -1,0 +1,9 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.loader {
+	background-image: url('../images/hourglass.gif');
+	width: 38px;
+	height: 38px;
+}
