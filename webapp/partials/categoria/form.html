@@ -1,0 +1,25 @@
+<div class="modal-header">
+	<button type="button" class="close" ng-click="catAdd.cancel()"><span aria-hidden="true">&times;</span></button>
+    <h3 class="modal-title">{{catAdd.titulo}}</h3>
+</div>
+<div class="modal-body">
+    
+	<form name="categoriaAdicionar" novalidate="">
+		
+		<div class="form-group">
+			<label for="nome">Nome</label>
+			<input type="text"  class="form-control" ng-model="catAdd.categoria.nome" name="nome" id="nome" ng-required="true" ng-minlength="3">
+			<div ng-show="categoriaAdicionar.nome.$dirty">
+				<span ng-show="categoriaAdicionar.nome.$error.required" class="help-block">O campo nome é obrigatório.</span>
+				<span ng-show="categoriaAdicionar.nome.$error.minlength" class="help-block">O campo nome deve ter no mínimo 3 caracteres.</span>
+			</div>
+		</div>
+
+	</form>
+
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="catAdd.adicionar(catAdd.categoria)" ng-if="!catAdd.btnLoading" ng-disabled="categoriaAdicionar.$invalid">Adicionar</button>
+    <button class="btn btn-primary" type="button" disabled="disabled" ng-if="catAdd.btnLoading">Adicionando...</button>
+    <button class="btn btn-warning" type="button" ng-click="catAdd.cancel()">Cancelar</button>
+</div>

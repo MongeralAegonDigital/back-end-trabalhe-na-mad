@@ -22,7 +22,7 @@ webApp.factory('ProdutoService',[
 			//cadastra um produto
 			//Método POST
 			'cadastrar': function(input) {
-				return $resource(_url).save($input).$promise; 
+				return $resource(_url).save(input).$promise; 
 			},
 
 			//atualiza os dados de um produto específica

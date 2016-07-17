@@ -63,7 +63,7 @@ class ProdutoService implements ProdutoServiceInterface {
 			
 			//previne a inclusão do produto sem uma categoria
 			if(!is_array($request->input('categorias')) && count($request->input('categorias')) == 0) {
-				return response()->json("Selecione algumas categorias para o produto.", 400);
+				return response()->json(["msg"=>"Selecione algumas categorias para o produto."], 400);
 			}
 						
 			//Cria um produto no banco de dados usando Mass Assignment
@@ -75,7 +75,7 @@ class ProdutoService implements ProdutoServiceInterface {
 			}
 				
 			// retorna um json com a mensagem de sucesso
-			return response()->json("Produto criado com sucesso.");
+			return response()->json(["msg"=>"Produto criado com sucesso."]);
 		}
 	}
 	
@@ -109,7 +109,7 @@ class ProdutoService implements ProdutoServiceInterface {
 			
 			//previne a atualização do produto sem uma categoria
 			if(!is_array($request->input('categorias')) && count($request->input('categorias')) == 0) {
-				return response()->json("Selecione algumas categorias para o produto.", 400);
+				return response()->json(["msg"=>"Selecione algumas categorias para o produto."], 400);
 			}
 				
 			// Encontra o produto com o id especificado na requisição
@@ -125,7 +125,7 @@ class ProdutoService implements ProdutoServiceInterface {
 			}
 				
 			// retorna um json com a mensagem de sucesso
-			return response()->json("Produto atualizado com sucesso.");
+			return response()->json(["msg"=>"Produto atualizado com sucesso."]);
 		}
 	}
 	
@@ -135,7 +135,7 @@ class ProdutoService implements ProdutoServiceInterface {
 		$this->_model->destroy($id);
 		
 		//retorna um json com a mesnagem de exclusão
-		return response()->json("Produto removido com sucesso.");
+		return response()->json(["msg"=>"Produto removido com sucesso."]);
 	}
 	
 }

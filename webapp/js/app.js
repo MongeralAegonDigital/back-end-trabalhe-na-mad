@@ -3,7 +3,8 @@ var webApp = (function(angular){
 	var app = angular.module('webApp',[
 		'ngRoute',
 		'ngResource',
-		'ui.bootstrap'
+		'ui.bootstrap',
+		'toastr'
 	]);
 
 	app.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider){
@@ -26,6 +27,7 @@ var webApp = (function(angular){
 		$routeProvider.when('/categoria',{
 			templateUrl: 'partials/categoria/index.html',
 			controller: 'CategoriaCtrl',
+			controllerAs: 'cat',
 			resolve: {
 				//obtém a lista de categorias cadastras
 				categorias: ['$rootScope','CategoriaService', function($rootScope, CategoriaService) {

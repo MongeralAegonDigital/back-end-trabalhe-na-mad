@@ -32,7 +32,6 @@ class Kernel extends HttpKernel
         ],
 
         'api' => [
-        	\MongeralAegonApi\Http\Middleware\Cors::class, //Habilita o Cross-Origin Resource Sharing	
             'throttle:60,1',
         ],
     ];

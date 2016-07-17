@@ -163,33 +163,42 @@
   </div>
 </div>
 
-<div class="btn-group btn-prod pull-right" role="group">
-  <button type="button" class="btn btn-default" ng-disabled="!prod.paginaAnterior" ng-click="prod.anterior()"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-  <button type="button" class="btn btn-default" ng-disabled="!prod.proximaPagina" ng-click="prod.proxima()"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-</div>
+<div class="table-responsive">
 
-<table class="table table-bordered table-striped">
-	
-	<thead>
-		<tr>
-			<td>Nome</td>
-			<td>Data de Fabricação</td>
-			<td>Tamanho</td>
-			<td>Largura</td>
-			<td>Peso</td>
-		</tr>
-	</thead>
+	<div class="btn-group btn-prod pull-right" role="group">
+	  <button type="button" class="btn btn-default" ng-disabled="!prod.paginaAnterior" ng-click="prod.anterior()"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+	  <button type="button" class="btn btn-default" ng-disabled="!prod.proximaPagina" ng-click="prod.proxima()"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+	</div>
 
-	<tbody>
+	<table class="table table-bordered table-striped" id="table-produtos">
 		
-		<tr ng-repeat="produto in prod.produtos">
-			<td>{{produto.nome}}</td>
-			<td>{{produto.data_fabricacao}}</td>
-			<td>{{produto.tamanho}}</td>
-			<td>{{produto.largura}}</td>
-			<td>{{produto.peso}}</td>
-		</tr>
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>Data de Fabricação</th>
+				<th>Tamanho</th>
+				<th>Largura</th>
+				<th>Peso</th>
+				<th>Categorias</th>
+				<th>Criado em</th>
+			</tr>
+		</thead>
 
-	</tbody>
+		<tbody>
+			
+			<tr ng-repeat="produto in prod.produtos">
+				<td>{{produto.nome}}</td>
+				<td>{{produto.data_fabricacao}}</td>
+				<td>{{produto.tamanho}}</td>
+				<td>{{produto.largura}}</td>
+				<td>{{produto.peso}}</td>
+				<td>
+					<p ng-repeat="cat in produto.categorias">{{cat.categoria.nome}}</p>
+				</td>
+				<td>{{produto.created_at}}</td>
+			</tr>
 
-</table>
+		</tbody>
+
+	</table>
+</div>

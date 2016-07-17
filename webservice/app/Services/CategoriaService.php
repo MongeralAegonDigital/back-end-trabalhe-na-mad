@@ -50,7 +50,7 @@ class CategoriaService implements CategoriaServiceInterface {
 			$this->_model->create($request->all());
 			
 			// retorna um json com a mensagem de sucesso
-			return response()->json("Categoria criada com sucesso.");
+			return response()->json(["msg"=>"Categoria criada com sucesso."]);
 		}
 		
 	}
@@ -83,7 +83,7 @@ class CategoriaService implements CategoriaServiceInterface {
 			$categoria->update($request->all());
 				
 			// retorna um json com a mensagem de sucesso
-			return response()->json("Categoria atualizada com sucesso.");
+			return response()->json(["msg"=>"Categoria atualizada com sucesso."]);
 		}
 		
 	}
@@ -94,6 +94,6 @@ class CategoriaService implements CategoriaServiceInterface {
 		$this->_model->destroy($id);
 		
 		//retorna um json com a mensagem de exclusão
-		return response()->json("Categoria removida com sucesso.");
+		return response()->json(["msg"=>"Categoria removida com sucesso."]);
 	}
 }

@@ -4,7 +4,8 @@ webApp.controller('ProdutoCtrl',[
 	'$uibModal',
 	'produtos',
 	'ProdutoService',
-	function($log, $rootScope, $uibModal, produtos, ProdutoService) {
+	'CategoriaService',
+	function($log, $rootScope, $uibModal, produtos, ProdutoService, CategoriaService) {
 		
 		//desativa o loader da página
 		$rootScope.activeLoader = false;
@@ -40,12 +41,29 @@ webApp.controller('ProdutoCtrl',[
 		
 		//método que adiciona um novo produto
 		_self.adicionarNovo = function() {
-			alert("Adicionar Novo");
+			var modalAddNovo = $uibModal.open({
+		      animation: true,
+		      templateUrl: './partials/produto/form.html',
+		      controller: 'AdicionarInstanceCtrl',
+		      controllerAs: 'prodAdd',
+		      size: "md",
+		      resolve: {
+		      	categorias: function() {
+		      		//envia a lista de categoria para o AdicionarInstanceCtrl
+		      		return CategoriaService.listar();
+		      	}
+		      }
+		    });
+
+		    modalAddNovo.result.then(function() {
+		    	//recarrega a tabela quando é adicionado um novo produto
+		    	$rootScope.activeLoader = true;
+		      	paginacao(null, null);
+		    });
 		};
 
 		//método que filtra os dados da tabela
 		_self.buscar = function(produto) {
-			$log.log(produto);
 			$rootScope.activeLoader = true;
 			paginacao(null, produto);
 		};
@@ -58,6 +76,65 @@ webApp.controller('ProdutoCtrl',[
 				_self.produtos = response.data;
 			});
 		}
+
 	}
 
+]);
+
+webApp.controller('AdicionarInstanceCtrl',[
+	'$log',
+	'$uibModalInstance',
+	'categorias',
+	'ProdutoService',
+	'toastr',
+	function($log, $uibModalInstance, categorias, ProdutoService, toastr) {
+
+		var _self = this;
+		_self.titulo = "Adicionar Novo"; //título do modal
+		_self.produto = {};
+		_self.categorias = categorias.data;
+		_self.btnLoading = false;
+
+		//método que valida se o checkbox está marcado
+		_self.selectedCheckbox = function(categorias) {
+
+			if(categorias) {
+				return Object.keys(categorias).some(function(key){
+					return categorias[key];
+				});
+			}
+
+			return false;
+
+		};
+
+		//método que adiciona um novo produto
+		_self.adicionar = function(produto) {
+			
+			_self.btnLoading = true;
+			_categorias = [];
+
+			for(var prop in produto.categorias) {
+				if(produto.categorias[prop] == true) {
+					_categorias.push({categoria_id: prop});
+				}
+			}
+
+			produto.categorias = _categorias;
+
+			//Salva o produto
+			ProdutoService.cadastrar(produto).then(function(response){
+				_self.btnLoading = false;
+				_self.produto = {};
+				toastr.success(response.msg, "Sucesso");
+				$uibModalInstance.close();
+			});
+			
+		};
+
+		//fecha o modal
+		_self.cancel = function () {
+		    $uibModalInstance.dismiss('cancel');
+		};
+	}
 ]);

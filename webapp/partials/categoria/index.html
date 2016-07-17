@@ -1,1 +1,41 @@
 <h1>Categorias</h1>
+
+<hr>
+
+<p>
+	<button type="button" class="btn btn-success btn-md" ng-click="cat.adicionarNova()">
+		<i class="fa fa-plus" aria-hidden="true"></i>
+		Adicionar Nova
+	</button>
+</p>
+
+<div class="table-responsive">
+
+	<div class="btn-group btn-prod pull-right" role="group">
+	  <button type="button" class="btn btn-default" ng-disabled="!cat.paginaAnterior" ng-click="cat.anterior()"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+	  <button type="button" class="btn btn-default" ng-disabled="!cat.proximaPagina" ng-click="cat.proxima()"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+	</div>
+
+	<table class="table table-bordered table-striped">
+		
+		<thead>
+			<tr>
+				<th>Nome</th>
+				<th>Criado em</th>
+				<th>Ações</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr ng-repeat="categoria in cat.categorias">
+				<td>{{categoria.nome}}</td>
+				<td>{{categoria.created_at}}</td>
+				<td>
+					<button type="button" class="btn btn-default btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+				</td>
+			</tr>
+		</tbody>
+
+	</table>
+</div>

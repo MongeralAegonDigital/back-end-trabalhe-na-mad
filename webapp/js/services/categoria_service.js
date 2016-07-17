@@ -10,7 +10,7 @@ webApp.factory('CategoriaService',[
 			//obtém a lista de categorias
 			//Método GET
 			'listar': function(page) {
-				return $resource(_url).get().$promise;
+				return $resource((page) ? page : _url).get().$promise;
 			},
 
 			//obtém os dados de uma categoria específica
@@ -22,7 +22,7 @@ webApp.factory('CategoriaService',[
 			//cadastra uma categoria
 			//Método POST
 			'cadastrar': function(input) {
-				return $resource(_url).save($input).$promise; 
+				return $resource(_url).save(input).$promise; 
 			},
 
 			//atualiza os dados de uma categoria específica

@@ -4,6 +4,7 @@ namespace MongeralAegonApi\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use function foo\func;
 
 class Produto extends Model
 {
@@ -24,11 +25,18 @@ class Produto extends Model
     	$this->attributes['data_fabricacao'] = $dateTime->format("Y-m-d");
     }
     
-    //formata a data para o padrão Brasileiro
+    //formata a data de fabricação para o padrão Brasileiro
     public function getDataFabricacaoAttribute($value)
     {
     	$dateTime = new \DateTime($value);
     	return $dateTime->format('d/m/Y');
+    }
+    
+    //formata a data de criação para o padrão Brasileiro
+    public function getCreatedAtAttribute($value)
+    {
+    	$dateTime = new \DateTime($value);
+    	return $dateTime->format('d/m/Y H:i:s');
     }
     
     //cria o filtro da tabela

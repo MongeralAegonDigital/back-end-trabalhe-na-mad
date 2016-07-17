@@ -19,3 +19,7 @@ body {
 .btn-prod {
 	margin-bottom: 15px;
 }
+
+#table-produtos > tbody > tr > td > p:last-child {
+	margin-bottom: 0;
+}

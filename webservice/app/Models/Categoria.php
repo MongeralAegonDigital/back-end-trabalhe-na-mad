@@ -14,4 +14,11 @@ class Categoria extends Model
     {
     	return $this->hasMany(ProdutoCategoria::class);
     }
+    
+    //formata a data de criação para o padrão Brasileiro
+    public function getCreatedAtAttribute($value)
+    {
+    	$dateTime = new \DateTime($value);
+    	return $dateTime->format('d/m/Y H:i:s');
+    }
 }

@@ -157,7 +157,11 @@ return [
         MongeralAegonApi\Providers\AuthServiceProvider::class,
         MongeralAegonApi\Providers\EventServiceProvider::class,
         MongeralAegonApi\Providers\RouteServiceProvider::class,
-
+    		
+    	/*
+    	 * CORS
+    	 */	
+    	Barryvdh\Cors\ServiceProvider::class,
     ],
 
     /*
