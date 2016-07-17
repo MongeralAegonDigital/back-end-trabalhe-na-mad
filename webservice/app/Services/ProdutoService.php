@@ -29,8 +29,14 @@ class ProdutoService implements ProdutoServiceInterface {
 	
 	public function index(Request $request) 
 	{
+		$query = $this->_model->with(['categorias','categorias.categoria']);
+		
+		//definido no modelo Produto
+		$query->tabelaFiltros($request);
+		$query->tabelaSorte($request);
+		
 		//retorna um json com uma lista de produtos e paginação
-		return response()->json($this->_model->paginate($this->_paginacao));
+		return response()->json($query->paginate($this->_paginacao));
 	}
 	
 	public function store(Request $request)

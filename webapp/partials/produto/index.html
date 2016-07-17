@@ -11,53 +11,155 @@
 <div class="panel panel-default panel-filtrar">
   <div class="panel-body">
     	
-    <h4>Filtar por:</h4>
-	
 	<form name="filtro" novalidate="">
+
+	<h4>Filtar por:</h4>
 		
 		<div class="row">
 		
 			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
 				<div class="form-group">
 					<label for="nome">Nome</label>
-					<input type="text" ng-model="prod.produto.nome" name="nome" id="nome" class="form-control">
+					<input type="text" ng-model="prod.produto.filter.nome" name="nome" id="nome" class="form-control">
 				</div>	
 			</div>
 
 			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
 				<div class="form-group">
 					<label for="data_fabricacao">Data de Fabricação</label>
-					<input type="text" ng-model="prod.produto.data_fabricacao" name="data_fabricacao" id="data_fabricacao" class="form-control">
+					<input type="text" ng-model="prod.produto.filter.data_fabricacao" name="data_fabricacao" id="data_fabricacao" class="form-control">
 				</div>	
 			</div>
 			
 			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
 				<div class="form-group">
 					<label for="tamanho">Tamanho</label>
-					<input type="text" ng-model="prod.produto.tamanho" name="tamanho" id="tamanho" class="form-control">
+					<input type="text" ng-model="prod.produto.filter.tamanho" name="tamanho" id="tamanho" class="form-control">
 				</div>	
 			</div>
 			
 			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
 				<div class="form-group">
 					<label for="largura">Largura</label>
-					<input type="text" ng-model="prod.produto.largura" name="largura" id="largura" class="form-control">
+					<input type="text" ng-model="prod.produto.filter.largura" name="largura" id="largura" class="form-control">
 				</div>	
 			</div>
 			
 			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
 				<div class="form-group">
 					<label for="peso">Peso</label>
-					<input type="text" ng-model="prod.produto.peso" name="peso" id="peso" class="form-control">
+					<input type="text" ng-model="prod.produto.filter.peso" name="peso" id="peso" class="form-control">
 				</div>	
 			</div>
 
 		</div>
 
-		<button type="button" class="btn btn-primary btn-md" ng-click="prod.buscar(prod.produto)">Buscar</button>
+	<h4>Sorte por:</h4>
+
+		<div class="row">
+			
+			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+
+				<div class="form-group">
+					<label for="nome-sort">Nome</label>
+
+					<div class="radio">
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.nome" ng-checked="!prod.produto.sort.nome"  id="nome-sort" value=""> Sem
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.nome"  id="nome-sort" value="asc"> asc
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.nome"  id="nome-sort" value="desc"> desc
+						</label>
+					</div>
+
+				</div>	
+			</div>
+
+			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+				<div class="form-group">
+					<label for="data_fabricacao-sort">Data de Fabricação</label>
+
+					<div class="radio">
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.data_fabricacao" ng-checked="!prod.produto.sort.data_fabricacao"  id="data_fabricacao-sort" value=""> Sem
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.data_fabricacao"  id="data_fabricacao-sort" value="asc"> asc
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.data_fabricacao"  id="data_fabricacao-sort" value="desc"> desc
+						</label>
+					</div>
+
+				</div>	
+			</div>
+			
+			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+				<div class="form-group">
+					<label for="tamanho-sort">Tamanho</label>
+
+					<div class="radio">
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.tamanho" ng-checked="!prod.produto.sort.tamanho"  id="tamanho-sort" value=""> sem
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.tamanho"  id="tamanho-sort" value="asc"> asc
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.tamanho"  id="tamanho-sort" value="desc"> desc
+						</label>
+					</div>
+
+				</div>	
+			</div>
+			
+			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+				<div class="form-group">
+					<label for="largura-sort">Largura</label>
+
+					<div class="radio">
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.largura" ng-checked="!prod.produto.sort.largura" id="largura-sort" value=""> Sem
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.largura"  id="largura-sort" value="asc"> asc
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.largura"  id="largura-sort" value="desc"> desc
+						</label>
+					</div>
+
+				</div>	
+			</div>
+			
+			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+				<div class="form-group">
+					<label for="peso-sort">Peso</label>
+
+					<div class="radio">
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.peso" ng-checked="!prod.produto.sort.peso" id="peso-sort" value=""> Sem
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.peso"  id="peso-sort" value="asc"> asc
+						</label>
+						<label class="radio-inline">
+						  <input type="radio" ng-model="prod.produto.sort.peso"  id="peso-sort" value="desc"> desc
+						</label>
+					</div>
+
+				</div>	
+			</div>
+
+		</div>	
+
+	<button type="button" class="btn btn-primary btn-md" ng-click="prod.buscar(prod.produto)">Buscar</button>
 
 	</form>
-	
+
   </div>
 </div>
 

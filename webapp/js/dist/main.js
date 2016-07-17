@@ -207,9 +207,10 @@ webApp.controller('CategoriaCtrl', [
 webApp.controller('ProdutoCtrl',[
 	'$log',
 	'$rootScope',
+	'$uibModal',
 	'produtos',
 	'ProdutoService',
-	function($log, $rootScope, produtos, ProdutoService) {
+	function($log, $rootScope, $uibModal, produtos, ProdutoService) {
 		
 		//desativa o loader da página
 		$rootScope.activeLoader = false;
@@ -231,7 +232,7 @@ webApp.controller('ProdutoCtrl',[
 		_self.proxima = function() {
 			if(_self.proximaPagina) {
 				$rootScope.activeLoader = true;
-				paginacao(_self.proximaPagina, null);
+				paginacao(_self.proximaPagina, _self.produto);
 			}
 		};
 
@@ -239,7 +240,7 @@ webApp.controller('ProdutoCtrl',[
 		_self.anterior = function() {
 			if(_self.paginaAnterior) {
 				$rootScope.activeLoader = true;
-				paginacao(_self.paginaAnterior, null);
+				paginacao(_self.paginaAnterior, _self.produto);
 			}
 		};
 		
@@ -250,6 +251,7 @@ webApp.controller('ProdutoCtrl',[
 
 		//método que filtra os dados da tabela
 		_self.buscar = function(produto) {
+			$log.log(produto);
 			$rootScope.activeLoader = true;
 			paginacao(null, produto);
 		};
