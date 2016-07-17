@@ -24,7 +24,7 @@ class CategoriaService implements CategoriaServiceInterface {
 		$this->_model = $model;
 	}
 	
-	public function index() {
+	public function index(Request $request) {
 		//retorna um json com uma lista de categorias e paginação
 		return response()->json($this->_model->paginate($this->_paginacao));
 	}

@@ -9,8 +9,8 @@ webApp.factory('ProdutoService',[
 
 			//obtém a lista de produtos
 			//Método GET
-			'listar': function(page) {
-				return $resource(_url).get().$promise;
+			'listar': function(page, params) {
+				return $resource((page) ? page : _url).get(params).$promise;
 			},
 
 			//obtém os dados de um produto específico

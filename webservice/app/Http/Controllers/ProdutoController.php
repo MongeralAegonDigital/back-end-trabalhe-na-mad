@@ -17,9 +17,9 @@ class ProdutoController extends Controller {
 		$this->_produtoService = $service;
 	}
 	
-	public function index() {
+	public function index(Request $request) {
 		//delega a tratamento da requisição para a classe ProdutoService
-		return $this->_produtoService->index();
+		return $this->_produtoService->index($request);
 	}
 	
 	public function store(Request $request) {

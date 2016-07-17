@@ -17,7 +17,7 @@ var webApp = (function(angular){
 				//obtém a lista de produtos cadatrados
 				produtos: ['$rootScope','ProdutoService', function($rootScope, ProdutoService) {
 					$rootScope.activeLoader = true;
-					return ProdutoService.listar();
+					return ProdutoService.listar(null,null);
 				}]
 			}
 		});
@@ -30,7 +30,7 @@ var webApp = (function(angular){
 				//obtém a lista de categorias cadastras
 				categorias: ['$rootScope','CategoriaService', function($rootScope, CategoriaService) {
 					$rootScope.activeLoader = true;
-					return CategoriaService.listar();
+					return CategoriaService.listar(null,null);
 				}]
 			}
 		});

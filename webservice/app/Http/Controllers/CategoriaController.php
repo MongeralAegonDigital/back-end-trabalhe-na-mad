@@ -18,10 +18,10 @@ class CategoriaController extends Controller
     	$this->_categoriaService = $categoriaService;
     }
 	
-    public function index()
+    public function index(Request $request)
     {
     	//delega a tratamento da requisição para a classe CategoriaService
-        return $this->_categoriaService->index();
+        return $this->_categoriaService->index($request);
     }
 
     public function store(Request $request)

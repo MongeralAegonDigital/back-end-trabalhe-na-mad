@@ -27,7 +27,7 @@ class ProdutoService implements ProdutoServiceInterface {
 		$this->_model = $model;
 	}
 	
-	public function index() 
+	public function index(Request $request) 
 	{
 		//retorna um json com uma lista de produtos e paginação
 		return response()->json($this->_model->paginate($this->_paginacao));

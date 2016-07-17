@@ -12,10 +12,82 @@
   <div class="panel-body">
     	
     <h4>Filtar por:</h4>
-
-	<div class="row">
+	
+	<form name="filtro" novalidate="">
 		
-	</div>
+		<div class="row">
+		
+			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+				<div class="form-group">
+					<label for="nome">Nome</label>
+					<input type="text" ng-model="prod.produto.nome" name="nome" id="nome" class="form-control">
+				</div>	
+			</div>
 
+			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+				<div class="form-group">
+					<label for="data_fabricacao">Data de Fabricação</label>
+					<input type="text" ng-model="prod.produto.data_fabricacao" name="data_fabricacao" id="data_fabricacao" class="form-control">
+				</div>	
+			</div>
+			
+			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+				<div class="form-group">
+					<label for="tamanho">Tamanho</label>
+					<input type="text" ng-model="prod.produto.tamanho" name="tamanho" id="tamanho" class="form-control">
+				</div>	
+			</div>
+			
+			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+				<div class="form-group">
+					<label for="largura">Largura</label>
+					<input type="text" ng-model="prod.produto.largura" name="largura" id="largura" class="form-control">
+				</div>	
+			</div>
+			
+			<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+				<div class="form-group">
+					<label for="peso">Peso</label>
+					<input type="text" ng-model="prod.produto.peso" name="peso" id="peso" class="form-control">
+				</div>	
+			</div>
+
+		</div>
+
+		<button type="button" class="btn btn-primary btn-md" ng-click="prod.buscar(prod.produto)">Buscar</button>
+
+	</form>
+	
   </div>
 </div>
+
+<div class="btn-group btn-prod pull-right" role="group">
+  <button type="button" class="btn btn-default" ng-disabled="!prod.paginaAnterior" ng-click="prod.anterior()"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+  <button type="button" class="btn btn-default" ng-disabled="!prod.proximaPagina" ng-click="prod.proxima()"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+</div>
+
+<table class="table table-bordered table-striped">
+	
+	<thead>
+		<tr>
+			<td>Nome</td>
+			<td>Data de Fabricação</td>
+			<td>Tamanho</td>
+			<td>Largura</td>
+			<td>Peso</td>
+		</tr>
+	</thead>
+
+	<tbody>
+		
+		<tr ng-repeat="produto in prod.produtos">
+			<td>{{produto.nome}}</td>
+			<td>{{produto.data_fabricacao}}</td>
+			<td>{{produto.tamanho}}</td>
+			<td>{{produto.largura}}</td>
+			<td>{{produto.peso}}</td>
+		</tr>
+
+	</tbody>
+
+</table>

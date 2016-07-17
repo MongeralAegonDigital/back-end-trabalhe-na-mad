@@ -11,9 +11,10 @@ interface ServiceInterface {
 	/**
 	 * Método que lista todos os produtos
 	 *
+	 * @param \Illuminate\Http\Request $request
 	 * @return \Illuminate\Http\Response
 	 */
-	public function index();
+	public function index(Request $request);
 	
 	/**
 	 * Método que cria um novo produto
