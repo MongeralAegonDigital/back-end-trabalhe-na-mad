@@ -40,25 +40,15 @@ class ProdutoService implements ProdutoServiceInterface {
 	}
 	
 	public function store(Request $request)
-	{
-		// regras para validação dos campos do formulário
-		$rules = [
-			'nome' => 'required|min:6',
-			'data_fabricacao' => 'required|date_format:d/m/Y',
-			'tamanho' => 'required|numeric',
-			'largura' => 'required|numeric',
-			'peso' => 'required|numeric',
-			'categorias.*.categoria_id' => 'required'
-		];
-				
+	{	
 		// realiza a validação dos campos
-		$validator = Validator::make($request->all(), $rules);
+		$validator = $this->_validateInput($request->all());
 		
 		// verifica se os campos são válidos
-		if ($validator->fails()) {
+		if ($validator) {
 			// retorna um json com os campos que não passaram na validação
 			// e seta o status da requisição http para 422
-			return response()->json($validator->errors (), 422);
+			return response()->json($validator, 422);
 		} else {
 			
 			//previne a inclusão do produto sem uma categoria
@@ -82,29 +72,19 @@ class ProdutoService implements ProdutoServiceInterface {
 	public function show($id)
 	{
 		//retorna um json com os dados de um produto específico
-		return response()->json($this->_model->find($id));
+		return response()->json($this->_model->with(['categorias'])->find($id));
 	}
 	
 	public function update(Request $request, $id)
 	{
-		// regras para validação dos campos do formulário
-		$rules = [
-			'nome' => 'required|min:6',
-			'data_fabricacao' => 'required|date_format:d/m/Y',
-			'tamanho' => 'required|numeric',
-			'largura' => 'required|numeric',
-			'peso' => 'required|numeric',
-			'categorias.*.categoria_id' => 'required'
-		];
-		
 		// realiza a validação dos campos
-		$validator = Validator::make($request->all(), $rules);
+		$validator = $this->_validateInput($request->all());
 		
 		// verifica se os campos são válidos
-		if ($validator->fails()) {
+		if ($validator) {
 			// retorna um json com os campos que não passaram na validação
 			// e seta o status da requisição http para 422
-			return response()->json($validator->errors(), 422);
+			return response()->json($validator, 422);
 		} else {
 			
 			//previne a atualização do produto sem uma categoria
@@ -136,6 +116,34 @@ class ProdutoService implements ProdutoServiceInterface {
 		
 		//retorna um json com a mesnagem de exclusão
 		return response()->json(["msg"=>"Produto removido com sucesso."]);
+	}
+
+	/**
+	 * Valida os campos do formulário
+	 * @param array $input
+	 * @return array Retorna um array com os campos invalidados
+	 */
+	private function _validateInput(array $input)
+	{
+		//regras para validação dos campos do formulário
+		$rules = [
+			'nome' => 'required|min:6',
+			'data_fabricacao' => 'required|date_format:d/m/Y',
+			'tamanho' => 'required|numeric',
+			'largura' => 'required|numeric',
+			'peso' => 'required|numeric',
+			'categorias.*.categoria_id' => 'required'
+		];
+		
+		// realiza a validação dos campos
+		$validator = Validator::make($input, $rules);
+		
+		if($validator->fails()) {
+			// retorna um array com os campos que não passaram na validação
+			return $validator->errors();
+		} else {
+			return [];
+		}
 	}
 	
 }

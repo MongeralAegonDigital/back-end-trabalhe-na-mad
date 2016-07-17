@@ -31,19 +31,14 @@ class CategoriaService implements CategoriaServiceInterface {
 	
 	public function store(Request $request) {
 		
-		// regras para validação dos campos do formulário
-		$rules = [
-			'nome' => 'required|min:3'	
-		];
-		
-		// realiza a validação dos campos
-		$validator = Validator::make($request->all(), $rules);
+		//realiza a validação dos campos
+		$validator = $this->_validateInput($request->all());
 		
 		// verifica se os campos são válidos
-		if($validator->fails()) {
+		if($validator) {
 			// retorna um json com os campos que não passaram na validação
 			// e seta o status da requisição http para 422
-			return response()->json($validator->errors (), 422);
+			return response()->json($validator, 422);
 		} else {
 			
 			//Cria uma categoria no banco de dados usando Mass Assignment
@@ -57,24 +52,19 @@ class CategoriaService implements CategoriaServiceInterface {
 	
 	public function show($id) {
 		//retorna um json com os dados de uma categoria específica
-		return response()->json($this->_model->find($id));
+		return response()->json($this->_model->with('produtos')->find($id));
 	}
 	
 	public function update(Request $request, $id) {
 		
-		// regras para validação dos campos do formulário
-		$rules = [
-			'nome' => 'required|min:3'
-		];
-		
-		// realiza a validação dos campos
-		$validator = Validator::make($request->all(), $rules);
+		//realiza a validação dos campos
+		$validator = $this->_validateInput($request->all());
 		
 		// verifica se os campos são válidos
-		if($validator->fails()) {
+		if($validator) {
 			// retorna um json com os campos que não passaram na validação
 			// e seta o status da requisição http para 422
-			return response()->json($validator->errors (), 422);
+			return response()->json($validator, 422);
 		} else {
 			
 			// Encontra o produto com o id especificado na requisição
@@ -95,5 +85,28 @@ class CategoriaService implements CategoriaServiceInterface {
 		
 		//retorna um json com a mensagem de exclusão
 		return response()->json(["msg"=>"Categoria removida com sucesso."]);
+	}
+	
+	/**
+	 * Valida os campos do formulário
+	 * @param array $input
+	 * @return array Retorna um array com os campos invalidados
+	 */
+	private function _validateInput(array $input)
+	{
+		//regras para validação dos campos do formulário
+		$rules = [
+			'nome' => 'required|min:3'
+		];
+	
+		// realiza a validação dos campos
+		$validator = Validator::make($input, $rules);
+	
+		if($validator->fails()) {
+			// retorna um array com os campos que não passaram na validação
+			return $validator->errors();
+		} else {
+			return [];
+		}
 	}
 }
