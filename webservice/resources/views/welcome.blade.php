@@ -2,7 +2,7 @@
 <html>
     <head>
     	<meta charset="UTF-8">
-        <title>Laravel</title>
+        <title>WebService</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
