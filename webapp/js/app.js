@@ -2,33 +2,40 @@ var webApp = (function(angular){
 
 	var app = angular.module('webApp',[
 		'ngRoute',
-		'ngResource'
+		'ngResource',
+		'ui.bootstrap'
 	]);
 
 	app.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider){
 
+		//define a rota produto
 		$routeProvider.when('/produto',{
 			templateUrl: 'partials/produto/index.html',
 			controller: 'ProdutoCtrl',
+			controllerAs: 'prod',
 			resolve: {
-				produtos: function($rootScope, ProdutoService) {
+				//obtém a lista de produtos cadatrados
+				produtos: ['$rootScope','ProdutoService', function($rootScope, ProdutoService) {
 					$rootScope.activeLoader = true;
 					return ProdutoService.listar();
-				}
+				}]
 			}
 		});
 
+		//define a rota categoria
 		$routeProvider.when('/categoria',{
 			templateUrl: 'partials/categoria/index.html',
 			controller: 'CategoriaCtrl',
 			resolve: {
-				categorias: function($rootScope, CategoriaService) {
+				//obtém a lista de categorias cadastras
+				categorias: ['$rootScope','CategoriaService', function($rootScope, CategoriaService) {
 					$rootScope.activeLoader = true;
 					return CategoriaService.listar();
-				}
+				}]
 			}
 		});
 
+		//define a rota padrão caso não encontre um rota
 		$routeProvider.otherwise({
 			redirectTo: '/produto'
 		});

@@ -4,12 +4,16 @@ webApp.controller('ProdutoCtrl',[
 	'produtos',
 	function($log, $rootScope, produtos) {
 		
+		//desativa o loader da página
 		$rootScope.activeLoader = false;
 
 		var _self = this;
+		//recebe a listagem de produtos
 		_self.produtos = produtos;
 
-		$log.log(_self.produtos);
+		_self.adicionarNovo = function() {
+			alert("Adicionar Novo");
+		};
 	}
 
 ]);
