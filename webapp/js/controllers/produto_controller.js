@@ -5,7 +5,8 @@ webApp.controller('ProdutoCtrl',[
 	'produtos',
 	'ProdutoService',
 	'CategoriaService',
-	function($log, $rootScope, $uibModal, produtos, ProdutoService, CategoriaService) {
+	'toastr',
+	function($log, $rootScope, $uibModal, produtos, ProdutoService, CategoriaService, toastr) {
 		
 		//desativa o loader da página
 		$rootScope.activeLoader = false;
@@ -60,6 +61,19 @@ webApp.controller('ProdutoCtrl',[
 		    	$rootScope.activeLoader = true;
 		      	paginacao(null, null);
 		    });
+		};
+
+		//método que remove um produto
+		_self.remover = function(produto) {
+
+			if(confirm("Tem certeza que deseja realizar esse ação?")) {
+				ProdutoService.remover(produto.id).then(function(response){
+					toastr.success(response.msg, "Sucesso");
+					$rootScope.activeLoader = true;
+					paginacao(null, null);
+				});
+			}
+
 		};
 
 		//método que filtra os dados da tabela

@@ -31,8 +31,7 @@
 				<td>{{categoria.nome}}</td>
 				<td>{{categoria.created_at}}</td>
 				<td>
-					<button type="button" class="btn btn-default btn-xs"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-					<button type="button" class="btn btn-danger btn-xs"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-danger btn-xs" ng-click="cat.remover(categoria)"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
 				</td>
 			</tr>
 		</tbody>

@@ -95,7 +95,7 @@ webApp.factory('CategoriaService',[
 			'atualizar': function(_id) {
 				return $resource(_url + "/:id", null, {
 					'update': { method:'PUT' }
-				}).update({id:_id}).$promise;
+				}).update({id:_id, _method:'PUT'}).$promise;
 			},
 
 			//deleta uma categoria específico
@@ -103,7 +103,7 @@ webApp.factory('CategoriaService',[
 			'remover': function(_id) {
 				return $resource(_url + "/:id", null, {
 					'delete': { method:'DELETE' }
-				}).delete({id:_id}).$promise;
+				}).delete({id:_id, _method:'DELETE'}).$promise;
 			}
 
 		};
@@ -142,7 +142,7 @@ webApp.factory('ProdutoService',[
 			'atualizar': function(_id) {
 				return $resource(_url + "/:id", null, {
 					'update': { method:'PUT' }
-				}).update({id:_id}).$promise;
+				}).update({id:_id, _method:'PUT'}).$promise;
 			},	
 
 			//deleta um produto específico
@@ -150,7 +150,7 @@ webApp.factory('ProdutoService',[
 			'remover': function(_id) {
 				return $resource(_url + "/:id", null, {
 					'delete': { method:'DELETE' }
-				}).delete({id:_id}).$promise;
+				}).delete({id:_id, _method:'DELETE'}).$promise;
 			}
 
 		};
@@ -195,7 +195,8 @@ webApp.controller('CategoriaCtrl', [
 	'$uibModal',
 	'categorias',
 	'CategoriaService',
-	function($log, $rootScope, $uibModal, categorias, CategoriaService) {
+	'toastr',
+	function($log, $rootScope, $uibModal, categorias, CategoriaService, toastr) {
 
 		//desativa o loader da página
 		$rootScope.activeLoader = false;
@@ -241,6 +242,21 @@ webApp.controller('CategoriaCtrl', [
 		    	$rootScope.activeLoader = true;
 		      	paginacao(null, null);
 		    });
+		};
+
+		//método que remove uma categoria
+		_self.remover = function(categoria) {
+
+			if(confirm("Tem certeza que deseja realizar essa ação?")) {
+
+				CategoriaService.remover(categoria.id).then(function(response){
+					toastr.success(response.msg, "Sucesso");
+					$rootScope.activeLoader = true;
+					paginacao(null, null);
+				});
+
+			}
+
 		};
 
 		function paginacao(url) {
@@ -295,7 +311,8 @@ webApp.controller('ProdutoCtrl',[
 	'produtos',
 	'ProdutoService',
 	'CategoriaService',
-	function($log, $rootScope, $uibModal, produtos, ProdutoService, CategoriaService) {
+	'toastr',
+	function($log, $rootScope, $uibModal, produtos, ProdutoService, CategoriaService, toastr) {
 		
 		//desativa o loader da página
 		$rootScope.activeLoader = false;
@@ -350,6 +367,19 @@ webApp.controller('ProdutoCtrl',[
 		    	$rootScope.activeLoader = true;
 		      	paginacao(null, null);
 		    });
+		};
+
+		//método que remove um produto
+		_self.remover = function(produto) {
+
+			if(confirm("Tem certeza que deseja realizar esse ação?")) {
+				ProdutoService.remover(produto.id).then(function(response){
+					toastr.success(response.msg, "Sucesso");
+					$rootScope.activeLoader = true;
+					paginacao(null, null);
+				});
+			}
+
 		};
 
 		//método que filtra os dados da tabela

@@ -181,6 +181,7 @@
 				<th>Peso</th>
 				<th>Categorias</th>
 				<th>Criado em</th>
+				<th>Ações</th>
 			</tr>
 		</thead>
 
@@ -196,6 +197,9 @@
 					<p ng-repeat="cat in produto.categorias">{{cat.categoria.nome}}</p>
 				</td>
 				<td>{{produto.created_at}}</td>
+				<td>
+					<button type="button" class="btn btn-danger btn-xs" ng-click="prod.remover(produto)"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+				</td>
 			</tr>
 
 		</tbody>

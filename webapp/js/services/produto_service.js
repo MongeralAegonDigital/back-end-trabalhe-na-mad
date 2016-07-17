@@ -30,7 +30,7 @@ webApp.factory('ProdutoService',[
 			'atualizar': function(_id) {
 				return $resource(_url + "/:id", null, {
 					'update': { method:'PUT' }
-				}).update({id:_id}).$promise;
+				}).update({id:_id, _method:'PUT'}).$promise;
 			},	
 
 			//deleta um produto específico
@@ -38,7 +38,7 @@ webApp.factory('ProdutoService',[
 			'remover': function(_id) {
 				return $resource(_url + "/:id", null, {
 					'delete': { method:'DELETE' }
-				}).delete({id:_id}).$promise;
+				}).delete({id:_id, _method:'DELETE'}).$promise;
 			}
 
 		};

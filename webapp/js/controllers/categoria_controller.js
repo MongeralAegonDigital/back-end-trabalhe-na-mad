@@ -4,7 +4,8 @@ webApp.controller('CategoriaCtrl', [
 	'$uibModal',
 	'categorias',
 	'CategoriaService',
-	function($log, $rootScope, $uibModal, categorias, CategoriaService) {
+	'toastr',
+	function($log, $rootScope, $uibModal, categorias, CategoriaService, toastr) {
 
 		//desativa o loader da página
 		$rootScope.activeLoader = false;
@@ -50,6 +51,21 @@ webApp.controller('CategoriaCtrl', [
 		    	$rootScope.activeLoader = true;
 		      	paginacao(null, null);
 		    });
+		};
+
+		//método que remove uma categoria
+		_self.remover = function(categoria) {
+
+			if(confirm("Tem certeza que deseja realizar essa ação?")) {
+
+				CategoriaService.remover(categoria.id).then(function(response){
+					toastr.success(response.msg, "Sucesso");
+					$rootScope.activeLoader = true;
+					paginacao(null, null);
+				});
+
+			}
+
 		};
 
 		function paginacao(url) {
