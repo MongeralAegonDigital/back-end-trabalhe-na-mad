@@ -1,0 +1,217 @@
+<div class="mrg10T row" style="clear: both">
+
+    <div class="col-sm-12" data-ng-controller="PessoaCtrl">
+
+        <div class="content-box drop-shadow" data-ng-repeat="pes in data.pesonsaveis">
+            <div class="content-box-header bg-white pointer" ng-click="pes.show = !pes.show">
+
+                <div class="glyph-icon icon-separator"><i class="glyph-icon icon-male"></i></div>
+
+                <span data-ng-class="{'font-red':pes.alert}"><b>{{$index + 1}}º &nbsp; Pessoa</b> <span data-ng-show="pes.pessoa.nome.length>0">::::::</span> <small class="font-blue">{{pes.pessoa.nome}}</small></span>
+
+                <div class="pull-right mrg20R"><b>Pessoa pelos pagamentos?</b> &nbsp;<span class="font-blue">{{pes.principal == 'S' ?'Sim':'Não'}}</span></div>
+            </div>
+                <div class="divider"></div>
+
+                <div class="row mrg15T mrg15B">
+                    <div  data-ng-hide="pes.pessoa && data.aluno.cpf != ''">
+                        <div class="form-label col-md-2">
+                            <label for="cpf{{$index}}">CPF: <span class="required">*</span></label>
+                        </div>
+                        <div class="form-input col-md-2">
+                            <input type="text" name="cpf" ng-cpf ui-mask="999.999.999-99" data-ng-class="{'parsley-error error_value' : formResp.cpf.$invalid && (pes.pessoa.cpf.length == 11)}" id="cpf{{$index}}" data-ng-model="pes.pessoa.cpf" data-ng-blur="checkCPF(formResp, pes)" class="validate">
+                            <div data-ng-show="!formResp.cpf.$pristine" class="font-red">
+                                <p ng-show="formResp.cpf.$invalid && (pes.pessoa.cpf.length == 11)" class="font-red">Formato de CPF inválido</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-ng-hide="pes.pessoa" class="row mrg15T mrg15B">
+
+                    <div class="form-label col-md-2">
+                        <label for="rg{{$index}}">RG:</label>
+                    </div>
+
+                    <div class="form-input col-md-2">
+                        <input type="text" id="rg{{$index}}" data-ng-model="pes.pessoa.rg" >
+                    </div>
+
+                    <div class="form-label col-md-2 col-md-offset-1">
+                        <label for="rgOrgaoEmissor{{$index}}">Órgão Emissor:</label>
+                    </div>
+
+                    <div class="form-input col-md-1">
+                        <input type="text" id="rgOrgaoEmissor{{$index}}" data-ng-model="pes.pessoa.rgOrgaoEmissor" >
+                    </div>
+
+                    <div class="form-label col-md-2">
+                        <label for="rgValidade{{$index}}">Data de Emissão:</label>
+                    </div>
+
+                    <div class="form-input col-md-2">
+                        <input type="text" id="rgValidade{{$index}}" ui-jq="datepicker" ui-refresh="iChange" ui-mask="99/99/9999" ui-mask-use-viewvalue="true" clear-case-no-date data-ng-model="pes.pessoa.rgValidade" >
+                    </div>
+
+                </div>
+
+
+                <div data-ng-hide="pes.pessoa">
+                    <div class="row mrg15T mrg15B">
+                        <div class="form-label col-md-2">
+                            <label for="nome{{$index}}">Nome completo: <span class="required">*</span></label>
+                        </div>
+                        <div class="form-input col-md-4">
+                            <input placeholder="Nome completo" type="text" id="nome{{$index}}" data-ng-model="pes.pessoa.nome" maxlength="100" class="validate">
+                        </div>
+                        <div class="form-label col-md-2">
+                            <label for="sexo{{$index}}">Sexo: <span class="required">*</span></label>
+                        </div>
+                        <div class="form-input col-md-4">
+                            <select data-ng-model="pes.pessoa.sexo" id="sexo{{$index}}" class="validate" >
+                                <option value="">Selecione</option>
+                                <option value="{{s.id}}" data-ng-selected="s.id == pes.pessoa.sexo" data-ng-repeat="s in sexo.list">{{s.description}}</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mrg15T mrg15B">
+                        <div class="form-label col-md-2">
+                            <label for="nascimento{{$index}}">Nascimento: <span class="required">*</span></label>
+                        </div>
+                        <div class="form-input col-md-2">
+                            <input type="text" class="validate" id="nascimento{{$index}}" ui-jq="datepicker" ui-refresh="iChange" ui-mask="99/99/9999" ui-mask-use-viewvalue="true" clear-case-no-date data-ng-model="pes.pessoa.dataNascimento" >
+                        </div>
+
+                        <div class="form-label col-md-2 col-md-offset-2">
+                            <label for="estadoCivil{{$index}}">Estado civil: <span class="required">*</span></label>
+                        </div>
+                        <div class="form-input col-md-4">
+                            <select data-ng-model="pes.pessoa.estadoCivil" id="estadoCivil{{$index}}" class="validate" >
+                                <option value="">Selecione</option>
+                                <option value="{{e.id}}" data-ng-selected="e.id == pes.pessoa.estadoCivil" data-ng-repeat="e in estadoCivil.list">{{e.description}}</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="row mrg15T mrg15B">
+                        <div class="form-label col-md-2">
+                            <label for="tel{{$index}}">Telefone Residencial:</label>
+                        </div>
+                        <div class="form-input col-md-2">
+                            <input type="text" id="tel{{$index}}" ui-mask="(99) 9999-9999" data-ng-model="pes.pessoa.telefone" >
+                        </div>
+
+                        <div class="form-label col-md-2 col-md-offset-2">
+                            <label for="cel{{$index}}">Celular:</label>
+                        </div>
+                        <div class="form-input col-md-2">
+                            <input type="text" id="cel{{$index}}" ui-mask="(99) 9999-9999?9" data-ng-model="pes.pessoa.celular">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mrg15T mrg15B">
+                    <div class="form-label col-md-2" data-ng-hide="(pes.pessoa && !pes.is_user) || (pes.pessoa && data.aluno.email.length > 0)">
+                        <label for="email{{$index}}">Email: <span class="required" data-ng-show="pes.is_user">*</span></label>
+                    </div>
+                    <div class="form-input col-md-4" data-ng-hide="(pes.pessoa && !pes.is_user) || (pes.pessoa && data.aluno.email.length > 0)">
+                        <input type="email" name="email" id="email{{$index}}" ng-class="{'parsley-error error_value' : formResp.email.$invalid, 'validate': pes.is_user}" ng-model="pes.pessoa.email" ng-blur="checkUserPessoa(pes,$index)" ng-readonly="!pes.isEditavel">
+                        <p ng-show="formResp.email.$invalid" class="font-red">Email inválido.</p>
+
+                        <i class="fa fa-check" data-ng-show="pes.is_user && pes.usernameIsValid && pes.usernameVerified && (pes.pessoa.email == pes.lastUsernameVerified)"> <small class="font-blue">Login disponível</small></i>
+                        <i class="fa fa-ban" data-ng-show="pes.is_user && !pes.usernameIsValid && pes.usernameVerified && (pes.pessoa.email == pes.lastUsernameVerified)"> <small class="font-red">Login indisponível</small></i>
+                    </div>
+                </div>
+
+                <div class="row mrg15T mrg15B">
+                    <div class="form-label col-md-2">
+                        <label for="profissao{{$index}}">Profissão: <span class="required" data-ng-show="!pes.is_user">*</span></label>
+                    </div>
+                    <div class="form-input col-md-4">
+                        <input type="text" data-ng-model="pes.profissao" id="profissao{{$index}}" data-ng-class="{'validate': !pes.is_user}">
+                    </div>
+                </div>
+
+                <div class="divider" data-ng-hide="pes.pessoa"></div>
+
+                <div data-ng-hide="pes.pessoa">
+
+                    <div class="row mrg15T mrg15B">
+                        <div class="col-md-12"><h3>Endereço</h3></div>
+                    </div>
+
+                    <div class="row mrg15T mrg15B">
+                        <div class="form-label col-md-2">
+                            <label for="cep{{$index}}">Cep <span class="required" data-ng-show="pes.principal == 'S'">*</span>:</label>
+                        </div>
+                        <div class="form-input col-md-2">
+                            <input type="text" id="cep{{$index}}" ui-mask="99999-999" data-ng-class="{'validate': pes.principal == 'S'}" data-ng-model="pes.pessoa.endereco.cep">
+                        </div>
+                        <div class="col-md-2">
+                            <a href="javascript:;" data-ng-if="pes.pessoa.endereco.lastCepVerified != pes.pessoa.endereco.cep && pes.pessoa.endereco.cep.length == 8" data-ng-click="getEndereco(pes, 'endereco')" title="Buscar CEP"><i class="fa fa-search fa-2x"></i></a>
+                            <i class="fa fa-spinner fa-spin" data-ng-show="pes.pessoa.endereco.loadCEP"> </i> <span data-ng-show="pes.pessoa.endereco.loadCEP">Buscando cep...</span>
+                        </div>
+                        <div class="form-label col-md-2">
+                            <label for="logradouro{{$index}}">Logradouro <span class="required" data-ng-show="pes.principal == 'S'">*</span>: </label>
+                        </div>
+                        <div class="form-input col-md-4">
+                            <input placeholder="Logradouro" type="text" id="logradouro{{$index}}" data-ng-class="{'validate': pes.principal == 'S'}" data-ng-model="pes.pessoa.endereco.logradouro">
+                        </div>
+                    </div>
+
+                    <div class="row mrg15T mrg15B">
+                        <div class="form-label col-md-2">
+                            <label for="numero{{$index}}">Numero <span class="required" data-ng-show="pes.principal == 'S'">*</span>: </label>
+                        </div>
+                        <div class="form-input col-md-2">
+                            <input placeholder="Número" type="text" id="numero{{$index}}" data-ng-class="{'validate': pes.principal == 'S'}" data-ng-model="pes.pessoa.endereco.numero" >
+                        </div>
+
+                        <div class="form-label col-md-2 col-md-offset-2">
+                            <label for="complemento{{$index}}">Complemento:</label>
+                        </div>
+                        <div class="form-input col-md-4">
+                            <input placeholder="Complemento" type="text" id="complemento{{$index}}" data-ng-model="pes.pessoa.endereco.complemento" >
+                        </div>
+                    </div>
+
+                    <div class="row mrg15T mrg15B">
+                        <div class="form-label col-md-2">
+                            <label for="bairro{{$index}}">Bairro <span class="required" data-ng-show="pes.principal == 'S'">*</span>: </label>
+                        </div>
+                        <div class="form-input col-md-2">
+                            <input placeholder="Bairro" type="text" id="bairro{{$index}}" data-ng-class="{'validate': pes.principal == 'S'}" data-ng-model="pes.pessoa.endereco.bairro" >
+                        </div>
+
+                        <div class="form-label col-md-2 col-md-offset-2">
+                            <label for="estado{{$index}}">Estado <span class="required" data-ng-show="pes.principal == 'S'">*</span>:</label>
+                        </div>
+                        <div class="form-input col-md-4">
+                            <select id="estado{{$index}}" data-ng-class="{'validate': pes.principal == 'S'}" data-ng-change="loadCiadesToForm(pes, 'endereco')" data-ng-model="pes.pessoa.endereco.estado">
+                                <option value="">Selecione</option>
+                                <option value="{{e.id}}" data-ng-selected="e.sigla == pes.pessoa.endereco.uf" data-ng-repeat="e in lists.estados">{{e.nome}}</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mrg15T mrg15B">
+                        <div class="form-label col-md-2">
+                            <label for="cidade{{$index}}">Cidade <span class="required" data-ng-show="pes.principal == 'S'">*</span>:</label>
+                        </div>
+                        <div class="form-input col-md-4">
+                            <select data-ng-model="pes.pessoa.endereco.cidade" data-ng-class="{'validate': pes.principal == 'S'}" id="cidade{{$index}}">
+                                <option value="">Selecione</option>
+                                <option value="{{c.id}}" data-ng-selected="c.id == pes.pessoa.endereco.cidade" data-ng-repeat="c in pes.lists.cidades">{{c.nome}}</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <i class="fa fa-spinner fa-spin" data-ng-show="pes.pessoa.endereco.loadCidade"> </i> <span data-ng-show="pes.pessoa.endereco.loadCidade">Carregando as cidades...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
