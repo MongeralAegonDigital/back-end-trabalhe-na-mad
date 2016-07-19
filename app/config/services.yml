@@ -1,0 +1,15 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+    mail.class: AppBundle\Service\Util\MailService
+    apiLogger.class: AppBundle\Service\Util\ApiLoggerService
+
+services:
+  pessoa.service:
+       class: AppBundle\Service\PessoaService
+       arguments: 
+            entityManager: "@doctrine.orm.entity_manager"
+            container: "@service_container"
+  util.mail:
+        class: %mail.class%
+        arguments: ['@mailer','@templating']

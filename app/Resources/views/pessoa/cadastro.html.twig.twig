@@ -1,0 +1,10 @@
+{% extends 'mail/base.html.twig' %}
+
+{% block body %}
+<div style="padding: 15px;">
+<h1 style="font-size: 24px; font-weight: 700; color: #333332; margin: 20px 0">Olá, {{pessoa.nome}}</h1>
+<p style="font-size: 15px; color: #8c8c8c; line-height: 26px; margin-bottom: 15px;">
+	Email: <strong>{{ pessoa.email }}</strong><br>
+	Senha: <strong>{{ pessoa.senha }}</strong>
+</p></div>
+{% endblock %}
