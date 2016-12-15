@@ -28,15 +28,19 @@
 ### Obs: Escolha o teste de sua preferência.
 
 #### Requisitos ####
+
+### Junior ###
 * Utilize **PHP >= 5.5** e MySQL como tecnologias
 * Uso de um Framework (MVC)
 * RestFull
 
+#### Pleno ####
+*  Todos os anteriores
+*  Teste unitário (ex. TDD)
+*  Uso de Design Patterns
+
 ***Diferencial***
-*   Uso de Design Patterns
 *   SOLID
-*   Teste unitário (ex. TDD)
-*   Comentar os métodos
 
 ### O que será avaliado
 1. *Domínio da linguagem PHP*
