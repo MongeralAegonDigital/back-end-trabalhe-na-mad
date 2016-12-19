@@ -1,0 +1,21 @@
+{
+  "name": "mongeral",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Liniker Silva <contato@liniker.com.br>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "node_modules/",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery-mask-plugin": "jquery-mask#^1.14.3"
+  }
+}

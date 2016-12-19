@@ -1,0 +1,190 @@
+/* vermelho*/
+/* vermelho*/
+/* cinza escuro*/
+/* cinza claro*/
+/* cinza claro*/
+/* cinza claro*/
+/* cinza claro*/
+.pages {
+  display: block;
+  color: #FFFFFF !important;
+  font-family: 'Roboto Slab', serif;
+}
+.pages .tituloPage {
+  font-size: 22px;
+  color: #EEEEEE;
+  font-weight: bold;
+  text-align: center;
+}
+.item-produto {
+  display: table !important;
+  margin-top: 15px;
+}
+.item-produto .ih-item.circle {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 190px !important;
+  height: 190px !important;
+}
+.item-produto .ih-item.circle .img {
+  width: 190px !important;
+  height: 190px !important;
+}
+.item-produto .ih-item.circle .info {
+  background: #FFDED9 !important;
+}
+.item-produto .ih-item.circle .sabores {
+  border-top: none !important;
+  font-size: 16px !important;
+  height: auto !important;
+  margin-top: 20px !important;
+  padding: 30px 3px 3px !important;
+  position: relative;
+  text-align: center !important;
+  color: #FF60A8 !important;
+  font-size: 18px;
+  text-shadow: none !important;
+  font-weight: bold;
+}
+.item-produto .ih-item.circle p {
+  color: #333333 !important;
+}
+.pageSobre .title {
+  background-color: #F9B6A7 !important;
+  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0px 0px;
+  color: #FFFFFF;
+  font-size: 135%;
+  margin: 0 0 -15px;
+  padding: 5px 10px;
+  position: relative;
+  font-weight: bold;
+}
+.pageSobre p {
+  padding: 35px 20px 20px 20px;
+  background-color: #ADE9F9 !important;
+  font-size: 120%;
+  border-radius: 10px 10px 10px 10px;
+  text-shadow: #85D8E5 1px 1px;
+  line-height: 28px;
+  color: #39677D !important;
+}
+.pageProdutos {
+  display: block !important;
+}
+.pageProdutos .info-nutricional {
+  background-color: rgba(202, 255, 255, 0.4) !important;
+  display: table;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+.pageProdutos .info-nutricional table {
+  color: #666666;
+  border-color: #58B5C4 !important;
+}
+.pageProdutos .info-nutricional table th,
+.pageProdutos .info-nutricional table td {
+  border-color: #58B5C4 !important;
+}
+.pageProdutos .info-nutricional .infomacao {
+  color: #333333;
+}
+.pageRevendas .card {
+  border: 1px solid #85D8E5;
+  background-color: rgba(202, 255, 255, 0.4) !important;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 10px;
+}
+.pageRevendas .card .card-header {
+  background-color: #58B5C4 !important;
+  background-color: #F9B6A7 !important;
+  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px;
+}
+.pageRevendas .card .card-block {
+  padding: 10px;
+  color: #39677D !important;
+}
+.pageRevendas .card .card-block p {
+  line-height: 10px;
+  font-size: 95%;
+  text-shadow: #85D8E5 1px 1px;
+}
+.pageContato .contatoInfo .detalhes {
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(202, 255, 255, 0.4) !important;
+  font-size: 110%;
+  padding: 10px;
+  display: block;
+  color: #39677D;
+}
+.pageContato .contatoInfo .detalhes .title {
+  font-size: 150%;
+  margin: 5px 0;
+  padding: 5px;
+  color: #58B5C4;
+  border-bottom: 1px solid #85D8E5;
+}
+.pageContato .contatoInfo .detalhes .horario b {
+  color: #58B5C4 !important;
+}
+.pageContato .contatoInfo .detalhes .horario span {
+  color: #666666 !important;
+  clear: both;
+}
+.pageContato .contatoForm {
+  padding: 10px;
+}
+.pageContato .contatoForm .form-control {
+  background-color: rgba(202, 255, 255, 0.4) !important;
+  border: 1px solid #FFFFFF !important;
+  color: #FFFFFF !important;
+  border-radius: 5px;
+  border: none;
+  background: #ADE9F9;
+  /* Navegadores que tenham suporte ao Webkit */
+  /* Firefox 18- */
+  /* Firefox 19+ */
+  /* Internet Explorer */
+}
+.pageContato .contatoForm .form-control::-webkit-input-placeholder {
+  color: #FFFFFF !important;
+}
+.pageContato .contatoForm .form-control:-moz-placeholder {
+  color: #FFFFFF !important;
+}
+.pageContato .contatoForm .form-control::-moz-placeholder {
+  color: #FFFFFF !important;
+}
+.pageContato .contatoForm .form-control:-ms-input-placeholder {
+  color: #FFFFFF !important;
+}
+.pageContato .contatoForm input {
+  height: 45px;
+}
+.pageContato .contatoForm textarea {
+  height: 105px;
+}
+.pageContato .contatoForm button {
+  background: #FFDED9;
+  padding: 12.5px;
+  color: #FE0037;
+  font-weight: bold;
+}
+
+/* vermelho*/
+/* vermelho*/
+/* cinza escuro*/
+/* cinza claro*/
+/* cinza claro*/
+/* cinza claro*/
+/* cinza claro*/
+body {
+  background: #ddd;
+}
+body .info {
+  margin-top: 200px;
+}
+
+/*# sourceMappingURL=portal.css.map */

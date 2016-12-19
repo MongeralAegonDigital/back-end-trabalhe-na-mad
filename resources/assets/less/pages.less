@@ -1,0 +1,203 @@
+@import "variables.less";
+
+@page_bg: rgba(202, 255, 255, 0.4);
+
+.pages{
+    display: block;
+    color: @cor-0 !important;
+    font-family: @font-02 ;
+    .tituloPage{
+        font-size: 22px;
+        color: @cor-1;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+.item-produto{
+    display: table !important;
+    margin-top: 15px;
+    .ih-item.circle{
+        margin: 0 !important;
+        padding:0 !important;
+        @valor: 190px;
+        width: @valor!important;
+        height: @valor !important;
+        .img{
+            width: @valor !important;
+            height:@valor !important;
+        }
+        .info{
+            background: @pink-light !important;
+            //background: @red !important;
+        }
+        .sabores{
+            border-top:none !important;
+            font-size: 16px !important;
+            height: auto !important;
+            margin-top: 20px !important;
+            padding: 30px 3px 3px !important;
+            position: relative;
+            text-align: center !important;
+            color: @pink  !important;
+            font-size: 18px;
+            text-shadow: none !important;
+            font-weight: bold;
+        }
+        p{
+            color: @cor-4 !important;
+        }
+    }
+}
+
+
+
+
+//####  IHOVER
+//##########################################
+
+
+//####  SOBRE
+//##########################################
+
+.pageSobre{
+    .title {
+        background-color: @pink-medium !important;
+        border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0px 0px;
+        border-radius: 10px 10px 0px 0px;
+        color: @cor-0;
+        font-size: 135%;
+        margin: 0 0 -15px;
+        padding: 5px 10px;
+        position: relative;
+        font-weight: bold;
+    }
+    p{
+        padding: 35px 20px 20px 20px;
+        background-color: @blue-light !important;
+        font-size: 120%;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        text-shadow: @blue 1px 1px;
+        line-height: 28px;
+        color: @font-blue !important;
+
+    }
+}
+
+
+//####  PRODUTOS
+//##########################################
+.pageProdutos{
+    display: block !important;
+    .info-nutricional{
+        background-color: @page_bg !important;
+        display: table;
+        padding:10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+
+        table{
+            color: @cor-3;
+            border-color: @blue-dark !important;
+            th,td{
+                border-color: @blue-dark !important;
+            }
+        }
+        .infomacao{
+            color: @cor-4;
+        }
+    }
+
+
+
+}
+////####  REVENDAS
+//##########################################
+
+.pageRevendas{
+
+    .card{
+        border: 1px solid @blue;
+        background-color: @page_bg !important;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
+        margin-top:10px;
+        .card-header{
+            background-color: @blue-dark !important;
+            background-color: @pink-medium !important;
+            border-radius: 10px 10px 0 0;
+            -webkit-border-radius: 10px 10px 0px 0px;
+            border-radius: 10px 10px 0px 0px;
+            padding: 10px;
+        }
+        .card-block{
+            padding:10px;
+            color: @font-blue !important;
+
+            p{
+                line-height: 10px;
+                font-size: 95%;
+                text-shadow: @blue 1px 1px ;
+            }
+        }
+    }
+
+}
+
+//####  CONTATO
+//##########################################
+
+.pageContato{
+
+    .contatoInfo{
+        .detalhes{
+            -webkit-border-radius: 10px 10px 10px 10px;
+            border-radius: 10px 10px 10px 10px;
+            background-color: @page_bg !important;
+            font-size: 110%;
+            padding: 10px;
+            display: block;
+            color: @font-blue;
+            .title{
+                font-size: 150%;
+                margin:5px 0;
+                padding: 5px;
+                color: @blue-dark;
+                border-bottom:1px solid @blue;
+            }
+            .horario{
+                b{color:@blue-dark !important;}
+                span{color:@cor-3 !important;clear: both}
+
+            }
+        }
+    }
+
+    .contatoForm{
+
+        padding: 10px;
+        .form-control{
+            background-color: @page_bg !important;
+            border:1px solid @cor-0 !important;
+            color: @cor-0 !important;
+            border-radius: 5px;
+            border: none;
+            background:@blue-light;
+            &::-webkit-input-placeholder {color: @cor-0 !important;} /* Navegadores que tenham suporte ao Webkit */
+            &:-moz-placeholder {color: @cor-0 !important;} /* Firefox 18- */
+            &::-moz-placeholder {color: @cor-0 !important;} /* Firefox 19+ */
+            &:-ms-input-placeholder {color: @cor-0 !important;} /* Internet Explorer */
+        }
+        input{height: 45px}
+        textarea{height: 105px}
+        button{
+            background: @pink-light;
+            padding:12.5px;
+            color: @red;
+            font-weight: bold;
+        }
+    }
+
+}
+
