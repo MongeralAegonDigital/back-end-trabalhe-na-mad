@@ -1,0 +1,27 @@
+{
+  "name": "webapp",
+  "homepage": "https://github.com/marcusmendes/back-end-trabalhe-na-mad",
+  "authors": [
+    "Marcus Mendes Maciel <mendesxx.ti@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "angular-resource": "^1.5.7",
+    "angular-bootstrap": "^1.3.3",
+    "angular-animate": "^1.5.7",
+    "font-awesome": "^4.6.3",
+    "angular-toastr": "^1.7.0"
+  }
+}
