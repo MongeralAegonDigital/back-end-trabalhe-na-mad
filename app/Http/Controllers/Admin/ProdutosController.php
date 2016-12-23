@@ -34,7 +34,7 @@ class ProdutosController extends Controller
     public function index()
     {
         $produtos = Produtos::all();
-        return view('admin.produtos-lista')
+                return view('admin.produtos-lista')
             ->with([
                 'title'         => $this->title,
                 'produtos'      => $produtos
@@ -130,6 +130,9 @@ class ProdutosController extends Controller
     public function edit($id)
     {
         $prod = Produtos::find($id);
+        $dateCreate = date_create( $prod->fabricacao);
+        $prod->fabricacao = date_format($dateCreate, "d/m/Y");
+
         $categoriasAll = $prod->notCategoria($id);
         $catsProduto = $prod->categoria;
 
