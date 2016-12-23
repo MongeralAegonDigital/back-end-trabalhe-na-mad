@@ -75,7 +75,7 @@
 
         <tr >
           <td> @{{x.name}}</td>
-          <td> @{{x.fabricacao}}</td>
+          <td> @{{ x.fabricacao | date :  "dd/MM/y"}}</td>
           <td> @{{x.tamanho}}</td>
           <td> @{{x.largura}}</td>
           <td> @{{x.peso}}</td>
