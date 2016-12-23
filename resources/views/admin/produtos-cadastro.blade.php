@@ -61,7 +61,7 @@
                   <div class="col-md-4">
                     <div class="form-group">
                       <label>Data de Fabricação:</label>
-                      <input type="date" name="fabricacao" class="date form-control" value="{{ $produtos->fabricacao or old('fabricacao')}}" required>
+                      <input type="text" name="fabricacao" class="date form-control" value="{{ $produtos->fabricacao or old('fabricacao')}}" required>
                     </div>
                   </div>
                   <div class="col-md-3 col-xs-12 col-sm-12">
