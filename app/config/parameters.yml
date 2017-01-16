@@ -7,6 +7,7 @@ parameters:
     database_password: password
     
     mailer_transport: gmail
+    mailer_host: ~
     mailer_user: nilosoares1989@gmail.com
     mailer_password: "#123456789"
     
