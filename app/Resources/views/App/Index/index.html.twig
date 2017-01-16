@@ -1,0 +1,37 @@
+{% extends 'App/base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+            <!-- navbar -->
+            <div class="navbar navbar-default">
+                <nav class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ns-navbar-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#/" class="navbar-brand">Página Inicial</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="ns-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#/cadastro">Cadastro de cliente</a></li>
+                            <li><a href="#/clientes">Clientes cadastrados</a></li>
+                            <li><a href="#/api">API</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <flash-message duration="5000" show-close="true"></flash-message>
+                
+            <!-- view -->
+            <div class="view">
+                <div ng-view ng-if="!isRouteLoading"></div>
+                <route-resolve></route-resolve>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="ns_teste1">
+    <head>
+        <!-- meta -->
+        {% block meta %}
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Página para teste de desenvolvedor na empresa Mongeral Aegon.">
+            <meta name="keywords" content="nilosoares, teste, mongeral, php, mysql, html, css, js, tdd">
+            <meta name="author" content="Nilo Soares">
+            <meta name="reply-to" content="nilosoares@gmail.com">
+            <meta name="theme-color" content="#FFFFFF">
+            <meta Name="robots" content="index,follow">
+        {% endblock %}
+        
+        <!-- title -->
+        <title>{% block title %}Nilo Soares - Teste 1{% endblock %}</title>
+        
+        <!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        
+        <!-- css -->
+        {% block css %}
+            <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
+            {% if app.environment == 'dev' %}
+                <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+            {% else %}
+                <link href="{{ asset('css/styles.min.css') }}" rel="stylesheet">
+            {% endif%}
+        {% endblock %}
+        
+        <!-- javascript -->
+        {% block js %}
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-resource.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-messages.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap.min.js"></script>
+            <script src="{{ asset('vendor/angular-flash-alert/dist/angular-flash.min.js') }}"></script>
+            <script src="{{ asset('vendor/angular-ui-mask/dist/mask.min.js') }}"></script>
+            <script src="{{ asset('vendor/angular-locale-pt-br/angular-locale_pt-br.js') }}"></script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+            {% if app.environment == 'dev' %}
+                <script src="{{ asset('js/scripts.js') }}"></script>
+            {% else %}
+                <script src="{{ asset('js/scripts.min.js') }}"></script>
+            {% endif%}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+</html>

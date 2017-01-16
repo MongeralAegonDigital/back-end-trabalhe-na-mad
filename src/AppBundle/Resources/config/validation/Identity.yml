@@ -1,0 +1,15 @@
+AppBundle\Entity\Identity:
+    properties:
+        number:
+            - NotBlank: ~
+            - Type: string
+            - Length:
+                max: 16
+        agency:
+            - NotBlank: ~
+            - Type: string
+            - Length:
+                max: 16
+        issuedAt:
+            - NotBlank: ~
+            - Date: ~

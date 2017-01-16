@@ -1,0 +1,38 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/service_container.html
+parameters:
+#    parameter_name: value
+
+services:
+    # events
+    event.send_welcome_message_listener:
+        class: AppBundle\EventListener\SendWelcomeMessageListener
+        arguments: ["@mailer", "@twig"]
+        tags:
+            -  { name: kernel.event_subscriber }
+            
+    event.encode_password_listener:
+        class: AppBundle\EventListener\EncodePasswordListener
+        arguments: ["@symfony.security.password_encoder"]
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }  
+            
+    # form handler
+    form.client_form_handler:
+        class: AppBundle\Form\Handler\ClientFormHandler
+        arguments: ["@entity.client_manager"]
+    
+    # managers
+    entity.client_manager:
+        class: AppBundle\Manager\ClientManager
+        arguments: ["@doctrine.orm.entity_manager", "@event_dispatcher"]
+    
+    # utils
+    util.zip_to_address:
+        class: AppBundle\Util\ZipToAddress\PostmonService
+        
+    # security
+    symfony.security.password_encoder:
+        class: Symfony\Component\Security\Core\Encoder\BCryptPasswordEncoder
+        arguments: [13]

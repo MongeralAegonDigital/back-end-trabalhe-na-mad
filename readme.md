@@ -1,3 +1,15 @@
+# Teste 1 #
+---
+### Informações para instalação:
+
+1. Alterar as configurações do banco de dados no arquivo "app/config/parameters.yml".
+2. Criar o banco de dados de acordo com a configuração do item 1.
+3. Importar o arquivo "var/mysql_dump.sql" no banco de dados do item 2.
+4. Executar o comando "composer update".
+5. Executar o camando "bower install".
+6. Criar as pastas "var/cache/prod", "var/logs" e "var/sessions".
+7. No navegador, executar o arquivo "web/app.php".
+
 # Teste para Back-end #
 ---
 ### Baseado no conceito S.P.A. (Single Page Application), construa uma aplicação escolhendo uma das opções abaixo:

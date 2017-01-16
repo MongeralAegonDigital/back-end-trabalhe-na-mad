@@ -1,0 +1,21 @@
+AppBundle\Entity\ProfessionalInfo:
+    properties:
+        category:
+            - NotBlank: ~
+            - Type: string
+            - Length:
+                max: 10
+            - Choice:
+                choices: ["Empregado", "Empregador", "Autônomo", "Outros"]
+        company:
+            - Type: string
+            - Length:
+                max: 64
+        profession:
+            - Type: string
+            - Length:
+                max: 64
+        salary:
+            - NotBlank: ~
+            - GreaterThanOrEqual:
+                value: 0.00

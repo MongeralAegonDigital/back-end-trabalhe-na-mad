@@ -1,0 +1,45 @@
+AppBundle\Entity\Client:
+    properties:
+        address:
+            - Valid: ~
+        birthday:
+            - NotBlank: ~
+            - Date: ~
+        cpf:
+            - NotBlank: ~
+            - Type: string
+        email:
+            - NotBlank: ~
+            - Type: string
+            - Email: ~
+            - Length:
+                max: 255
+        gender:
+            - NotBlank: ~
+            - Type: string
+            - Choice:
+                choices: ["Feminino", "Masculino"]
+        identity:
+            - Valid: ~
+        maritalStatus:
+            - NotBlank: ~
+            - Type: string
+            - Choice:
+                choices: ["Solteiro(a)", "Casado(a)", "Divorciado(a)", "Viúvo(a)", "Separado(a)", "Companheiro(a)"]
+        name:
+            - NotBlank: ~
+            - Type: string
+            - Length:
+                max: 64
+        password:
+            - Type: string
+            - Length:
+                min: 8
+                max: 32
+        phone:
+            - NotBlank: ~
+            - Type: string
+            - Length:
+                max: 16
+        professionalInfo:
+            - Valid: ~
