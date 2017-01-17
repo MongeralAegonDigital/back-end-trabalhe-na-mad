@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="autoload.php" server="127.0.0.1/mongeral/" local="131290624301315115" remote="131290621800000000" Dst="2" />
+<file name="config.php" server="127.0.0.1/mongeral/" local="131290624301355152" remote="131290621800000000" Dst="2" />
+<file name="constants.php" server="127.0.0.1/mongeral/" local="131290624301400175" remote="131290621800000000" Dst="2" />
+<file name="database.php" server="127.0.0.1/mongeral/" local="131290624301445211" remote="131290621800000000" Dst="2" />
+<file name="doctypes.php" server="127.0.0.1/mongeral/" local="131290624301470225" remote="131290621800000000" Dst="2" />
+<file name="foreign_chars.php" server="127.0.0.1/mongeral/" local="131290624301500246" remote="131290621800000000" Dst="2" />
+<file name="hooks.php" server="127.0.0.1/mongeral/" local="131290624301575304" remote="131290621800000000" Dst="2" />
+<file name="index.html" server="127.0.0.1/mongeral/" local="131290624301595331" remote="131290621800000000" Dst="2" />
+<file name="memcached.php" server="127.0.0.1/mongeral/" local="131290624301635346" remote="131290621800000000" Dst="2" />
+<file name="migration.php" server="127.0.0.1/mongeral/" local="131290624301675379" remote="131290621800000000" Dst="2" />
+<file name="mimes.php" server="127.0.0.1/mongeral/" local="131290624301730414" remote="131290621800000000" Dst="2" />
+<file name="profiler.php" server="127.0.0.1/mongeral/" local="131290624301750428" remote="131290621800000000" Dst="2" />
+<file name="routes.php" server="127.0.0.1/mongeral/" local="131290641795542174" remote="131290641600000000" Dst="2" />
+<file name="smileys.php" server="127.0.0.1/mongeral/" local="131290624301820478" remote="131290621800000000" Dst="2" />
+<file name="user_agents.php" server="127.0.0.1/mongeral/" local="131290624301885533" remote="131290621800000000" Dst="2" />
+</dwsync>
