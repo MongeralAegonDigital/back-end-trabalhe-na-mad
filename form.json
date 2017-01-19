@@ -1,0 +1,90 @@
+{
+	"fields": [
+		{
+			"name": "nome",
+			"type": "string"
+		},
+		{
+			"name": "email",
+			"type": "string"
+		},
+		{
+			"name": "senha",
+			"type": "password"
+		},
+		{
+			"name": "telefone",
+			"type": "integer"
+		},
+		{
+			"name": "data_nascimento",
+			"type": "date"
+		},
+		{
+			"name": "CPF",
+			"type": "integer"
+		},
+		{
+			"name": "RG",
+			"type": "integer"
+		},
+		{
+			"name": "data_expedicao",
+			"type": "date"
+		},
+		{
+			"name":	"orgao_expedidor",
+			"type": "string"
+		},
+		{
+			"name": "estado_civil",
+			"type": "select",
+			"options": ["Casado", "Solteiro", "Divorciado", "Viuvo"]
+		},
+		{
+			"name": "categoria",
+			"type": "select",
+			"options": ["Empregado", "Empregador", "Autonomo", "Outros"]
+		},
+		{
+			"name": "empresa_atual",
+			"type": "string"
+		},
+		{
+			"name": "profissao",
+			"type": "string"
+		},
+		{
+			"name": "renda_bruta",
+			"type": "integer"
+		},
+		{
+			"name": "cep",
+			"type": "integer"
+		},
+		{
+			"name": "logradouro",
+			"type": "string"
+		},
+		{
+			"name": "numero",
+			"type": "integer"
+		},
+		{
+			"name": "complemento",
+			"type": "string"
+		},
+		{
+			"name": "bairro",
+			"type": "string"
+		},
+		{
+			"name": "cidade",
+			"type": "string"
+		},
+		{
+			"name": "estado",
+			"type": "string"
+		}
+	]
+}
