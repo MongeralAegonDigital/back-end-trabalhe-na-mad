@@ -4,10 +4,10 @@
 
 #### Teste 1
 
-1. Dados do cliente: CPF (identificador do cliente no sistema), Senha, Nome, Telefone, E-mail, Data de Nascimento
-2. Endereço do cliente: CEP, Logradouro, Número, Complemento, Bairro, Cidade, Estado
-3. Dados pessoais e profissionais do cliente: RG, Número, Data Expedição, Órgão Expedidor, Estado Civil, Categoria (Empregado, Empregador, Autônomo, Outros), Empresa em que trabalha (opcional), Profissão, Renda Bruta
-4. Enviar um email para o cliente  apos o cadastro.
+1. Dados do cliente: CPF (identificador do cliente no sistema), Senha, Nome, Telefone, E-mail, Data de Nascimento.
+2. Endereço do cliente: CEP, Logradouro, Número, Complemento, Bairro, Cidade, Estado.
+3. Dados pessoais e profissionais do cliente: RG, Número, Data Expedição, Órgão Expedidor, Estado Civil, Categoria (Empregado, Empregador, Autônomo, Outros), Empresa em que trabalha (opcional), Profissão, Renda Bruta.
+4. Enviar um email para o cliente  após o cadastro.
 
 > Para ajudar nosso usuário, no momento que ele terminar o digitar o CEP, preencha os campos do formulário utilizando uma API. Aqui vai algumas sugestões de API's disponíveis para serem usadas:
 >[PostMon](http://postmon.com.br/) | [Cep](http://cep.correiocontrol.com.br/XXXXXXXX.json) | [BuscaCep](http://www.buscacep.correios.com.br/sistemas/buscacep/)
@@ -16,14 +16,13 @@
 
 1.  Cria um cadastro de produtos com : Nome, data de fabicação, tamanho, largura, peso e categoria.
 2.  O produto pode ter uma ou mais categorias.
-3.  Criar um filtro que traga os produtos pelo  campos que foram pedidos no item um e ter um sort por colunas.
+3.  Criar um filtro que traga os produtos pelo campos que foram pedidos no item um e ter um sort por colunas.
 
 ### Teste 3
 
-1. Criar uma API com controle de acesso OAuth2
-2. Criar um cadastro de clientes de acesso a API
-3. Criar recursos com diferentes níveis de acesso autenticado
-
+1. Criar uma API com controle de acesso OAuth2.
+2. Criar um cadastro de clientes de acesso a API.
+3. Criar recursos com diferentes níveis de acesso autenticado.
 
 ### Obs: Escolha o teste de sua preferência.
 
