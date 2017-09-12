@@ -29,11 +29,11 @@
 #### Requisitos ####
 
 #### Júnior ####
-* Utilize **PHP >= 5.5** e MySQL como tecnologias
-* Uso de um Framework (MVC)
+* Utilize **PHP >= 7.* ** e MySQL como tecnologias
+* Uso de um Framework (MVC/MVVM)
 * RestFull
 
-#### Pleno ####
+#### Pleno/Sênior ####
 *  Todos os anteriores
 *  Teste unitário (ex. TDD)
 *  Uso de Design Patterns
@@ -51,8 +51,8 @@
 O teste tem que ser feito em 3 dias após o fork.
 
 ## Dicas :) 
->   Seria muito legal você mostrar suas skills com tecnologias de front-end como:
->>   * Algum framework Javascript (Angular, Ember e etc…)
+>   Seria muito legal você mostrar suas 'skills' com tecnologias de front-end como:
+>>   * Algum framework Javascript (Angular, React, Vue.js e etc…)
 >>   * Pré-Processadores (sass, less e etc...)
->>   * Task Runner (gulp, grunt e etc...)
->>   * ES6
+>>   * Task Runner (webpack, gulp, grunt e etc...)
+>>   * ES6/7
