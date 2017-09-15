@@ -9,5 +9,5 @@ export class FilterProduct {
        productSize:number;
        productHeight:number;
        productWeight:number;
-       productCategoryId:number;
+       productCategoryId:any;
      }

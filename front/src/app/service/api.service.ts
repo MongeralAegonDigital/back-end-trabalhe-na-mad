@@ -20,7 +20,7 @@ export class ApiService {
         
         let headers = new Headers({ 'Content-Type': 'application/json' });
         let options = new RequestOptions({ headers: headers });
-     
+        console.log(service);
         return this.http
                    .post(endPoint,service,options)
                    .toPromise()

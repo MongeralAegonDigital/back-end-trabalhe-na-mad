@@ -3,11 +3,12 @@ import { Router } from '@angular/router';
 import { ApiService } from '../../service/api.service';
 import { Product } from '../../model/Product';
 import { EndPoints } from '../../config/EndPoints';
-import 'rxjs/add/operator/toPromise';
 import { Subject } from 'rxjs/Rx';
-import 'rxjs/add/operator/map';
 import { FilterProduct } from '../../model/FilterProduct';
 import { Category } from '../../model/Category';
+
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/toPromise';
 
 declare let jQuery: any;
 
@@ -19,11 +20,14 @@ export class SearchComponent {
   productList:Array<Product>;
   filter:FilterProduct;
   categories:Array<Category>;
-
+  category:Category;
+  filterProduct:Product;
   public rowsOnPage = 3;
 
   constructor( private api:ApiService) { 
-      this.filter = new FilterProduct();  
+      this.filter = new FilterProduct();
+      this.category = new Category();
+      this.filterProduct = new Product();
   }
 
   translateCategory(categoryId:number){
@@ -42,10 +46,17 @@ export class SearchComponent {
         });
   }
 
-  getProducts(){
+  getProducts(event){
+    event.preventDefault();
+    if(this.category){
+      this.filter.productCategoryId = this.category;
+    }
+    let product:Product = this.filterProduct.translateFilter(this.filter);
+    alert(JSON.stringify(product));
     this.api
-        .post(JSON.stringify(this.filter),EndPoints.searchEndPoint())
+        .post(JSON.stringify(product),EndPoints.searchEndPoint())
         .then(productListRet=>{
+          alert(JSON.stringify(productListRet));
           this.productList = productListRet;
         });
   }
@@ -67,7 +78,8 @@ export class SearchComponent {
   }
 
   ngOnInit() {
-    //this.refresh();
+    this.refresh();
+    this.populateProductCategory();
   }
 
 
