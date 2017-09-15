@@ -1,0 +1,46 @@
+<header class="app-header navbar">
+  <button class="navbar-toggler d-lg-none" type="button" appMobileSidebarToggler>&#9776;</button>
+  <a class="navbar-brand" href="#"></a>
+  <ul class="nav navbar-nav mr-auto d-md-down-none">
+    <li class="nav-item">
+      <a class="nav-link navbar-toggler" href="#" appSidebarToggler>&#9776;</a>
+    </li>
+  </ul>
+</header>
+
+<div class="app-body">
+  <div class="sidebar">
+    <nav class="sidebar-nav">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" [routerLink]="['/dashboard']"><i class="icon-home"></i> Dashboard </a>
+        </li>
+        <li class="nav-item nav-dropdown" routerLinkActive="open" appNavDropdown>
+          <a class="nav-link nav-dropdown-toggle" href="#" appNavDropdownToggle><i class="icon-briefcase"></i> Products</a>
+          <ul class="nav-dropdown-items">
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" [routerLink]="['/products/insert']"><i class="icon-energy"></i> Insert</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" [routerLink]="['/products/search']"><i class="icon-magnifier"></i> Search</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+   
+  <main class="main">
+
+    <ol class="breadcrumb">
+      <app-breadcrumbs></app-breadcrumbs>
+    </ol>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>
+
+<footer class="app-footer">
+  <a href="https://www.mongeralaegon.com.br/">Mongeral AEGON</a> &copy; 2017.
+</footer>

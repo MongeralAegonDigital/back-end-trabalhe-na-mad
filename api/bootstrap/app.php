@@ -11,6 +11,14 @@
 |
 */
 
+// allow origin
+header('Access-Control-Allow-Origin: *');
+// add any additional headers you need to support here
+header('Access-Control-Allow-Headers: Origin, Content-Type');
+
+
+
+
 $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
 );
@@ -40,6 +48,8 @@ $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
     App\Exceptions\Handler::class
 );
+
+
 
 /*
 |--------------------------------------------------------------------------
