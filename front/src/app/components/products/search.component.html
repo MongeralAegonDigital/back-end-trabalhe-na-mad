@@ -1,3 +1,42 @@
 <div class="animated fadeIn">
-    SEARCH!!
+    <div class="col-md-8">
+        <div>
+          <span>Highlight after: </span>
+          <input type="number" [(ngModel)]="yearLimit" class="form-control input-sm" style="display: inline-block; width: 100px">
+        </div>
+        <data-table
+          [items]="products"
+          [itemCount]="productCount"
+          (reload)="reload($event)"
+          [pagination]="true"
+          [indexColumn]="false"
+          [selectColumn]="true"
+          [multiSelect]="true"
+          class="form-control">
+          <data-table-column
+            property="productName"
+            header="Name">
+          </data-table-column>
+          <data-table-column
+            property="productCategoryId"
+            header="Category">
+          </data-table-column>
+          <data-table-column
+            property="productManufacture"
+            header="Manufacture">
+          </data-table-column>
+          <data-table-column
+            property="productSize"
+            header="Size">
+          </data-table-column>
+          <data-table-column
+            property="productHeight"
+            header="Height">
+          </data-table-column>
+          <data-table-column
+            property="productWeight"
+            header="Weight">
+          </data-table-column>
+        </data-table>
+      </div>
 </div>
