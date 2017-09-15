@@ -1,0 +1,88 @@
+<div class="animated fadeIn">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-header">
+          Filter product
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="form-group col-sm-8">
+                    <label for="company">Product name</label>
+                    <input type="text" [(ngModel)]="filter.productName" class="form-control" id="company" >
+                </div>
+                <div class="form-group col-sm-4">
+                    <label for="categoryId">Category</label>
+                    <select  [(ngModel)]="category"  id="categoryId" class="form-control">
+                      <option *ngFor="let cat of categories" [ngValue]="cat.id" >{{cat.categoryName}}</option> 
+                    </select>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="form-group col-sm-8">
+                      <label for="productManufacture">Product manufacture</label>
+                      <input type="text" [(ngModel)]="filter.productManufacture" class="form-control" id="productManufacture" placeholder="DD/MM/YYYY" >
+                  </div>
+                  <div class="form-group col-sm-4">
+                      <label for="productSize">Product size</label>
+                      <input type="text"  [(ngModel)]="filter.productSize"  class="form-control" id="productSize">
+                  </div>
+              </div>
+            <div class="row">
+              <div class="form-group col-sm-4">
+                <label for="productHeight">Product height</label>
+                <input type="text" [(ngModel)]="filter.productHeight"  class="form-control" id="productHeight" >
+              </div>
+              <div class="form-group col-sm-4">
+                <label for="productWeight">Product weight</label>
+                <input type="text" [(ngModel)]="filter.productWeight"  class="form-control" id="productWeight" >
+              </div>
+            </div><!--/.row--> 
+        </div>
+          <div class="card-footer">
+            <button type="submit"  (click)="getProducts($event)" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Search products</button>
+          </div>
+      </div>
+    </div>      
+    </div>
+    <div class="col-sm-8">
+        <div class="card">
+          <div class="card-header">
+            Search product
+          </div>
+          <div class="card-body">
+          <div class="mt">
+              <table class="table table-striped table-hover" [mfData]="productList" #mf="mfDataTable" [mfRowsOnPage]="3">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Manufacture</th>
+                        <th>Size</th>
+                        <th>Height</th>
+                        <th>Weight</th>
+                        <th>Delete</th>
+                      </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let product of mf.data">
+                      <td>{{ product.productName }}</td>
+                      <td>{{ translateCategory(product.productCategoryId) }}</td>
+                      <td>{{ product.productManufacture }}</td>
+                      <td>{{ product.productSize }}</td>
+                      <td>{{ product.productHeight }}</td>
+                      <td>{{ product.productWeight }}</td>
+                      <td><button type="submit"  (click)="deleteProduct(product.id)" class="btn btn-sm btn-danger">Delete</button></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                  <td colspan="8">
+                    <mfBootstrapPaginator [rowsOnPageSet]="[10, 25, 50, 100]"></mfBootstrapPaginator>
+                  </td>
+                </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+      </div><!--/.col-->
+</div>
