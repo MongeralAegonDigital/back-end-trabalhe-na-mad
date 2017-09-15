@@ -17,75 +17,20 @@
 
 ### Api commands
 
-
 ***Get an list of categories***
 
 TYPE:GET
 */api/getCategoryList*
-
-Returns
- {
-    "data": [
-        {
-            "id": 1,
-            "categoryName": "Durável"
-        },
-        {
-            "id": 2,
-            "categoryName": "Não durável"
-        }
-    ],
-    "meta": {
-        "pagination": {
-            "total": 2,
-            "count": 2,
-            "per_page": 15,
-            "current_page": 1,
-            "total_pages": 1,
-            "links": []
-        }
-    }
- }
-
 
 ***Get an list of products***
 
 TYPE:GET
 *api/getProductList*
 
-returns
- {
-    "data": [
-        {
-            "id": 4,
-            "productName": "Produto_1",
-            "productManufacture": "14/09/2017",
-            "productSize": 1,
-            "productHeight": 1,
-            "productWeight": 1,
-            "productCategoryId": 1
-        }
-    ],
-    "meta": {
-        "pagination": {
-            "total": 7,
-            "count": 7,
-            "per_page": 1000,
-            "current_page": 1,
-            "total_pages": 1,
-            "links": []
-        }
-    }
- }
-
-
-
 ***Delete an product***
 
 TYPE:DELETE
 */api/deleteProduct/:productId*
-
-
 
 ***Create an product***
 
@@ -107,31 +52,11 @@ Request
 TYPE:POST
 */api/search*
 
-Request 1
- {
-  "productName":"Produto 1",
-  "productManufacture":"14/09/2017",
-  "productCategoryId":7
- }
+### Dependencies:
 
-Request 2
- {
-  "productSize":7,
-  "productHeight":7,
-  "productWeight":7,
-  "productCategoryId":7
- }
+1. Apache Version 2.4.27
+2. PHP Version 7.1.9
+3. Laravel 5.5
+4. MySQL 5.7.19
 
-Request 3
- {
-  "productName":"Produto 1",
- }
 
-Apache Version:
-2.4.27
-
-PHP Version:
-7.1.9
-
-MySQL Version:
-5.7.19
