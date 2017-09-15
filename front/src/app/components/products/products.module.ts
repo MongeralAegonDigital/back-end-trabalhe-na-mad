@@ -5,7 +5,7 @@ import { InsertComponent } from './insert.component';
 import { ProductsRoutingModule } from './products-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { DataTableModule } from 'angular-2-data-table';
+import { DataTableModule } from 'angular2-datatable';
 
 @NgModule({
   imports: [

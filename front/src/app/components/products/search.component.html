@@ -1,42 +1,43 @@
 <div class="animated fadeIn">
-    <div class="col-md-8">
-        <div>
-          <span>Highlight after: </span>
-          <input type="number" [(ngModel)]="yearLimit" class="form-control input-sm" style="display: inline-block; width: 100px">
-        </div>
-        <data-table
-          [items]="products"
-          [itemCount]="productCount"
-          (reload)="reload($event)"
-          [pagination]="true"
-          [indexColumn]="false"
-          [selectColumn]="true"
-          [multiSelect]="true"
-          class="form-control">
-          <data-table-column
-            property="productName"
-            header="Name">
-          </data-table-column>
-          <data-table-column
-            property="productCategoryId"
-            header="Category">
-          </data-table-column>
-          <data-table-column
-            property="productManufacture"
-            header="Manufacture">
-          </data-table-column>
-          <data-table-column
-            property="productSize"
-            header="Size">
-          </data-table-column>
-          <data-table-column
-            property="productHeight"
-            header="Height">
-          </data-table-column>
-          <data-table-column
-            property="productWeight"
-            header="Weight">
-          </data-table-column>
-        </data-table>
-      </div>
+    <div class="col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            Search product
+          </div>
+          <div class="card-body">
+          <div class="mt">
+              <table class="table table-striped table-hover" [mfData]="productList" #mf="mfDataTable" [mfRowsOnPage]="3">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Category</th>
+                        <th>Manufacture</th>
+                        <th>Size</th>
+                        <th>Height</th>
+                        <th>Weight</th>
+                        <th>Delete</th>
+                      </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let product of productList">
+                      <td>{{ product.productName }}</td>
+                      <td>{{ translateCategory(product.productCategoryId) }}</td>
+                      <td>{{ product.productManufacture }}</td>
+                      <td>{{ product.productSize }}</td>
+                      <td>{{ product.productHeight }}</td>
+                      <td>{{ product.productWeight }}</td>
+                      <td><button type="submit"  (click)="deleteProduct(product.id)" class="btn btn-sm btn-danger">Delete</button></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                  <td colspan="12">
+                    <mfBootstrapPaginator [rowsOnPageSet]="[10, 25, 50, 100]"></mfBootstrapPaginator>
+                  </td>
+                </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+      </div><!--/.col-->
 </div>
