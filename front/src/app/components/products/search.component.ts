@@ -6,6 +6,8 @@ import { EndPoints } from '../../config/EndPoints';
 import 'rxjs/add/operator/toPromise';
 import { Subject } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
+import { FilterProduct } from '../../model/FilterProduct';
+import { Category } from '../../model/Category';
 
 declare let jQuery: any;
 
@@ -15,11 +17,13 @@ declare let jQuery: any;
 export class SearchComponent {
 
   productList:Array<Product>;
- 
+  filter:FilterProduct;
+  categories:Array<Category>;
+
   public rowsOnPage = 3;
 
   constructor( private api:ApiService) { 
-       
+      this.filter = new FilterProduct();  
   }
 
   translateCategory(categoryId:number){
@@ -28,6 +32,22 @@ export class SearchComponent {
      }else{
        return 'Não durável';
      }
+  }
+
+  populateProductCategory():any{
+    this.api
+        .get(EndPoints.getCategoryListEndPoint())
+        .then(resultList=>{  
+          this.categories = resultList;
+        });
+  }
+
+  getProducts(){
+    this.api
+        .post(JSON.stringify(this.filter),EndPoints.searchEndPoint())
+        .then(productListRet=>{
+          this.productList = productListRet;
+        });
   }
 
   deleteProduct(productId:number){
@@ -40,13 +60,14 @@ export class SearchComponent {
   
   refresh(){
     this.api
-    .get(EndPoints.getProductListEndPoint())
-    .then(productListRet=>{
-      this.productList = productListRet;
-    });
+        .get(EndPoints.getProductListEndPoint())
+        .then(productListRet=>{
+          this.productList = productListRet;
+        });
   }
+
   ngOnInit() {
-    this.refresh();
+    //this.refresh();
   }
 
 
