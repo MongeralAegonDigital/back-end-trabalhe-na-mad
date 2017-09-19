@@ -1,0 +1,98 @@
+<div class="page-header">
+    <div class="row">
+        <div class="col-xs-9 text-left">
+            <h1>Cliente <small>{{ client.name }}</small></h1>
+        </div>
+        <div class="col-xs-3 text-right h1">
+            <ul class="list-inline">
+                <li>
+                    <a href="#/clientes/{{ client.id }}/editar" title="Editar Cliente" rel="tooltip">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/clientes/{{ client.id }}/deletar" title="Deletar Cliente" rel="tooltip">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h2>Dados do cliente</h2>
+<dl class="dl-horizontal">
+    <dt>Nome</dt>
+    <dd>{{ client.name }}</dd>
+    
+    <dt>CPF</dt>
+    <dd>{{ client.cpf }}</dd>
+    
+    <dt>Gênero</dt>
+    <dd>{{ client.gender }}</dd>
+    
+    <dt>Data de Nascimento</dt>
+    <dd>{{ client.birthday|localeDate }}</dd>
+    
+    <dt>Telefone</dt>
+    <dd>
+        <a href="tel:{{ client.phone|tel }}">
+            {{ client.phone }}
+        </a>
+    </dd>
+    
+    <dt>E-mail</dt>
+    <dd>
+        <a href="mailto:{{ client.email }}">
+            {{ client.email }}
+        </a>
+    </dd>
+    
+    <dt>Estado Civil</dt>
+    <dd>{{ client.maritalStatus }}</dd>
+</dl>
+
+<h2>Endereço</h2>
+<dl class="dl-horizontal">
+    <dt>Logradouro</dt>
+    <dd>{{ client.address.route }} {{ client.address.number }} / {{ client.address.complement }}</dd>
+
+    <dt>Bairro</dt>
+    <dd>{{ client.address.neighborhood }}</dd>
+
+    <dt>Cidade</dt>
+    <dd>{{ client.address.city }}</dd>
+
+    <dt>Estado</dt>
+    <dd>{{ client.address.state }}</dd>
+
+    <dt>CEP</dt>
+    <dd>{{ client.address.zipcode }}</dd>
+</dl>
+
+<h2>Identidade</h2>
+<dl class="dl-horizontal">
+    <dt>Número</dt>
+    <dd>{{ client.identity.number }}</dd>
+
+    <dt>Órgão Emissor</dt>
+    <dd>{{ client.identity.agency }}</dd>
+    
+    <dt>Data de expedição</dt>
+    <dd>{{ client.identity.issuedAt|localeDate }}</dd>
+</dl>
+
+<h2>Dados profissionais</h2>
+<dl class="dl-horizontal">
+    <dt>Categoria</dt>
+    <dd>{{ client.professionalInfo.category }}</dd>
+
+    <dt>Empresa</dt>
+    <dd>{{ client.professionalInfo.company }}</dd>
+
+    <dt>Profissão</dt>
+    <dd>{{ client.professionalInfo.profession }}</dd>
+
+    <dt>Renda Bruta</dt>
+    <dd>{{ client.professionalInfo.salary|currency }}</dd>
+</dl>

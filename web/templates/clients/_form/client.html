@@ -1,0 +1,134 @@
+<!-- cpf -->
+<div class="form-group" ng-class="{ 'has-error' : clientForm.cpf.$invalid && (clientForm.cpf.$dirty || clientForm.$submitted) }" novalidate="true">
+    <label for="client_cpf">
+        CPF <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+    </label>
+    <input type="text" class="form-control" name="cpf" id="client_cpf"
+        ng-model="client.cpf"
+        ng-required="true"
+        ng-maxlength="14"
+        ng-pattern="/^([0-9]{3})\.([0-9]{3})\.([0-9]{3})\-([0-9]{2})$/"
+        validate-cpf=""
+        validate-unique-cpf=""
+        client="client"
+        ui-mask="999.999.999-99"
+        model-view-value="true">
+    <div ng-messages="clientForm.cpf.$error" ng-show="clientForm.cpf.$invalid && (clientForm.cpf.$dirty || clientForm.$submitted)">
+        <span class="help-block" ng-message="required">Informe o seu CPF.</span>
+        <span class="help-block" ng-message="maxlength">Seu nome deve ter no máximo 14 caracteres.</span>
+        <span class="help-block" ng-message="pattern">O CPF deve estar no formato xxx.xxx.xxx-xx.</span>
+        <span class="help-block" ng-message="cpf">Informe um CPF válido.</span>
+        <span class="help-block" ng-message="uniqueCpf">Esse CPF já foi cadastrado no sistema.</span>
+    </div>
+</div>
+
+<!-- name -->
+<div class="form-group" ng-class="{ 'has-error' : clientForm.name.$invalid && (clientForm.name.$dirty || clientForm.$submitted) }" novalidate="true">
+    <label for="client_name">
+        Nome <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+    </label>
+    <input type="text" class="form-control" name="name" id="client_name"
+        ng-model="client.name"
+        ng-required="true"
+        ng-maxlength="64">
+    <div ng-messages="clientForm.name.$error" ng-show="clientForm.name.$invalid && (clientForm.name.$dirty || clientForm.$submitted)">
+        <span class="help-block" ng-message="required">Informe o seu nome.</span>
+        <span class="help-block" ng-message="maxlength">Seu nome deve ter no máximo 64 caracteres.</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <!-- gender -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.gender.$invalid && (clientForm.gender.$dirty || clientForm.$submitted) }">
+            <label for="client_gender">
+                Gênero <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+            </label>
+            <select class="form-control" name="gender" id="client_gender"
+                ng-model="client.gender"
+                ng-required="true"
+                ng-maxlength="10">
+                <option value="Feminino">Feminino</option>
+                <option value="Masculino">Masculino</option>
+            </select>
+            <div ng-messages="clientForm.gender.$error" ng-show="clientForm.gender.$invalid && (clientForm.gender.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="required">Informe seu gênero.</span>
+                <span class="help-block" ng-message="maxlength">O gênero deve ter no máximo 10 caracteres.</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <!-- birthday -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.birthday.$invalid && (clientForm.birthday.$dirty || clientForm.$submitted) }">
+            <label for="client_birthday">
+                Data de Nascimento <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+            </label>
+            <input type="date" class="form-control" name="birthday" id="client_birthday"
+                ng-model="client.birthday"
+                ng-required="true"
+                date-normalize>
+            <div ng-messages="clientForm.birthday.$error" ng-show="clientForm.birthday.$invalid && (clientForm.birthday.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="required">Informe a sua data de nascimento.</span>
+                <span class="help-block" ng-message="date">Informe uma data válida.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- marital status -->
+<div class="form-group" ng-class="{ 'has-error' : clientForm.marital_status.$invalid && (clientForm.marital_status.$dirty || clientForm.$submitted) }">
+    <label for="client_marital_status">
+        Estado Civil <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+    </label>
+    <select class="form-control" name="marital_status" id="client_marital_status"
+        ng-model="client.maritalStatus"
+        ng-required="true"
+        ng-maxlength="16">
+        <option value="Solteiro(a)">Solteiro(a)</option>
+        <option value="Casado(a)">Casado(a)</option>
+        <option value="Divorciado(a)">Divorciado(a)</option>
+        <option value="Viúvo(a)">Viúvo(a)</option>
+        <option value="Separado(a)">Separado(a)</option>
+        <option value="Companheiro(a)">Companheiro(a)</option>
+    </select>
+    <div ng-messages="clientForm.marital_status.$error" ng-show="clientForm.marital_status.$invalid && (clientForm.marital_status.$dirty || clientForm.$submitted)">
+        <span class="help-block" ng-message="required">Informe o seu estado civil.</span>
+        <span class="help-block" ng-message="maxlength">O estado civil deve ter no máximo 16 caracteres.</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <!-- email -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.email.$invalid && (clientForm.email.$dirty || clientForm.$submitted) }">
+            <label for="client_email">
+                E-mail <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+            </label>
+            <input type="email" class="form-control" name="email" id="client_email" placeholder="seu@email.com.br"
+                ng-model="client.email"
+                ng-required="true"
+                ng-maxlength="255">
+            <div ng-messages="clientForm.email.$error" ng-show="clientForm.email.$invalid && (clientForm.email.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="required">Informe o seu e-mail.</span>
+                <span class="help-block" ng-message="email">Informe um e-mail válido.</span>
+                <span class="help-block" ng-message="maxlength">Seu e-mail deve ter no máximo 255 caracteres.</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <!-- phone -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.phone.$invalid && (clientForm.phone.$dirty || clientForm.$submitted) }">
+            <label for="client_phone">
+                Telefone <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+            </label>
+            <input type="text" class="form-control" name="phone" id="client_phone"
+                ng-model="client.phone"
+                ng-required="true"
+                ui-mask="(99) 99999999?9"
+                model-view-value="true">
+            <div ng-messages="clientForm.phone.$error" ng-show="clientForm.phone.$invalid && (clientForm.phone.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="required">Informe o telefone.</span>
+            </div>
+        </div>
+    </div>
+</div>

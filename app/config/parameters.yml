@@ -1,0 +1,14 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: mongeral
+    database_user: root
+    database_password: password
+    
+    mailer_transport: gmail
+    mailer_host: ~
+    mailer_user: nilosoares1989@gmail.com
+    mailer_password: "#123456789"
+    
+    secret: 1715de77722a8b6dbddf8f838bb050b49f1071f6

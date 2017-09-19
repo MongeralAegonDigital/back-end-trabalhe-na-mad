@@ -1,0 +1,49 @@
+{% extends 'Email/base.html.twig' %}
+
+{% block body %}
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td style="
+                text-align: center;
+                font-size: 14px;
+            ">
+                Olá <strong>{{ client.name }}</strong>!
+                <br />
+                <br />
+
+                Você foi cadastrado no sistema desenvolvido por Nilo Soares durante a segunda etapa do processo seletivo da empresa Mongeral Aegon.
+                <br />
+                <br />
+
+                <strong>Seu dados:</strong><br />
+                Nome: {{ client.name }}<br />
+                CPF: {{ client.cpf }}<br />
+                Data de Nascimento: {{ client.birthday|date('d/m/Y') }}<br />
+                Telefone: {{ client.phone }}<br />
+                E-mail: {{ client.email }}<br />
+                Estado Civil: {{ client.maritalStatus }}<br />
+                <br />
+
+                <strong>Endereço:</strong><br />
+                Logradouro: {{ client.address.route }} {{ client.address.number }} / {{ client.address.complement }}<br />
+                Bairro: {{ client.address.neighborhood }}<br />
+                Cidade: {{ client.address.city }}<br />
+                Estado: {{ client.address.state }}<br />
+                CEP: {{ client.address.zipcode }}<br />
+                <br />
+                
+                <strong>Identidade:</strong><br />
+                Número: {{ client.identity.number }}<br />
+                Órgão emissor: {{ client.identity.agency }}<br />
+                Data de expedição: {{ client.identity.issuedAt|date('d/m/Y') }}<br />
+                <br />
+
+                <strong>Dados profissionais:</strong><br />
+                Categoria: {{ client.professionalInfo.category }}<br />
+                Empresa: {{ client.professionalInfo.company }}<br />
+                Profissão: {{ client.professionalInfo.profession }}<br />
+                Renda Bruta: R$ {{ client.professionalInfo.salary|number_format(2, ',', '.') }}
+            </td>
+        </tr>
+    </table>
+{% endblock %}

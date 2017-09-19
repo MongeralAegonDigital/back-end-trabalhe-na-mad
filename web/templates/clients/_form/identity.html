@@ -1,0 +1,51 @@
+<h2>Identidade</h2>
+<div class="row">
+    <div class="col-xs-12 col-sm-4">
+        <!-- identity number -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.identity_number.$invalid && (clientForm.identity_number.$dirty || clientForm.$submitted) }">
+            <label for="client_identity_number">
+                Número <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+            </label>
+            <input type="text" class="form-control" name="identity_number" id="client_identity_number"
+                ng-model="client.identity.number"
+                ng-required="true"
+                ng-maxlength="16">
+            <div ng-messages="clientForm.identity_number.$error" ng-show="clientForm.identity_number.$invalid && (clientForm.identity_number.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="required">Informe o número da sua identidade.</span>
+                <span class="help-block" ng-message="maxlength">O número da identidade deve ter no máximo 16 caracteres.</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <!-- identity agency -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.identity_agency.$invalid && (clientForm.identity_agency.$dirty || clientForm.$submitted) }">
+            <label for="client_identity_agency">
+                Órgão Emissor <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+            </label>
+            <input type="text" class="form-control" name="identity_agency" id="client_identity_agency"
+                ng-model="client.identity.agency"
+                ng-required="true"
+                ng-maxlength="16">
+            <div ng-messages="clientForm.identity_agency.$error" ng-show="clientForm.identity_agency.$invalid && (clientForm.identity_agency.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="required">Informe o órgão emissor da sua identidade.</span>
+                <span class="help-block" ng-message="maxlength">O órgão emissor da identidade deve ter no máximo 16 caracteres.</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <!-- identity issuedAt -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.identity_issuedAt.$invalid && (clientForm.identity_issuedAt.$dirty || clientForm.$submitted) }">
+            <label for="client_identity_issuedAt">
+                Data de expedição <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+            </label>
+            <input type="date" class="form-control" name="identity_issuedAt" id="client_identity_issuedAt"
+                ng-model="client.identity.issuedAt"
+                ng-required="true"
+                date-normalize>
+            <div ng-messages="clientForm.identity_issuedAt.$error" ng-show="clientForm.identity_issuedAt.$invalid && (clientForm.identity_issuedAt.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="required">Informe a data de expedição da sua identidade.</span>
+                <span class="help-block" ng-message="date">Informe uma data válida.</span>
+            </div>
+        </div>
+    </div>
+</div>

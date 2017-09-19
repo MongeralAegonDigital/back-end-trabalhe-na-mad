@@ -1,0 +1,72 @@
+<h2>Dados Profissionais</h2>
+<!-- professional info category -->
+<div class="form-group" ng-class="{ 'has-error' : clientForm.professional_category.$invalid && (clientForm.professional_category.$dirty || clientForm.$submitted) }">
+    <label for="client_professional_category">
+        Categoria <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+    </label>
+    <select class="form-control" name="professional_category" id="client_professional_category"
+        ng-model="client.professionalInfo.category"
+        ng-required="true"
+        ng-maxlength="10">
+        <option value="Empregado">Empregado</option>
+        <option value="Empregador">Empregador</option>
+        <option value="Autônomo">Autônomo</option>
+        <option value="Outros">Outros</option>
+    </select>
+    <div ng-messages="clientForm.professional_category.$error" ng-show="clientForm.professional_category.$invalid && (clientForm.professional_category.$dirty || clientForm.$submitted)">
+        <span class="help-block" ng-message="required">Informe sua categoria.</span>
+        <span class="help-block" ng-message="maxlength">Sua categoria deve ter no máximo 10 caracteres.</span>
+    </div>
+</div>
+
+<!-- professional info company -->
+<div class="form-group" ng-class="{ 'has-error' : clientForm.professional_company.$invalid && (clientForm.professional_company.$dirty || clientForm.$submitted) }">
+    <label for="client_professional_company">
+        Nome da Empresa
+    </label>
+    <input type="text" class="form-control" name="professional_company" id="client_professional_company"
+        ng-model="client.professionalInfo.company"
+        ng-maxlength="64">
+    <div ng-messages="clientForm.professional_company.$error" ng-show="clientForm.professional_company.$invalid && (clientForm.professional_company.$dirty || clientForm.$submitted)">
+        <span class="help-block" ng-message="maxlength">O nome da empresa deve ter no máximo 64 caracteres.</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <!-- professional info profession -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.professional_profession.$invalid && (clientForm.professional_profession.$dirty || clientForm.$submitted) }">
+            <label for="client_professional_profession">
+                Profissão <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+            </label>
+            <input type="text" class="form-control" name="professional_profession" id="client_professional_profession"
+                ng-model="client.professionalInfo.profession"
+                ng-required="true"
+                ng-maxlength="64">
+            <div ng-messages="clientForm.professional_profession.$error" ng-show="clientForm.professional_profession.$invalid && (clientForm.professional_profession.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="required">Informe sua profissão.</span>
+                <span class="help-block" ng-message="maxlength">O nome da empresa deve ter no máximo 64 caracteres.</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <!-- professional info salary -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.professional_salary.$invalid && (clientForm.professional_salary.$dirty || clientForm.$submitted) }">
+            <label for="client_professional_salary">
+                Renda Bruta <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+            </label>
+            <div class="input-group">
+                <span class="input-group-addon">R$</span>
+                <input type="text" class="form-control" name="professional_salary" id="client_salaryal_salary"
+                    ng-model="client.professionalInfo.salary"
+                    ng-required="true"
+                    currency-mask
+                    currency-mask-normalize
+                    ng-change="testSalary(client);">
+            </div>
+            <div ng-messages="clientForm.professional_salary.$error" ng-show="clientForm.professional_salary.$invalid && (clientForm.professional_salary.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="required">Informe sua renda bruta.</span>
+            </div>
+        </div>
+    </div>
+</div>

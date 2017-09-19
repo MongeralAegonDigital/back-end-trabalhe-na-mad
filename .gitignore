@@ -1,0 +1,10 @@
+/build/
+/phpunit.xml
+/var/cache/*
+/var/logs/*
+/var/sessions/*
+/vendor/
+/web/bundles/
+/web/vendor/
+/node_modules/*
+/nbproject/private/

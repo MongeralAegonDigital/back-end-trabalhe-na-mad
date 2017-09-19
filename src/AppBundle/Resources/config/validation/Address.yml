@@ -1,0 +1,36 @@
+AppBundle\Entity\Address:
+    properties:
+        route:
+            - NotBlank: ~
+            - Type: string
+            - Length:
+                max: 255
+        number:
+            - NotBlank: ~
+            - Type: string
+            - Length:
+                max: 32
+        complement:
+            - Type: string
+            - Length:
+                max: 64
+        neighborhood:
+            - NotBlank: ~
+            - Type: string
+            - Length:
+                max: 64
+        city:
+            - NotBlank: ~
+            - Type: string
+            - Length:
+                max: 64
+        state:
+            - NotBlank: ~
+            - Type: string
+            - Length:
+                max: 2
+        zipcode:
+            - NotBlank: ~
+            - Type: string
+            - Length:
+                max: 9

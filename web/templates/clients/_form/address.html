@@ -1,0 +1,118 @@
+<h2>Endereço</h2>
+<flash-message name="flash-address"></flash-message>
+<div class="form-group" ng-class="{ 'has-error' : clientForm.address_zipcode.$invalid && (clientForm.address_zipcode.$dirty || clientForm.$submitted) }">
+    <label for="client_address_zipcode">
+        CEP <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+    </label>
+    <input type="text" class="form-control" name="address_zipcode" id="client_address_zipcode"
+        ng-model="client.address.zipcode"
+        ng-required="true"
+        ng-pattern="/^([0-9]{5})\-([0-9]{3})$/"
+        ui-mask="99999-999"
+        model-view-value="true"
+        find-address-by-zipcode=""
+        address="client.address">
+    <div ng-messages="clientForm.address_zipcode.$error" ng-show="clientForm.address_zipcode.$invalid && (clientForm.address_zipcode.$dirty || clientForm.$submitted)">
+        <span class="help-block" ng-message="required">Informe o CEP.</span>
+        <span class="help-block" ng-message="pattern">O CEP deve estar no formato XXXXX-XXX.</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+        <!-- address route -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.address_route.$invalid && (clientForm.address_route.$dirty || clientForm.$submitted) }">
+            <label for="client_address_route">
+                Rua <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+            </label>
+            <input type="text" class="form-control" name="address_route" id="client_address_route"
+                ng-model="client.address.route"
+                ng-required="true"
+                ng-maxlength="255">
+            <div ng-messages="clientForm.address_route.$error" ng-show="clientForm.address_route.$invalid && (clientForm.address_route.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="required">Informe a rua.</span>
+                <span class="help-block" ng-message="maxlength">A rua deve ter no máximo 255 caracteres.</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+        <!-- address number -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.address_number.$invalid && (clientForm.address_number.$dirty || clientForm.$submitted) }">
+            <label for="client_address_number">
+                Número <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+            </label>
+            <input type="text" class="form-control" name="address_number" id="client_address_number"
+                ng-model="client.address.number"
+                ng-required="true"
+                ng-maxlength="32">
+            <div ng-messages="clientForm.address_number.$error" ng-show="clientForm.address_number.$invalid && (clientForm.address_number.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="required">Informe o número.</span>
+                <span class="help-block" ng-message="maxlength">O número deve ter no máximo 32 caracteres.</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+        <!-- address complement -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.address_complement.$invalid && (clientForm.address_complement.$dirty || clientForm.$submitted) }">
+            <label for="client_address_complement">
+                Complemento
+            </label>
+            <input type="text" class="form-control" name="address_complement" id="client_address_complement"
+                ng-model="client.address.complement"
+                ng-maxlength="64">
+            <div ng-messages="clientForm.address_complement.$error" ng-show="clientForm.address_complement.$invalid && (clientForm.address_complement.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="maxlength">O complemento deve ter no máximo 64 caracteres.</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-4">
+        <!-- address neighborhood -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.address_neighborhood.$invalid && (clientForm.address_neighborhood.$dirty || clientForm.$submitted) }">
+            <label for="client_address_neighborhood">
+                Bairro <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+            </label>
+            <input type="text" class="form-control" name="address_neighborhood" id="client_address_neighborhood"
+                ng-model="client.address.neighborhood"
+                ng-required="true"
+                ng-maxlength="64">
+            <div ng-messages="clientForm.address_neighborhood.$error" ng-show="clientForm.address_neighborhood.$invalid && (clientForm.address_neighborhood.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="required">Informe o bairro.</span>
+                <span class="help-block" ng-message="maxlength">O bairro deve ter no máximo 64 caracteres.</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <!-- address city -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.address_city.$invalid && (clientForm.address_city.$dirty || clientForm.$submitted) }">
+            <label for="client_address_city">
+                Cidade <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+            </label>
+            <input type="text" class="form-control" name="address_city" id="client_address_city"
+                ng-model="client.address.city"
+                ng-required="true"
+                ng-maxlength="64">
+            <div ng-messages="clientForm.address_city.$error" ng-show="clientForm.address_city.$invalid && (clientForm.address_city.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="required">Informe a cidade.</span>
+                <span class="help-block" ng-message="maxlength">A cidade deve ter no máximo 64 caracteres.</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <!-- address state -->
+        <div class="form-group" ng-class="{ 'has-error' : clientForm.address_state.$invalid && (clientForm.address_state.$dirty || clientForm.$submitted) }">
+            <label for="client_address_state">
+                Estado <span class="required" title="Esse campo é obrigatório" rel="tooltip">*</span>
+            </label>
+            <input type="text" class="form-control" name="address_state" id="client_address_state"
+                ng-model="client.address.state"
+                ng-required="true"
+                ng-maxlength="2">
+            <div ng-messages="clientForm.address_state.$error" ng-show="clientForm.address_state.$invalid && (clientForm.address_state.$dirty || clientForm.$submitted)">
+                <span class="help-block" ng-message="required">Informe o estado.</span>
+                <span class="help-block" ng-message="maxlength">O estado deve ter no máximo 2 caracteres.</span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+{
+  "name": "nilosoares-teste1",
+  "authors": [
+    "Nilo Soares <nilosoares@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/nilosoares/back-end-trabalhe-na-mad",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.*",
+    "angular-route": "~1.5.*",
+    "angular-resource": "~1.5.*",
+    "angular-messages": "~1.5.*",
+    "angular-flash-alert": "~2.4.*",
+    "angular-ui-mask": "~1.8.*",
+    "angular-locale-pt-br": "~1.3.*",
+    "bootstrap": "~3.3.*",
+    "bower": "*",
+    "install": "~1.0.*"
+  }
+}
