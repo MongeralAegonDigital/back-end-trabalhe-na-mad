@@ -13,7 +13,7 @@ class AddressTest extends TestCase
     /**
      * @test
      */
-    public function testCreateUser()
+    public function testCreateAddressToUser()
     {
         $quantity = 2;
 
@@ -28,5 +28,6 @@ class AddressTest extends TestCase
         $this->assertNotNull($userWithAddress);
         $this->assertEquals($count, $quantity);
         $this->assertEquals($userWithAddress->address2, $address->address2);
+        $this->assertEquals($userWithAddress->cep, $address->cep);
     }
 }
