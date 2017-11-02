@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>Cadastro de usuário</h1>
+    </div>
+
+    <div class="col-md-12">
+        <form (submit)="create()">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-5">
+                        <input type="text" name="name" [(ngModel)]="user.name" class="form-control" placeholder="Nome" required />
+                    </div>
+                    <div class="col-md-4">
+                        <input type="email" name="email" [(ngModel)]="user.email" class="form-control" placeholder="Email" required />
+                    </div>
+                    <div class="col-md-3">
+                        <input type="password" name="password" [(ngModel)]="user.password" class="form-control" placeholder="Senha" required />
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" name="cpf" [(ngModel)]="user.cpf" class="form-control" placeholder="CPF" required />
+                    </div>
+                    <div class="col-md-6">
+                        <input type="date" name="date_birth" [(ngModel)]="user.date_birth" class="form-control" placeholder="Data de Nacimento" />
+                    </div>
+                </div>
+            </div>
+
+            <app-address [user]="user"></app-address>
+
+            <app-user-data [user]="user"></app-user-data>            
+
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+    </div>
+</div>

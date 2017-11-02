@@ -1,0 +1,6 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+    <app-user-list [users]="users"></app-user-list>
+    
+    <app-user-new (createNewUserEvent)="create($event)"></app-user-new>
+</div>
