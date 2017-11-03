@@ -16,7 +16,7 @@ class CreateDataTable extends Migration
         Schema::create('user_data', function (Blueprint $table) {
             $table->increments('id');
 
-            $table->bigInteger('user_cpf')->unsigned();
+            $table->bigInteger('user_cpf');
             $table->integer('rg');
             $table->date('date_expedition');
             $table->string('org');
