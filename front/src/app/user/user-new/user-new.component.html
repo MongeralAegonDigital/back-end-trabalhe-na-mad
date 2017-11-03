@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-md-12">
+        <h1>Cadastro de usuário</h1>
+    </div>
+
+    <div class="col-md-12">
+        <form (submit)="create()">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" [(ngModel)]="user.name" class="form-control" placeholder="Nome" required />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" [(ngModel)]="user.email" class="form-control" placeholder="Email" required />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" [(ngModel)]="user.password" class="form-control" placeholder="Senha" required />
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" [(ngModel)]="user.cpf" class="form-control" placeholder="CPF" required />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="phone">Telefone</label>
+                        <input type="text" name="phone" [(ngModel)]="user.phone" class="form-control" placeholder="Telefone" required />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="date_birth">Data de nascimento</label>
+                        <input type="date" name="date_birth" [(ngModel)]="user.date_birth" class="form-control" placeholder="Data de Nacimento" />
+                    </div>
+                </div>
+            </div>
+
+            <app-address [user]="user"></app-address>
+
+            <app-user-data [user]="user"></app-user-data>            
+
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+    </div>
+</div>

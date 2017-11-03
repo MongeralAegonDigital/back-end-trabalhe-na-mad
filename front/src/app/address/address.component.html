@@ -1,0 +1,40 @@
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-3">
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" [(ngModel)]="user.address.cep" (keyup)="getAddressFromCEP(user.address)" class="form-control" placeholder="CEP" required />
+        </div>
+        <div class="col-md-6">
+            <label for="street">Rua</label>
+            <input type="text" name="street" [(ngModel)]="user.address.street" class="form-control" placeholder="Logradouro" required readonly />
+        </div>
+        <div class="col-md-3">
+            <label for="number">Número</label>
+            <input type="text" name="number" [(ngModel)]="user.address.number" class="form-control" placeholder="Nº" required />
+        </div>
+    </div>
+</div>
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-7">
+            <label for="address2">Complemento</label>
+            <input type="text" name="address2"[(ngModel)]="user.address.address2" class="form-control" placeholder="Complemento" required />
+        </div>
+        <div class="col-md-5">
+            <label for="neighbor">Bairro</label>
+            <input type="text" name="neighbor"[(ngModel)]="user.address.neighbor" class="form-control" placeholder="Bairro" readonly />
+        </div>
+    </div>
+</div>
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-9">
+            <label for="city">Cidade</label>
+            <input type="text" name="city"[(ngModel)]="user.address.city" class="form-control" placeholder="Cidade" required readonly />
+        </div>
+        <div class="col-md-3">
+            <label for="state">Estado</label>
+            <input type="text" name="state"[(ngModel)]="user.address.state" class="form-control" placeholder="Estado" required readonly />
+        </div>
+    </div>
+  </div>

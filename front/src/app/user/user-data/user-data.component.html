@@ -1,0 +1,57 @@
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-3">
+            <label for="rg">RG</label>
+            <input type="text" name="rg" [(ngModel)]="user.data.rg" class="form-control" placeholder="RG" required />
+        </div>
+        <div class="col-md-3">
+            <label for="date_expedition">Dt. Expedição</label>
+            <input type="date" name="date_expedition" [(ngModel)]="user.data.date_expedition" class="form-control" placeholder="Data Expedição" required />
+        </div>
+        <div class="col-md-3">
+            <label for="org">Orgão</label>
+            <input type="text" name="org" [(ngModel)]="user.data.org" class="form-control" placeholder="Órgao Expedidor" required />
+        </div>
+        <div class="col-md-3">
+            <label for="marital_status">Estado Civil</label>
+            <input type="text" name="marital_status" [(ngModel)]="user.data.marital_status" class="form-control" placeholder="Estado Civil" required />
+        </div>
+    </div>
+</div>
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-3">
+            <label for="category">Categoria</label>
+            <select name="category" [(ngModel)]="user.data.category" class="form-control" required>
+                <option value="">Categoria</option>
+                <option value="Empregador">Empregador</option>
+                <option value="Empregado">Empregado</option>
+                <option value="Autônomo">Autônomo</option>
+                <option value="Outros">Outros</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="company">Empresa</label>
+            <input type="text" name="company" [(ngModel)]="user.data.company" class="form-control" placeholder="Empresa em que trabalha" />
+        </div>
+        <div class="col-md-3">
+            <label for="occupation">Cargo</label>
+            <input type="text" name="occupation" [(ngModel)]="user.data.occupation" class="form-control" placeholder="Profissão" required />
+        </div>
+        <div class="col-md-3">
+            <label for="salary">Renda Bruta</label>
+            <input type="text" name="salary" [(ngModel)]="user.data.salary" class="form-control" placeholder="Renda Bruta" required />
+        </div>
+    </div>
+</div>
+
+
+        
+
+        
+
+
+
+
+
+
