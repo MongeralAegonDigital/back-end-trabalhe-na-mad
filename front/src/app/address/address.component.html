@@ -1,7 +1,7 @@
 <div class="form-group">
     <div class="row">
         <div class="col-md-3">
-          <input type="text" name="cep" [(ngModel)]="user.address.cep" class="form-control" placeholder="CEP" required />
+          <input type="text" name="cep" [(ngModel)]="user.address.cep" (keyup)="getAddressFromCEP(user.address)" class="form-control" placeholder="CEP" required />
         </div>
         <div class="col-md-6">
             <input type="text" name="street" [(ngModel)]="user.address.street" class="form-control" placeholder="Logradouro" required readonly />

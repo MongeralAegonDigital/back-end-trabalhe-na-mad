@@ -3,6 +3,14 @@
         <h1>Cadastro de usuário</h1>
     </div>
 
+    <div>
+        <ul *ngIf="!errors">
+            <li *ngFor="let error of errors">
+                {{ error[0] }} - {{ error[1] }}
+            </li>
+        </ul>
+    </div>
+
     <div class="col-md-12">
         <form (submit)="create()">
             <div class="form-group">
@@ -21,10 +29,13 @@
 
             <div class="form-group">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <input type="text" name="cpf" [(ngModel)]="user.cpf" class="form-control" placeholder="CPF" required />
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
+                        <input type="text" name="phone" [(ngModel)]="user.phone" class="form-control" placeholder="Telefone" required />
+                    </div>
+                    <div class="col-md-4">
                         <input type="date" name="date_birth" [(ngModel)]="user.date_birth" class="form-control" placeholder="Data de Nacimento" />
                     </div>
                 </div>
