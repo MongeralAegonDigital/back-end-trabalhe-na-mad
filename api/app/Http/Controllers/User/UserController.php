@@ -1,9 +1,9 @@
 <?php
 namespace App\Http\Controllers\User;
 
-use App\Models\Address\Address;
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Http\Requests\User\UserRequest;
+use App\Models\User\User;
 
 class UserController extends Controller
 {
@@ -14,17 +14,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        return User::all();
     }
 
     /**
@@ -33,19 +23,8 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UserRequest $request)
     {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Address\Address  $address
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Address $address)
-    {
-        //
+        return User::create($request->all());
     }
 }
