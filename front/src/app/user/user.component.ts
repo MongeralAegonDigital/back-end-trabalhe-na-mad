@@ -12,32 +12,44 @@ import { UserData } from './user-data/user-data';
     styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  users: User[] = [];
-  errors = [];
+    users: User[] = [];
+    errors: JSON[] = null;
+    success: boolean = false;
 
-  constructor(
-      private _userService: UserService
-  ) { }
+    constructor(
+        private _userService: UserService
+    ) { }
 
-  ngOnInit() {
-      this.getUsers();
-  }
+    ngOnInit()
+    {
+        this.getUsers();
+    }
 
-  getUsers() {
-      this._userService.getUsers()
-      .then(users => this.users = users)
-      .catch(err => console.log(err));
-  }
+    getUsers()
+    {
+        this._userService.getUsers()
+        .then(users => this.users = users)
+        .catch(err => console.log(err));
+    }
 
-  create(user: User) {
-      this._userService.create(user)
-      .then(status => this.getUsers())
-      .catch(err => {
-          console.log(err.json());
-          this.errors = err.json();
-          console.log(this.errors);
-      });
-      console.log(this.errors);
-  }
+    create(user: User)
+    {
+        this.errors = null;
+        this.success = false;
 
+        this._userService.create(user)
+        .then(status => {
+            this.getUsers();
+            this.success = true;
+            console.log(user);
+            user = new User();
+            console.log(user);
+        })
+        .catch(err => this.handleError(err.json()));
+    }
+
+    private handleError(jsonErrors)
+    {
+        this.errors = jsonErrors;
+    }
 }

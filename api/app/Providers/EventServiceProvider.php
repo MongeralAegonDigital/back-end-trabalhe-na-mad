@@ -16,6 +16,12 @@ class EventServiceProvider extends ServiceProvider
         'App\Events\Event' => [
             'App\Listeners\EventListener',
         ],
+
+        'App\Events\CreateUser' => [
+            'App\Listeners\AddressToUser',
+            'App\Listeners\DataToUser',
+            'App\Listeners\SendEmail',
+        ]
     ];
 
     /**

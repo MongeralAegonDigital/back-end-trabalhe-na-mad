@@ -19,7 +19,7 @@ export class AddressComponent implements OnInit {
     getAddressFromCEP(address: Address)
     {
         let cep = address.cep;
-        if(cep.toString().length < 8) {
+        if(cep != null && cep.toString().length < 8) {
             return false;
         }
 

@@ -12,6 +12,7 @@ import { UserDataComponent } from './user/user-data/user-data.component';
 import { UserService } from './user/user.service';
 import { AddressService } from './address/address.service';
 import { FormsModule } from '@angular/forms';
+import { KeysPipe } from './keys.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule } from '@angular/forms';
     UserNewComponent,
     UserListComponent,
     AddressComponent,
-    UserDataComponent
+    UserDataComponent,
+    KeysPipe
   ],
   imports: [
     BrowserModule,

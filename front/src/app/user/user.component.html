@@ -1,6 +1,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
-    <app-user-list [users]="users"></app-user-list>
     
+    <div class="alert alert-danger" *ngIf="errors != null">
+        <strong>Erro!</strong>
+        <ul>
+            <li *ngFor="let error of errors | keys">
+                {{ error.key }} - {{ error.value }}
+            </li>
+        </ul>
+    </div>
+    
+    <div class="alert alert-success" *ngIf="success != false">
+        <strong>Sucesso!</strong> Seu usuário foi criado com sucesso
+    </div>
+
     <app-user-new (createNewUserEvent)="create($event)"></app-user-new>
+    
+    <app-user-list [users]="users"></app-user-list>
 </div>

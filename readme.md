@@ -1,3 +1,14 @@
+# To run project #
+1. Inside api folder
+1.1 composer install
+1.2 cp .env.example .env
+1.3 php artisan key:generate
+1.4 create database
+1.5 php artisan migrate
+2. Inside front folder
+2.1 npm install
+
+---
 # Teste para Back-end #
 ---
 ### Baseado no conceito S.P.A. (Single Page Application), construa uma aplicação escolhendo uma das opções abaixo:
