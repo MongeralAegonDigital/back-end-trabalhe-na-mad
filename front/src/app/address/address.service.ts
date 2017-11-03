@@ -23,6 +23,7 @@ export class AddressService {
     private buildAddress(address)
     {
         let cep = new Address();
+        cep.cep = address.cep;
         cep.street = address.logradouro;
         cep.neighbor = address.bairro;
         cep.city = address.cidade;
