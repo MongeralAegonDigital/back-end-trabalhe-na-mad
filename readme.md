@@ -1,3 +1,7 @@
+# setup
+
+docker-compose up -d && cd api && php composer.phar install && cd .. && docker-composer exec app php artisan key:generate
+
 # Teste para Back-end #
 ---
 ### Baseado no conceito S.P.A. (Single Page Application), construa uma aplicação escolhendo uma das opções abaixo:
