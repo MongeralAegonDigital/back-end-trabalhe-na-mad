@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    protected $table = 'products';
     protected $fillable = [
         'name',
         'fabrication_date',
@@ -13,6 +14,8 @@ class Product extends Model
         'lenght',
         'weight'
     ];
+    protected $with = [ 'categories'];
+
 
     public function categories() {
         return $this->belongsToMany('App\Category','product_category');

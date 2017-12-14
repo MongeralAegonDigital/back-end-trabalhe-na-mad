@@ -27,3 +27,13 @@ $factory->define(\App\Category::class, function(Faker\Generator $faker) {
         'name' => $faker->word
     ];
 });
+
+$factory->define(\App\Product::class, function(Faker\Generator $faker) {
+    return [
+        'name' => $faker->streetName,
+        'fabrication_date' => $faker->dateTime,
+        'size' => $faker->randomFloat(1,5,0.01),
+        'lenght' => $faker->randomFloat(1,5,0.01),
+        'weight' => $faker->randomFloat(1,5,0.01),
+    ];
+});

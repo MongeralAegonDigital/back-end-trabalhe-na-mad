@@ -6,6 +6,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class CategoryIntegrationTest extends TestCase
 {
+    use DatabaseTransactions;
     public function testlistAll()
     {
         $this->get('api/categories')

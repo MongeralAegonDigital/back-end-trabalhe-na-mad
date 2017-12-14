@@ -19,3 +19,6 @@ Route::get('/user', function (Request $request) {
 
 
 Route::resource('categories','CategoryController');
+Route::get('products/filter','ProductController@filter');
+Route::resource('products','ProductController');
+
