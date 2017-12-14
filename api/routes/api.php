@@ -17,6 +17,5 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
 
-Route::get('/users', function(Request $request){
-    return [1,2];
-});
+
+Route::resource('categories','CategoryController');

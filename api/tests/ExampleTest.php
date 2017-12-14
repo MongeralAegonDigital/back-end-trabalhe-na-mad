@@ -16,4 +16,11 @@ class ExampleTest extends TestCase
         $this->visit('/')
              ->see('Laravel');
     }
+
+    public function testListAll()
+    {
+        $category  = new \App\Category();
+
+
+    }
 }
