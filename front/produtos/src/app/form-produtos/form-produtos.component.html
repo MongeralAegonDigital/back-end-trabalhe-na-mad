@@ -1,0 +1,42 @@
+<div class="col-xs-12">
+    <form action="" class="form">
+      <div class="col-xs-12 col-sm-8 form-group">
+        <label for="name">Nome</label>
+        <input type="text" class="form-control" name="name" required >
+      </div>
+      <div class="col-xs-12 col-sm-4 form-group">
+          <label for="name">Data Fabricação</label>
+          <input type="text" class="form-control datepicker" name="name" required >
+      </div>
+      <div class="col-xs-12 col-sm-4 form-group">
+        <label for="">Tamanho</label>
+        <input type="text" class="form-control decimal" name="size" required />
+      </div>
+      <div class="col-xs-12 col-sm-4 form-group">
+          <label for="">Largura</label>
+          <input type="text" class="form-control" required >
+      </div>
+      <div class="col-xs-12 col-sm-4 form-group" required>
+          <label for="">Peso</label>
+          <input type="text" class="form-control" required>
+      </div>
+      <div class="col-xs-12 col-sm-12 form-group" >
+          <label for="">Categoria</label>
+          <a href="" class="pull-right">Nova Categoria</a>
+          <div class="input-group">
+            <select name="" id="" class="form-control" #categorySelect>
+              <option value="{{category.id}}" *ngFor="let category of categoryList"> {{category.name}}</option>
+            </select>
+            <span class="input-group-btn" >
+              <span class="btn btn-default" (click)="addCategory(categorySelect.value)" ><span class="glyphicon glyphicon-plus"></span></span>
+            </span>
+          </div>
+          <div>
+            <div class="label label-default" *ngFor="let categoryAdded of categoryListAdded"  > {{categoryAdded.name}} | <span class="text-right">x</span></div>
+          </div>  
+      </div>
+    </form>
+  </div>
+  
+  
+  

@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('cors');
+    }
+
     /**
      * Display a listing of the resource.
      *

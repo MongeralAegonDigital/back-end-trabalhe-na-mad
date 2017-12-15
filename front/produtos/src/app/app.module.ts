@@ -7,6 +7,9 @@ import { CadastroProdutosComponent } from './cadastro-produtos/cadastro-produtos
 import { ConsultaProdutosComponent } from './consulta-produtos/consulta-produtos.component';
 import { FiltroProdutosComponent } from './filtro-produtos/filtro-produtos.component';
 import { ListaProdutosComponent } from './lista-produtos/lista-produtos.component';
+import { FormProdutosComponent } from './form-produtos/form-produtos.component';
+import { CategoryServiceService } from './services/category-service.service';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -15,12 +18,13 @@ import { ListaProdutosComponent } from './lista-produtos/lista-produtos.componen
     CadastroProdutosComponent,
     ConsultaProdutosComponent,
     FiltroProdutosComponent,
-    ListaProdutosComponent
+    ListaProdutosComponent,
+    FormProdutosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule , HttpModule
   ],
-  providers: [],
+  providers: [ CategoryServiceService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,6 +9,15 @@ use Illuminate\Http\Request;
 class CategoryController extends Controller
 {
     /**
+     * CategoryController constructor.
+     */
+    public function __construct()
+    {
+        $this->middleware('cors');
+    }
+
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
