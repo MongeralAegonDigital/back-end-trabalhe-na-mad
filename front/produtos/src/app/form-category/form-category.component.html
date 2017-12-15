@@ -1,0 +1,17 @@
+<div class="col-xs-12">
+    <div>
+      <h2 class="col-xs-12 color-secondary">{{title}}</h2>
+    </div>
+    <div  class="form"  >
+
+      <div class="col-xs-12 form-group">
+        <label for="name">Nome</label>
+        <input [(ngModel)]="category.name" type="text" class="form-control" name="name" required >
+      </div>
+
+      <div class="col-xs-12 form-group text-right">
+        <button class="btn  btn-primary" (click)="onsubmit(category)" lass="close" data-dismiss="modal" aria-label="Close" >{{submitText}}</button>
+      </div>
+
+    </div>
+</div>

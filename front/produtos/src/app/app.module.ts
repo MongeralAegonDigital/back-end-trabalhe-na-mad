@@ -1,3 +1,4 @@
+import { ToastService } from './services/toast.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,6 +11,8 @@ import { ListaProdutosComponent } from './lista-produtos/lista-produtos.componen
 import { FormProdutosComponent } from './form-produtos/form-produtos.component';
 import { CategoryServiceService } from './services/category-service.service';
 import { HttpModule } from '@angular/http';
+import { FormCategoryComponent } from './form-category/form-category.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,12 +22,16 @@ import { HttpModule } from '@angular/http';
     ConsultaProdutosComponent,
     FiltroProdutosComponent,
     ListaProdutosComponent,
-    FormProdutosComponent
+    FormProdutosComponent,
+    FormCategoryComponent
   ],
   imports: [
-    BrowserModule , HttpModule
+    BrowserModule , HttpModule, FormsModule
   ],
-  providers: [ CategoryServiceService ],
+  providers: [ 
+    CategoryServiceService,
+    ToastService
+   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

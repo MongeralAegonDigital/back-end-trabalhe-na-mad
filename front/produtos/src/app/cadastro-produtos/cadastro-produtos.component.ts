@@ -1,3 +1,4 @@
+import { ToastService } from './../services/toast.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroProdutosComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _toast : ToastService) { }
 
   ngOnInit() {
+  }
+
+  saveProduct(product) {
+    this._toast.showToast('Sucesso','Produto Salvo com sucesso')
+  }
+  saveCategory(category) {
+    this._toast.showToast('Sucesso','Categoria Salva com sucesso')
   }
 
 }

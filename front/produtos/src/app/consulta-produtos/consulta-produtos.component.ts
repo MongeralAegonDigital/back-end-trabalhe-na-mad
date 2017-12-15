@@ -1,3 +1,4 @@
+import { Product } from './../models/product.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConsultaProdutosComponent implements OnInit {
 
+  listaProdutos: Array<Product>
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onFilter(productFilter) {
+    this.listaProdutos = null
+    //faz busca
+    this.listaProdutos = []
+
   }
 
 }

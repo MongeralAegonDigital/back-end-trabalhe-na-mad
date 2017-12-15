@@ -1,2 +1,7 @@
-<app-filtro-produtos></app-filtro-produtos>
-<app-lista-produtos></app-lista-produtos>
+<app-filtro-produtos (onFilter)="onFilter($event)" ></app-filtro-produtos>
+
+
+<app-lista-produtos *ngIf="listaProdutos"  [listaProdutos]="listaProdutos"></app-lista-produtos>
+<div class="text-center color-secondary empty-list" *ngIf="!listaProdutos" >
+    Utilize os filtros acima para listar os produtos.
+</div>
