@@ -1,9 +1,10 @@
 # setup
+1. docker run --rm -v $(pwd):/api composer/composer install
+2. docker-compose up
+3. docker-compose exec app php artisan key:generate
+4. docker-compose exex app php artisan migrate
 
-docker run --rm -v $(pwd):/api composer/composer install
-docker-compose up
-docker-compose exec app php artisan key:generate
-docker-compose exex app php artisan migrate
+OBS: a primeira vex o setup demora um pouco por conta das imagens que serão baixadas para subir os container da aplicação.
 
 ## API
 disponível em:
