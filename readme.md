@@ -1,6 +1,19 @@
 # setup
 
-docker-compose up -d && cd api && php composer.phar install && cd .. && docker-composer exec app php artisan key:generate
+docker run --rm -v $(pwd):/api composer/composer install
+docker-compose up
+docker-compose exec app php artisan key:generate
+docker-compose exex app php artisan migrate
+
+## API
+disponível em:
+localhost:300/api/
+
+## WEB
+disponível em:
+localhost:8080
+
+
 
 # Teste para Back-end #
 ---
