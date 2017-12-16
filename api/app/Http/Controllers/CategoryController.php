@@ -41,6 +41,7 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
+        $request->headers->set('Content-Type','Application/json');
         $category = new Category($request->all());
 
         try {

@@ -1,5 +1,9 @@
 import { ToastService } from './../services/toast.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Category } from '../models/category.model';
+import { CategoryServiceService } from '../services/category-service.service';
+import { FormProdutosComponent } from '../form-produtos/form-produtos.component';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-cadastro-produtos',
@@ -8,16 +12,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroProdutosComponent implements OnInit {
 
-  constructor(private _toast : ToastService) { }
+  @ViewChild('formProdutos') formProdutos
+  constructor(private _toast : ToastService , private _categoryService: CategoryServiceService , private _productService : ProductService) { }
 
   ngOnInit() {
   }
 
   saveProduct(product) {
-    this._toast.showToast('Sucesso','Produto Salvo com sucesso')
+    this._productService.save(product).subscribe(res => {
+      this._toast.showSuccess('Sucesso','Produto Salvo com sucesso')
+    }, error => {
+      this._toast.showError('Erro','Produto não foi salvo')
+    })
   }
   saveCategory(category) {
-    this._toast.showToast('Sucesso','Categoria Salva com sucesso')
+    this._categoryService.save(category).subscribe( res => {
+      this._toast.showSuccess('Sucesso','Categoria Salva com sucesso')
+    } , error => {
+      this._toast.showError('Erro','Erro ao salvar categoria')
+    }, () => {
+      this.formProdutos.loadCategories()
+    })
   }
 
 }

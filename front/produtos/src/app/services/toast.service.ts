@@ -11,7 +11,7 @@ export class ToastService {
 
   }
 
-  showToast(tittle : string , message : string) {
+  showToast(type:string, tittle : string , message : string) {
     toastr.options = {
       "closeButton": true,
       "debug": false,
@@ -29,7 +29,13 @@ export class ToastService {
       "showMethod": "fadeIn",
       "hideMethod": "fadeOut"
     }
-    toastr.success(tittle,message)
+    toastr[type](message,tittle)
+  }
+  showSuccess( tittle : string = 'Sucesso', message : string ) {
+    this.showToast('success', tittle, message)
+  }
+  showError( tittle : string = 'Erro', message : string ) {
+    this.showToast('error', tittle, message)
   }
 
 

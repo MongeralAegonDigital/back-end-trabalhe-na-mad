@@ -13,6 +13,9 @@ import { CategoryServiceService } from './services/category-service.service';
 import { HttpModule } from '@angular/http';
 import { FormCategoryComponent } from './form-category/form-category.component';
 import { FormsModule } from '@angular/forms';
+import { Http } from '@angular/http';
+import { TextMaskModule } from 'angular2-text-mask';
+import { ProductService } from './services/product.service';
 
 
 @NgModule({
@@ -26,11 +29,12 @@ import { FormsModule } from '@angular/forms';
     FormCategoryComponent
   ],
   imports: [
-    BrowserModule , HttpModule, FormsModule
+    BrowserModule , HttpModule, FormsModule , TextMaskModule
   ],
   providers: [ 
     CategoryServiceService,
-    ToastService
+    ToastService ,
+    ProductService
    ],
   bootstrap: [AppComponent]
 })

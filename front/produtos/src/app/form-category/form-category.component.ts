@@ -23,8 +23,8 @@ export class FormCategoryComponent implements OnInit {
   }
 
   onsubmit(form) {
-    console.log(form)
     this.onSubmit.emit(form)
+    this.category = new Category()
   }
 
 }

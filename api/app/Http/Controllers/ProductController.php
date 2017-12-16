@@ -38,6 +38,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        $request->headers->set('Content-Type','Application/json');
 
         $product = new Product($request->all());
 
@@ -47,7 +48,7 @@ class ProductController extends Controller
 
         try {
             $product->save();
-            $categories = json_decode($request->get('product_categories',[]));
+            $categories =  json_decode( $request->input('product_categories',[]) );
             foreach ($categories as $category) {
                 if(isset($category->id)) {
                     $categoryObj = Category::find($category->id);
