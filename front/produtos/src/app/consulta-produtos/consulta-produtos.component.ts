@@ -13,13 +13,13 @@ export class ConsultaProdutosComponent implements OnInit {
 
   listaProdutos: Array<Product>
   constructor(private _produtosService : ProductService , private _toastService : ToastService) { }
-
+  loading = false
   ngOnInit() {
   }
 
   onFilter(productFilter) {
     this.listaProdutos = null
-  
+    this.loading = true
     this._produtosService.filter(productFilter).subscribe( res => {
       res.forEach(element => {
           element.fabrication_date = moment(element.fabrication_date,'YYYY-MM-DD').format('DD/MM/YYYY')
@@ -28,6 +28,8 @@ export class ConsultaProdutosComponent implements OnInit {
       
     }, error => {
       this._toastService.showError('Erro','Produtos não encontrados');
+    },()=> {
+      this.loading = false
     })
 
   }
