@@ -9,29 +9,43 @@
           <th>
             <span>Nome</span> 
             <span class="pull-right">
-              <div><i class="glyphicon glyphicon-triangle-top" (click)="orderBy('name','ASC')" ></i></div>
-              <div><i class="glyphicon glyphicon-triangle-bottom" (click)="orderBy('name','DESC')"></i></div>
+              <div><i class="glyphicon glyphicon-triangle-top" (click)="orderBy('name','asc')" ></i></div>
+              <div><i class="glyphicon glyphicon-triangle-bottom" (click)="orderBy('name','desc')"></i></div>
             </span>
           </th>
           <th>
               <span>Fabricação</span>
               <span class="pull-right">
-                  <div><i class="glyphicon glyphicon-triangle-top" (click)="orderBy('fabrication_date','ASC')"></i></div>
-                  <div><i class="glyphicon glyphicon-triangle-bottom" (click)="orderBy('fabrication_date','DESC')"></i></div>
+                  <div><i class="glyphicon glyphicon-triangle-top" (click)="orderBy('fabrication_date','asc')"></i></div>
+                  <div><i class="glyphicon glyphicon-triangle-bottom" (click)="orderBy('fabrication_date','desc')"></i></div>
                 </span>
           </th>
           <th>
-              <span>Dimensões</span>
+              <span>Tamanho</span>
               <span class="pull-right">
-                  <div><i class="glyphicon glyphicon-triangle-top"></i></div>
-                  <div><i class="glyphicon glyphicon-triangle-bottom"></i></div>
+                  <div><i class="glyphicon glyphicon-triangle-top" (click)="orderBy('size','asc')" ></i></div>
+                  <div><i class="glyphicon glyphicon-triangle-bottom" (click)="orderBy('size','desc')"></i></div>
+                </span>
+          </th>
+          <th>
+              <span>Largura</span>
+              <span class="pull-right">
+                  <div><i class="glyphicon glyphicon-triangle-top" (click)="orderBy('lenght','asc')"></i></div>
+                  <div><i class="glyphicon glyphicon-triangle-bottom"(click)="orderBy('lenght','desc')" ></i></div>
+                </span>
+          </th>
+          <th>
+              <span>Peso</span>
+              <span class="pull-right">
+                  <div><i class="glyphicon glyphicon-triangle-top" (click)="orderBy('weight','asc')" ></i></div>
+                  <div><i class="glyphicon glyphicon-triangle-bottom" (click)="orderBy('weight','desc')" ></i></div>
                 </span>
           </th>
           <th>
               <span>Categoria(s)</span>
               <span class="pull-right">
-                  <div><i class="glyphicon glyphicon-triangle-top"></i></div>
-                  <div><i class="glyphicon glyphicon-triangle-bottom"></i></div>
+                  <div><i class="glyphicon glyphicon-triangle-top" (click)="orderBy('categories','asc')" ></i></div>
+                  <div><i class="glyphicon glyphicon-triangle-bottom" (click)="orderBy('categories','desc')" ></i></div>
                 </span>
           </th>
         </tr>
@@ -40,11 +54,9 @@
         <tr *ngFor="let product of listaProdutos" >
           <td>{{ product.name }}</td>
           <td>{{ product.fabrication_date}}</td>
-          <td>
-            <div><label for="">Tamanho:</label> {{product.size}}</div>
-            <div><label for="">Largura:</label> {{product.lenght}}</div>
-            <div><label for="">Peso:</label>    {{product.weight}}</div>
-          </td>
+          <td>{{product.size}}</td>
+          <td>{{product.lenght}}</td>
+          <td>{{product.weight}}</td>
           <td>
             <div class="label label-default" *ngFor="let category of product.categories" >{{category.name}}</div>
           </td>

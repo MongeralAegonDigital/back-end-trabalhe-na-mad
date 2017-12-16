@@ -1,6 +1,7 @@
 import { Category } from './../models/category.model';
 import { Product } from './../models/product.model';
 import { Component, OnInit, Input } from '@angular/core';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-lista-produtos',
@@ -18,7 +19,7 @@ export class ListaProdutosComponent implements OnInit {
   }
 
   orderBy(field , sortType) {
-    console.log("ORDER "+field+" - "+sortType)
+    this.listaProdutos = _.orderBy(this.listaProdutos,[field],[sortType])
   }
 
 }

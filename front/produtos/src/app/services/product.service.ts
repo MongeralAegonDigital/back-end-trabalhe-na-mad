@@ -33,32 +33,32 @@ export class ProductService {
   filter(product : Product){
 
     let productOBJ : any = product
-    if(productOBJ.fabrication_date)
-      productOBJ.fabrication_date = moment(productOBJ.fabrication_date,'DD/MM/YYYY').format('YYYY-MM-DD')    
-    if(productOBJ.size)
-      productOBJ.size = productOBJ.size.toString().replace(',','.')
-    if(productOBJ.lenght)
-      productOBJ.lenght = productOBJ.lenght.toString().replace(',','.')
-    if(productOBJ.weight)
-      productOBJ.weight = productOBJ.weight.toString().replace(',','.')
-
+          
     let url = environment.baseUrl + 'products/filter';
-    let filters = '?'
-
+    let someParam = false
     if(productOBJ.name) {
       url = this.addParams('name='+productOBJ.name,url);
+      someParam = true
     }
     if(productOBJ.fabrication_date) {
-      url = this.addParams('fabrication_date='+productOBJ.fabrication_date,url);
+      let date = moment(productOBJ.fabrication_date,'DD/MM/YYYY').format('YYYY-MM-DD')          
+      url = this.addParams('fabrication_date='+date,url);
+      someParam = true
     }
     if(productOBJ.size) {
-      url = this.addParams('size='+productOBJ.size,url);
+      let size = productOBJ.size = productOBJ.size.toString().replace(',','.')
+      url = this.addParams('size='+size,url);
+      someParam = true
     }
     if(productOBJ.lenght) {
-      url = this.addParams('lenght='+productOBJ.lenght,url);
+      let lenght = productOBJ.lenght.toString().replace(',','.')
+      url = this.addParams('lenght='+lenght,url);
+      someParam = true
     }
     if(productOBJ.weight) {
-      url = this.addParams('weight='+product.weight,url);
+      let weight = productOBJ.weight.toString().replace(',','.')
+      url = this.addParams('weight='+weight,url);
+      someParam = true
     }
     
     if (product.categories && product.categories.length > 0) {
@@ -68,10 +68,13 @@ export class ProductService {
       })
       let categoryIdsSTR = 'categories=' + categoryIds.join();
       url = this.addParams(categoryIdsSTR,url);
+      someParam = true
     }
 
-
-    return this._http.get( url ).map( (response : Response) => response.json() )
+    if(someParam)
+      return this._http.get( url ).map( (response : Response) => response.json() )
+    else
+      return this.listAll()
   }
 
   listAll() {

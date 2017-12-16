@@ -2,6 +2,7 @@ import { Product } from './../models/product.model';
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { ToastService } from '../services/toast.service';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-consulta-produtos',
@@ -17,12 +18,14 @@ export class ConsultaProdutosComponent implements OnInit {
   }
 
   onFilter(productFilter) {
-    console.log(productFilter)
     this.listaProdutos = null
-    //faz busca
-    
+  
     this._produtosService.filter(productFilter).subscribe( res => {
-      this.listaProdutos = res
+      res.forEach(element => {
+          element.fabrication_date = moment(element.fabrication_date,'YYYY-MM-DD').format('DD/MM/YYYY')
+      });
+      this.listaProdutos = res;
+      
     }, error => {
       this._toastService.showError('Erro','Produtos não encontrados');
     })
