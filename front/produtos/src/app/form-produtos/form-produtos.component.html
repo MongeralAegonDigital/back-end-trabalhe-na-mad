@@ -1,0 +1,61 @@
+<div class="col-xs-12">
+    <div>
+      <h2 class="col-xs-12 color-secondary">{{title}}</h2>
+    </div>
+    <div  class="form"  >
+      <div class="col-xs-12 col-sm-8 form-group">
+        <label for="name">Nome</label>
+        <input [(ngModel)]="product.name" type="text" class="form-control" name="name" required >
+      </div>
+      <div class="col-xs-12 col-sm-4 form-group">
+        <label for="name">Data Fabricação</label>
+        <input #fab [(ngModel)]="product.fabrication_date" type="text" class="form-control datepicker" name="fabrication_date" required (blur)="product.fabrication_date = fab.value" >
+      </div>
+      <div class="col-xs-12 col-sm-4 form-group">
+        <label for="">Tamanho</label>
+        <input #size [(ngModel)]="product.size" class="form-control numeric" name="size" required  (blur)="product.size = size.value"  />
+      </div>
+      <div class="col-xs-12 col-sm-4 form-group">
+        <label for="">Largura</label>
+        <input #lenght [(ngModel)]="product.lenght" type="text" class="form-control numeric"  name="lenght" required  (blur)="product.lenght = lenght.value">
+      </div>
+      <div class="col-xs-12 col-sm-4 form-group" required>
+        <label for="">Peso</label>
+        <input #weight [(ngModel)]="product.weight" type="text" class="form-control numeric" name="weight" required (blur)="product.weight = weight.value" >
+      </div>
+      <div class="col-xs-12 col-sm-12 form-group" >
+          <label for="">Categoria <small *ngIf="loadingCategories === true"> carregando...</small></label>
+          <a href="" class="pull-right" data-toggle="modal" href="#myModal" *ngIf="createCategoryEnabled" >Nova Categoria</a>
+          <div class="input-group">
+            <select name="" id="" class="form-control" #categorySelect>
+              <option value="{{category.id}}" *ngFor="let category of categoryList"> {{category.name}}</option>
+            </select>
+            <span class="input-group-btn" >
+              <span class="btn btn-default" (click)="addCategory(categorySelect.value)" ><span class="glyphicon glyphicon-plus"></span></span>
+            </span>
+          </div>
+          <div>
+            <div class="label label-default" *ngFor="let categoryAdded of categoryListAdded"  > {{categoryAdded.name}} | <span class="text-right remove-category-btn" (click)='removeCategory(categoryAdded)' >x</span></div>
+          </div>  
+      </div>
+      <div class="col-xs-12 form-group text-right">
+        <button class="btn  btn-primary" (click)="onsubmit(product)"  >{{submitText}}</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="row">
+                <app-form-category (onSubmit)="submitCategory($event)"></app-form-category>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+  
+  

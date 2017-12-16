@@ -1,0 +1,31 @@
+<div class="jumbotron bkg-primary color-tertiary">
+  <div class="container">
+      <h1 class="">Controle de Produtos</h1>
+      <h3 class="">Uma forma simples de cadastrar e buscar seu produtos</h3>
+  </div>
+</div>
+<div class="container">
+  <div>
+      <div class="col-xs-12">
+          <ul class="nav nav-pills" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#cadastro" aria-controls="cadastro" role="tab" data-toggle="tab">Cadastrar</a>
+              </li>
+              <li role="presentation">
+                <a href="#consulta" aria-controls="consulta" role="tab" data-toggle="tab">Consultar</a>
+              </li>        
+            </ul>
+      </div>
+    
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="cadastro">
+          <app-cadastro-produtos></app-cadastro-produtos>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="consulta">
+          <app-consulta-produtos></app-consulta-produtos>
+        </div>
+      </div>
+    
+    </div>
+</div>
+

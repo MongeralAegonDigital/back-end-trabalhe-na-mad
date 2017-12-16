@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+.color-primary { color:#00A7E5; }
+.color-secondary { color:#757575; }
+.color-tertiary { color:#ffffff; }
+.bkg-primary { background-color:#00A7E5; }
+.bkg-secondary { background-color:#757575; }
+.bkg-tertiary { background-color:#ffffff; }
+
+h1 , a , button , th  { text-transform: uppercase; }
+label , input , select { color: #757575}
+
+.table { max-width: 100%;}
+.empty-list {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+}
+
+@media screen and (max-width: 500px) {
+    table.table.table-responsive{
+        display: block !important;
+    }
+}

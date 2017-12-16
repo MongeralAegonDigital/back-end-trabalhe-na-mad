@@ -1,3 +1,21 @@
+# setup
+1. docker run --rm -v $(pwd):/api composer/composer install
+2. docker-compose up
+3. docker-compose exec app php artisan key:generate
+4. docker-compose exex app php artisan migrate
+
+OBS: a primeira vez o setup demora um pouco por conta das imagens que serão baixadas para subir os container da aplicação.
+
+## API
+disponível em:
+localhost:300/api/
+
+## WEB
+disponível em:
+localhost:8080
+
+
+
 # Teste para Back-end #
 ---
 ### Baseado no conceito S.P.A. (Single Page Application), construa uma aplicação escolhendo uma das opções abaixo:
