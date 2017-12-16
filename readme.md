@@ -4,7 +4,7 @@
 3. docker-compose exec app php artisan key:generate
 4. docker-compose exex app php artisan migrate
 
-OBS: a primeira vex o setup demora um pouco por conta das imagens que serão baixadas para subir os container da aplicação.
+OBS: a primeira vez o setup demora um pouco por conta das imagens que serão baixadas para subir os container da aplicação.
 
 ## API
 disponível em:
