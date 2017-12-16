@@ -1,5 +1,7 @@
 import { Product } from './../models/product.model';
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../services/product.service';
+import { ToastService } from '../services/toast.service';
 
 @Component({
   selector: 'app-consulta-produtos',
@@ -9,15 +11,21 @@ import { Component, OnInit } from '@angular/core';
 export class ConsultaProdutosComponent implements OnInit {
 
   listaProdutos: Array<Product>
-  constructor() { }
+  constructor(private _produtosService : ProductService , private _toastService : ToastService) { }
 
   ngOnInit() {
   }
 
   onFilter(productFilter) {
+    console.log(productFilter)
     this.listaProdutos = null
     //faz busca
-    this.listaProdutos = []
+    
+    this._produtosService.filter(productFilter).subscribe( res => {
+      this.listaProdutos = res
+    }, error => {
+      this._toastService.showError('Erro','Produtos não encontrados');
+    })
 
   }
 

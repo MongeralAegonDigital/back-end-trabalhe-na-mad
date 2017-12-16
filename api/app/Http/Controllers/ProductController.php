@@ -141,12 +141,26 @@ class ProductController extends Controller
         try {
             $query = '';
             foreach ($request->all() as $key => $value) {
-                if($query != '') {
-                    $query .= ' OR ';
+
+                if ($query != '') {
+                    $query .= ' AND ';
                 }
-                $query .= $key .' LIKE "%'.$value.'%" ';
+
+                if( $key != 'categories') {
+
+                    $query .= 'products.' . $key . ' LIKE "%' . $value . '%" ';
+                } else {
+                    $query .= 'categories.id in ('.$value.')';
+                }
             }
-            $product = Product::whereRaw($query)->get();
+            $product = Product::join('product_category', 'products.id', '=', 'product_category.product_id')
+                ->join('categories', 'categories.id', '=', 'product_category.category_id')
+                ->select('products.*')
+                ->whereRaw($query)
+                ->distinct('products.id')
+                ->get();
+
+
             if($product) {
                 return $product;
             } else {

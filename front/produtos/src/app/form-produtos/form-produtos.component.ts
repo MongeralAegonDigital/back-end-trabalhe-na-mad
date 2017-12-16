@@ -23,6 +23,7 @@ export class FormProdutosComponent implements OnInit {
   @Input() submitText : string = 'Salvar';
   @Input() createCategoryEnabled : boolean = true;
   @Input() title : string = 'Cadastro de produto';
+  @Input() validationEnabled : boolean = true;
   @Output() onSubmit : EventEmitter<any> = new EventEmitter();
   @Output() onSubmitCategory : EventEmitter<any> = new EventEmitter();
 
@@ -60,10 +61,14 @@ export class FormProdutosComponent implements OnInit {
 
   onsubmit(product : Product) {
     this.product.categories = this.categoryListAdded
-    if( this.productIsComplete(product)) {
-      this.onSubmit.emit(product)
+    if(this.validationEnabled) {
+      if( this.productIsComplete(product)) {
+        this.onSubmit.emit(product)
+      } else {
+        this._toastService.showError('Erro','Preencha todos os campos.')
+      }
     } else {
-      this._toastService.showError('Erro','Preencha todos os campos.')
+      this.onSubmit.emit(product)
     }
   }
 
