@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Client extends Model
 {
+    public $incrementing = false;
     protected $primaryKey = 'cpf';
     protected $fillable = ['cpf', 'name', 'password', 'birthdate', 'email'];
     public $timestamps = false;
