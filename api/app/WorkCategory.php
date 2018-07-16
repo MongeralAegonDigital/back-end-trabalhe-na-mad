@@ -4,9 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Phone extends Model
+class WorkCategory extends Model
 {
-    protected $fillable = ['number', 'client_cpf'];
     public $timestamps = false;
-    
 }
