@@ -46,6 +46,24 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        /** Usado somente em dev*/
+        if ($exception instanceof \Illuminate\Validation\ValidationException) {
+            return response()->json($exception->errors(), 422); 
+        }
+
+        if ($exception instanceof \Illuminate\Database\Eloquent\ModelNotFoundException) {
+            return response()->json('Registro não encontrado.', 404); 
+        }
+        
+        if ($exception instanceof \Illuminate\Database\QueryException) {
+            if ($exception->getCode() == 23000) {
+                return response()->json(
+                    'Este registro já se encontra cadastrado, não é possível realizar outro cadastro', 
+                    422
+                ); 
+            }
+        }
+        
         return parent::render($request, $exception);
     }
 }
