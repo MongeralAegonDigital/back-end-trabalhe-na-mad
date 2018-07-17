@@ -15,7 +15,9 @@ import {
   MatNativeDateModule,
   MatSelectModule,
   MatAutocompleteModule,
-  MatStepperModule
+  MatStepperModule,
+  MAT_DATE_FORMATS,
+  MAT_DATE_LOCALE
 } from '@angular/material';
 
 
@@ -56,6 +58,8 @@ import {
     MatAutocompleteModule,
     MatStepperModule
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_DATE_LOCALE, useValue: 'pt-BR'}
+  ],
 })
 export class MaterialModule { }

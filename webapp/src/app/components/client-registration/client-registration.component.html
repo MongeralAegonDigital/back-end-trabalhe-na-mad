@@ -6,14 +6,14 @@
   <mat-card-content>
     <div>
       <mat-horizontal-stepper [linear]="false" #stepper="matHorizontalStepper">
-        
+
         <mat-step [stepControl]="personalDataFormGroup">
           <form [formGroup]="personalDataFormGroup" fxLayout="column" fxLayoutAlign="space-evenly stretch" novalidate>
-            
+
             <ng-template matStepLabel>Dados Pessoais</ng-template>
 
             <mat-form-field>
-              <input matInput placeholder="CPF" formControlName="cpf">
+              <input matInput placeholder="CPF" formControlName="cpf" mask="000.000.000-00">
             </mat-form-field>
 
             <mat-form-field>
@@ -25,13 +25,17 @@
             </mat-form-field>
 
             <mat-form-field>
-              <input 
-                matInput 
-                [matDatepicker]="datepicker" 
-                placeholder="Data de nascimento" 
+              <input matInput placeholder="Contato" formControlName="phone" mask="(00) 000000000" >
+            </mat-form-field>
+
+            <mat-form-field>
+              <input
+                matInput
+                [matDatepicker]="datepicker"
+                placeholder="Data de nascimento"
                 formControlName="birthdate">
               <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
-              <mat-datepicker #datepicker disabled="false"></mat-datepicker>
+              <mat-datepicker #datepicker touchUi="true" disabled="false"></mat-datepicker>
             </mat-form-field>
 
             <mat-form-field>
@@ -52,11 +56,11 @@
         <mat-step [stepControl]="addressFormGroup">
 
           <form [formGroup]="addressFormGroup" fxLayout="column" fxLayoutAlign="space-evenly stretch" novalidate>
-          
+
             <ng-template matStepLabel>Endereço</ng-template>
-          
+
             <mat-form-field>
-              <input matInput placeholder="CEP" formControlName="cep">
+              <input matInput placeholder="CEP" formControlName="cep" mask="00.000.000">
             </mat-form-field>
 
             <mat-form-field>
@@ -92,17 +96,17 @@
         </mat-step>
 
         <mat-step [stepControl]="professionalDataFormGroup">
-          
+
           <ng-template matStepLabel>Dados Profissionais</ng-template>
-          
+
           <form [formGroup]="professionalDataFormGroup" fxLayout="column" fxLayoutAlign="space-evenly stretch" novalidate>
 
             <mat-form-field>
-              <input matInput placeholder="RG" formControlName="rg">
+              <input matInput placeholder="RG" formControlName="rg" mask="00.000.000-0">
             </mat-form-field>
 
             <mat-form-field>
-              <input matInput placeholder="Número" formControlName="number">
+              <input matInput placeholder="Número" formControlName="number" >
             </mat-form-field>
 
             <mat-form-field>
@@ -122,11 +126,19 @@
             </mat-form-field>
 
             <mat-form-field>
-              <input matInput placeholder="Estado civíl" formControlName="marital_status_id">
+              <mat-select placeholder="Estado civil" formControlName="marital_status_id">
+                <mat-option *ngFor="let martialStatus of allMaritalStatuses" [value]="martialStatus.id">
+                  {{martialStatus.name}}
+                </mat-option>
+              </mat-select>
             </mat-form-field>
 
             <mat-form-field>
-              <input matInput placeholder="Categoria" formControlName="work_category_id">
+              <mat-select placeholder="Categoria" formControlName="work_category_id">
+                <mat-option *ngFor="let category of allWorkcategories | async" [value]="category.id">
+                  {{category.name}}
+                </mat-option>
+              </mat-select>
             </mat-form-field>
         </form>
 

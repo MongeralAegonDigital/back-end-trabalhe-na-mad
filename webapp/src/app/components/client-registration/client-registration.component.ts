@@ -2,6 +2,7 @@ import { Component, ViewChild, OnInit, AfterViewInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { ClientService } from '../../services/client.service';
 import { MatHorizontalStepper } from '@angular/material';
+import { ProfessionalDataService } from '../../services/professional-data.service';
 
 @Component({
   selector: 'app-client-registration',
@@ -13,10 +14,15 @@ export class ClientRegistrationComponent implements OnInit, AfterViewInit {
   personalDataFormGroup: FormGroup;
   addressFormGroup: FormGroup;
   professionalDataFormGroup: FormGroup;
+
+  allWorkcategories = this._professionalDataService.getAllWorkCategories();
+  allMaritalStatuses = this._professionalDataService.getAllMaritalStatuses();
+
   @ViewChild('matHorizontalStepper') private _stepper: MatHorizontalStepper;
   constructor(
     private _formBuilder: FormBuilder,
-    private _service: ClientService
+    private _service: ClientService,
+    private _professionalDataService: ProfessionalDataService
   ) { }
 
   ngOnInit(): void {
@@ -24,6 +30,7 @@ export class ClientRegistrationComponent implements OnInit, AfterViewInit {
       cpf: ['', [Validators.required, Validators.maxLength(11), Validators.minLength(11)]],
       name: ['', [Validators.required, Validators.maxLength(200)]],
       email: ['', [Validators.required, Validators.email]],
+      phone: new FormControl({value: '', disable: true}),
       birthdate: new FormControl({value: '', disabled: true}, Validators.required),
       password: ['', Validators.required],
       repeatPassword: ['', Validators.required]
@@ -76,6 +83,7 @@ export class ClientRegistrationComponent implements OnInit, AfterViewInit {
   public save() {
 
   }
+
 
 }
 

@@ -14,6 +14,7 @@
 Route::middleware('api')->prefix('v1/desafio')->group(function () {
     
     Route::apiResource('clients','ClientController');
+    Route::apiResource('marital-statuses','MaritalStatusController');
+    Route::apiResource('work-categories','WorkCategoryController');
     Route::post('/mails/send', 'EmailController@send');
-    
 });

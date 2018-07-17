@@ -5,12 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxMaskModule } from 'ngx-mask';
 
 import { AppComponent } from './app.component';
 import { AppRoutesModule } from './routing/app.routing.module';
 import { MenuSidenavComponent } from './components/menu-sidenav/menu-sidenav.component';
 import { ClientRegistrationComponent } from './components/client-registration/client-registration.component';
 import { ClientService } from './services/client.service';
+import { ProfessionalDataService } from './services/professional-data.service';
 
 @NgModule({
   declarations: [
@@ -27,8 +29,12 @@ import { ClientService } from './services/client.service';
     HttpClientModule,
     FlexLayoutModule,
     MaterialModule,
+    NgxMaskModule.forRoot()
   ],
-  providers: [ClientService],
+  providers: [
+    ClientService,
+    ProfessionalDataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
