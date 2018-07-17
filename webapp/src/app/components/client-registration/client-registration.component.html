@@ -1,0 +1,142 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Cliente</mat-card-title>
+    <mat-card-subtitle>Registrar novo cliente:</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+      <mat-horizontal-stepper [linear]="false" #stepper="matHorizontalStepper">
+        
+        <mat-step [stepControl]="personalDataFormGroup">
+          <form [formGroup]="personalDataFormGroup" fxLayout="column" fxLayoutAlign="space-evenly stretch" novalidate>
+            
+            <ng-template matStepLabel>Dados Pessoais</ng-template>
+
+            <mat-form-field>
+              <input matInput placeholder="CPF" formControlName="cpf">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Nome" formControlName="name">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="E-mail" formControlName="email">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input 
+                matInput 
+                [matDatepicker]="datepicker" 
+                placeholder="Data de nascimento" 
+                formControlName="birthdate">
+              <mat-datepicker-toggle matSuffix [for]="datepicker"></mat-datepicker-toggle>
+              <mat-datepicker #datepicker disabled="false"></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Senha" formControlName="password" type="password" required>
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Repita a senha" formControlName="repeatPassword" type="password" required>
+            </mat-form-field>
+
+            <div fxLayout="row-reverse">
+              <button mat-button matStepperNext>Próximo<mat-icon>chevron_right</mat-icon></button>
+            </div>
+
+          </form>
+        </mat-step>
+
+        <mat-step [stepControl]="addressFormGroup">
+
+          <form [formGroup]="addressFormGroup" fxLayout="column" fxLayoutAlign="space-evenly stretch" novalidate>
+          
+            <ng-template matStepLabel>Endereço</ng-template>
+          
+            <mat-form-field>
+              <input matInput placeholder="CEP" formControlName="cep">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Estado" formControlName="state">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Cidade" formControlName="city">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Bairro" formControlName="neighborhood">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Logradouro" formControlName="street">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Número" formControlName="number">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Complemento" formControlName="complement">
+            </mat-form-field>
+
+            <div fxLayout="row-reverse">
+              <button mat-button matStepperNext>Próximo<mat-icon>chevron_right</mat-icon></button>
+              <button mat-button matStepperPrevious><mat-icon>chevron_left</mat-icon> Voltar</button>
+            </div>
+
+          </form>
+        </mat-step>
+
+        <mat-step [stepControl]="professionalDataFormGroup">
+          
+          <ng-template matStepLabel>Dados Profissionais</ng-template>
+          
+          <form [formGroup]="professionalDataFormGroup" fxLayout="column" fxLayoutAlign="space-evenly stretch" novalidate>
+
+            <mat-form-field>
+              <input matInput placeholder="RG" formControlName="rg">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Número" formControlName="number">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Orgão emissor" formControlName="issuing_agency">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Empresa em que trabalha" formControlName="actual_job">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Profissão" formControlName="profession">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Renda bruta" formControlName="gross_income">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Estado civíl" formControlName="marital_status_id">
+            </mat-form-field>
+
+            <mat-form-field>
+              <input matInput placeholder="Categoria" formControlName="work_category_id">
+            </mat-form-field>
+        </form>
+
+          <div fxLayout="row-reverse">
+            <button mat-raised-button color="primary" (click)="save()"><mat-icon>save</mat-icon> Salvar</button>
+            <button mat-button matStepperPrevious><mat-icon>chevron_left</mat-icon> Voltar</button>
+          </div>
+
+        </mat-step>
+      </mat-horizontal-stepper>
+    </div>
+  </mat-card-content>
+</mat-card>
