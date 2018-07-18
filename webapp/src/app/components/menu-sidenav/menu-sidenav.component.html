@@ -1,0 +1,52 @@
+<div fxLayout="column">
+  
+  <mat-toolbar color="primary">
+    <button type="button" mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Desafio da empresa maneira com nome difícil de lembrar</span>
+  </mat-toolbar>
+
+  <mat-sidenav-container >
+    <mat-sidenav #sidenav mode="over">
+      <div id="sidenav-menu" *ngFor="let item of elements" fxLayout="column" fxLayoutAlign="start stretch">
+
+        <div class="menu-list" *ngIf="item.elements && item.elements.length">
+          <a mat-raised-button color="primary" class="menu-button" (click)="toggleMenu(item)">
+            <mat-icon>{{ item.icon }}</mat-icon>
+            <span>{{ item.title }}</span>
+            <mat-icon class="icon-position" *ngIf="item.opened">arrow_drop_up</mat-icon>
+            <mat-icon class="icon-position" *ngIf="!item.opened">arrow_drop_down</mat-icon>
+          </a>
+
+          <div>
+            <ul [hidden]="!item.opened">
+              <li [ngClass]="{'sidenav-active': child.url === locationPath}" *ngFor="let child of item.elements">
+                <a mat-raised-button color="primary" class="menu-button" [routerLinkActive]="['active']" routerLink="{{ child.url }}">
+                  <span>
+                    {{ child.title }}
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="sidenav-item-container menu-list" [ngClass]="{'sidenav-ativo': item.url === locationPath}" *ngIf="!item.elements || !item.elements.length">
+          <a mat-raised-button color="primary" class="menu-button" [routerLinkActive]="['active']" routerLink="{{ item.url }}">
+            <mat-icon>{{ item.icon }}</mat-icon>
+            <span>{{ item.title }}</span>
+          </a>
+        </div>
+
+      </div>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content >
+      <router-outlet ></router-outlet>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+</div>
