@@ -127,7 +127,7 @@
 
             <mat-form-field>
               <mat-select placeholder="Estado civil" formControlName="marital_status_id">
-                <mat-option *ngFor="let martialStatus of allMaritalStatuses" [value]="martialStatus.id">
+                <mat-option *ngFor="let martialStatus of allMaritalStatuses | async" [value]="martialStatus.id">
                   {{martialStatus.name}}
                 </mat-option>
               </mat-select>
