@@ -24,11 +24,11 @@ class ClientService extends Service
             $client = Client::create($data);
 
             if (isset($data['address'])) {
-                $client->address()->create($data['address'][0]);
+                $client->address()->create($data['address']);
             }
 
             if (isset($data['phones'])) {
-                $client->phones()->createMany($data['phones']);
+                $client->phones()->create($data['phone']);
             }
 
             if (isset($data['professional_data'])) {

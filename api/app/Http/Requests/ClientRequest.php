@@ -40,20 +40,19 @@ class ClientRequest extends FormRequest
                 Rule::unique('clients')->ignore($this->cpf, 'cpf')
             ],
             
-            'phones' => ['array', 'nullable'],
-            'phones.*.number' => ['required_with:phones', 'max:14'],
+            'phone' => ['required', 'max:14'],
             
-            'address' => ['array', 'required'],
-            'address.*.cep' => ['required', 'max:10'],
-            'address.*.state' => ['required', 'max:255'],
-            'address.*.city' => ['required', 'max:255'],
-            'address.*.neighborhood' => ['required', 'max:255'],
-            'address.*.street' => ['required', 'max:255'],
-            'address.*.number' => ['required', 'max:1000000000', 'numeric'],
-            'address.*.complement' => ['nullable', 'max:255', 'string'],
+            'address' => ['required'],
+            'address.cep' => ['required', 'max:10'],
+            'address.state' => ['required', 'max:255'],
+            'address.city' => ['required', 'max:255'],
+            'address.neighborhood' => ['required', 'max:255'],
+            'address.street' => ['required', 'max:255'],
+            'address.number' => ['required', 'max:1000000000', 'numeric'],
+            'address.complement' => ['nullable', 'max:255', 'string'],
             
             'professional_data' =>  ['required'],
-            'professional_data.rg' => ['required', 'size:12'],
+            'professional_data.rg' => ['required', 'size:9'],
             'professional_data.number' => ['required', 'min:1', 'numeric'],
             'professional_data.issuing_agency' => ['required', 'max:200'],
             'professional_data.actual_job' => ['max:200'],
@@ -88,35 +87,32 @@ class ClientRequest extends FormRequest
             'email.email' => 'O campo E-Mail deve ser um e-mail válido.',
             'email.unique' => 'O e-mail informado já está cadastrado.',
             
-            'phones.array' => 'O campo Contato não foi informado no formato esperado, procure o administrador.',
-            
-            'phones.*.number.required_with' => 'O campo Número de contato é obrigatório.',
-            'phones.*.number.max' => 'O campo Número de contato aceita até 14 caracteres somente.',
+            'phones.required' => 'O campo Contato é obrigatório.',
+            'phones.max' => 'O campo Contato aceita até 14 caracteres somente.',
             
             'address.required' => 'O Endereço é obrigatório.',
-            'address.array' => 'O campo Endereço não foi informado no formato esperado, procure o administrador.',
             
-            'address.*.cep.required' => 'O campo CEP é obrigatório.',
-            'address.*.cep.max' => 'O campo CEP aceita até 10 caracteres somente.',
+            'address.cep.required' => 'O campo CEP é obrigatório.',
+            'address.cep.max' => 'O campo CEP aceita até 10 caracteres somente.',
             
-            'address.*.state.required' => 'O campo Estado é obrigatório.',
-            'address.*.state.max' => 'O campo Estado aceita até 255 caracteres somente.',
+            'address.state.required' => 'O campo Estado é obrigatório.',
+            'address.state.max' => 'O campo Estado aceita até 255 caracteres somente.',
             
-            'address.*.city.required' => 'O campo Cidade é obrigatório.',
-            'address.*.city.max' => 'O campo Cidade aceita até 255 caracteres somente.',
+            'address.city.required' => 'O campo Cidade é obrigatório.',
+            'address.city.max' => 'O campo Cidade aceita até 255 caracteres somente.',
             
-            'address.*.neighborhood.required' => 'O campo Bairro é obrigatório.',
-            'address.*.neighborhood.max' => 'O campo Bairro aceita até 255 caracteres somente.',
+            'address.neighborhood.required' => 'O campo Bairro é obrigatório.',
+            'address.neighborhood.max' => 'O campo Bairro aceita até 255 caracteres somente.',
             
-            'address.*.street.required' => 'O campo Logradouro é obrigatório.',
-            'address.*.street.max' => 'O campo Logradouro aceita até 255 caracteres somente.',
+            'address.street.required' => 'O campo Logradouro é obrigatório.',
+            'address.street.max' => 'O campo Logradouro aceita até 255 caracteres somente.',
             
-            'address.*.number.required' => 'O campo Número é obrigatório.',
-            'address.*.number.max' => 'O campo Número aceita até 10 caracteres somente.',
-            'address.*.number.numeric' => 'O campo Número aceita somente caracteres numéricos.',
+            'address.number.required' => 'O campo Número é obrigatório.',
+            'address.number.max' => 'O campo Número aceita até 10 caracteres somente.',
+            'address.number.numeric' => 'O campo Número aceita somente caracteres numéricos.',
             
-            'address.*.complement.max' => 'O campo Complemento aceita até 255 caracteres somente.',
-            'address.*.complement.string' => 'O campo Complemento aceita somente caracteres do tipo texto.',
+            'address.complement.max' => 'O campo Complemento aceita até 255 caracteres somente.',
+            'address.complement.string' => 'O campo Complemento aceita somente caracteres do tipo texto.',
             
             'professional_data.required' => 'Os Dados profissionais são obrigatórios.',
             

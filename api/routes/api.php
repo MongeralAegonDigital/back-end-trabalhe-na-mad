@@ -11,7 +11,7 @@
 |
 */
 
-Route::middleware('api')->prefix('v1/desafio')->group(function () {
+Route::middleware(['api', 'cors'])->prefix('v1/desafio')->group(function () {
     
     Route::apiResource('clients','ClientController');
     Route::apiResource('marital-statuses','MaritalStatusController');
