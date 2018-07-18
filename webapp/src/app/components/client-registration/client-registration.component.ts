@@ -18,7 +18,7 @@ export class ClientRegistrationComponent implements OnInit, AfterViewInit {
   allWorkcategories = this._professionalDataService.getAllWorkCategories();
   allMaritalStatuses = this._professionalDataService.getAllMaritalStatuses();
 
-  @ViewChild('matHorizontalStepper') private _stepper: MatHorizontalStepper;
+  @ViewChild('stepper') private _stepper: MatHorizontalStepper;
   constructor(
     private _formBuilder: FormBuilder,
     private _service: ClientService,
@@ -81,6 +81,29 @@ export class ClientRegistrationComponent implements OnInit, AfterViewInit {
   }
 
   public save() {
+    console.log('Save called');
+
+    if (this.addressFormGroup.valid &&
+      this.personalDataFormGroup.valid &&
+      this.professionalDataFormGroup.valid) {
+
+        const obj = this.personalDataFormGroup.value;
+        obj.birthdate = this.personalDataFormGroup.controls.birthdate.value;
+        obj.address = this.addressFormGroup.value;
+        obj.professional_data = this.professionalDataFormGroup.value;
+        this._service.save(obj).subscribe(
+          response => {
+            alert('Cliente registrado!');
+            this._stepper.reset();
+          },
+          error => alert('Deu ruim, da uma olhada na resposta da requisição.')
+        );
+
+    } else {
+      this.addressFormGroup.markAsDirty();
+      this.personalDataFormGroup.markAsDirty();
+      this.professionalDataFormGroup.markAsDirty();
+    }
 
   }
 
