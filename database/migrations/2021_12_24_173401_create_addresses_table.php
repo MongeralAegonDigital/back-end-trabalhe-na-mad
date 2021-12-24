@@ -22,6 +22,7 @@ class CreateAddressesTable extends Migration
             $table->string('district'); // bairro
             $table->string('city');
             $table->string('state');
+            $table->foreignId('user_id')->constrained('users');
             $table->timestamps();
         });
     }
