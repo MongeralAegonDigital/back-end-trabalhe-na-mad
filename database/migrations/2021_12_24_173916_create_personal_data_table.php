@@ -18,8 +18,8 @@ class CreatePersonalDataTable extends Migration
             $table->string('RG');
             $table->integer('number');
             $table->date('ship_date');
-            $table->date('issuing_body'); //orgao expedidor
-            $table->date('marital_status'); //estado civil
+            $table->string('issuing_body'); //orgao expedidor
+            $table->string('marital_status'); //estado civil
             $table->string('company')->nullable();
             $table->string('profession');
             $table->string('salary');
