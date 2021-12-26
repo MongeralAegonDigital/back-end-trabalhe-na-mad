@@ -12,4 +12,9 @@ class Category extends Model
     protected $fillable = [
         'name'
     ];
+
+    public function personalData()
+    {
+        return $this->hasMany(PersonalData::class);
+    }
 }
