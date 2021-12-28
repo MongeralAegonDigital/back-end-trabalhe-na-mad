@@ -7,9 +7,11 @@ use App\Services\AddressService;
 
 class AddressServiceImpl implements AddressService
 {
-    public function create(Address $address)
+    public function create(Address $address): Address
     {
 
         $address->save();
+        $address->id = $address->id;
+        return $address;
     }
 }

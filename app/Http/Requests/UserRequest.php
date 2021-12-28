@@ -26,7 +26,7 @@ class UserRequest extends FormRequest
             'email'         => 'required|email|unique:users',
             'password'      => 'required|between:6,12',
             'cpf'           => 'required|cpf',
-            'phone'         => 'required|between:11,12',
+            'phone'         => 'required|between:11,20',
             'birth_date'    => 'required|date',
 
             'personal_data.RG'              => 'required|min:9',

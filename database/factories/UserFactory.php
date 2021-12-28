@@ -2,8 +2,9 @@
 
 namespace Database\Factories;
 
+use App\Models\Address;
+use App\Models\PersonalData;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
 class UserFactory extends Factory
 {
@@ -17,9 +18,16 @@ class UserFactory extends Factory
         return [
             'name' => $this->faker->name(),
             'email' => $this->faker->unique()->safeEmail(),
-            'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-            'remember_token' => Str::random(10),
+            'cpf' => $this->faker->numberBetween(500000, 600000),
+            'phone' => $this->faker->phoneNumber(),
+            'birth_date' => $this->faker->date('Y-m-d'),
+            'personal_data' => [
+                PersonalData::factory()->make()
+            ],
+            'address' => [
+                Address::factory()->make()
+            ],
         ];
     }
 

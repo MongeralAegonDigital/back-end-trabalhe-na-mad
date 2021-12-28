@@ -25,6 +25,6 @@ class UserController extends Controller
     public function store(UserRequest $request): JsonResponse
     {
         $this->userService->create($request->all());
-        return response()->json(Response::HTTP_OK);
+        return response()->json(Response::HTTP_CREATED);
     }
 }

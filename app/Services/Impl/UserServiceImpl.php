@@ -37,15 +37,15 @@ class UserServiceImpl implements UserService
         DB::transaction(function () use ($array) {
             $user = new User($array);
             $user->save();
-
+    
             $address = new Address($array['address']);
             $address->user()->associate($user);
             $this->addressService->create($address);
-
+    
             $personal_data = new PersonalData($array['personal_data']);
             $personal_data->user()->associate($user);
             $this->personalDataService->create($personal_data);
-
+    
             $this->emailService->sendEmail($user);
         });
     }

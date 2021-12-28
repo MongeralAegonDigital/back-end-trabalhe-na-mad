@@ -3,7 +3,6 @@
 namespace App\Services\Impl;
 
 use App\Mail\SendMailUser;
-use App\Models\PersonalData;
 use App\Models\User;
 use App\Services\EmailService;
 use Illuminate\Support\Facades\Mail;
