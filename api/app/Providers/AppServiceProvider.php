@@ -3,9 +3,11 @@
 namespace App\Providers;
 
 use App\Services\AddressService;
+use App\Services\CategoryService;
 use App\Services\EmailService;
 use App\Services\UserService;
 use App\Services\Impl\AddressServiceImpl;
+use App\Services\Impl\CategoryServiceImpl;
 use App\Services\Impl\EmailServiceImpl;
 use App\Services\Impl\PersonalDataServiceImpl;
 use App\Services\Impl\UserServiceImpl;
@@ -26,6 +28,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(AddressService::class, AddressServiceImpl::class);
         $this->app->bind(PersonalDataService::class, PersonalDataServiceImpl::class);
         $this->app->bind(EmailService::class, EmailServiceImpl::class);
+        $this->app->bind(CategoryService::class, CategoryServiceImpl::class);
     }
 
     /**
