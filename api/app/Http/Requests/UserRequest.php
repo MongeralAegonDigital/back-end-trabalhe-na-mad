@@ -36,7 +36,7 @@ class UserRequest extends FormRequest
             'personal_data.marital_status'  => 'required',
             'personal_data.category_id'     => 'required',
             'personal_data.profession'      => 'required|min:5|max:20',
-            'personal_data.salary'          => 'required|min:5|max:10',
+            'personal_data.salary'          => 'required|min:4|max:10',
 
             'address.cep'                 => 'required',
             'address.public_area'         => 'required',
