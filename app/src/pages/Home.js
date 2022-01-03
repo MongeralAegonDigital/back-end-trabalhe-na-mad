@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CssBaseline from '@mui/material/CssBaseline';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -17,6 +17,7 @@ import PersonalData from './PersonalData';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import * as Config from './../config/config'
+import { List, ListItem, ListItemText } from '@mui/material';
 
 const steps = ['Dados do Cliente', 'Dados Pessoais', 'Endereço'];
 
@@ -27,7 +28,7 @@ function getStepContent(step, register, errors, setValue, clearErrors) {
         case 1:
             return <PersonalData register={register} errors={errors} />;
         case 2:
-            return <AddressForm register={register} errors={errors} setValue={setValue} clearErrors={clearErrors}/>;
+            return <AddressForm register={register} errors={errors} setValue={setValue} clearErrors={clearErrors} />;
         default:
             throw new Error('Unknown step');
     }
@@ -36,25 +37,37 @@ function getStepContent(step, register, errors, setValue, clearErrors) {
 const theme = createTheme();
 
 const Home = () => {
+    const [hasError, setHasErrors] = useState(false);
+    const [errorsList, setErrorsList] = useState([]);
+    const [activeStep, setActiveStep] = React.useState(0);
     const { register, handleSubmit, clearErrors, setValue, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
-        console.log(errors)
+
         if (Object.keys(errors).length === 0) {
-            console.log(data);
             setActiveStep(activeStep + 1);
         }
 
         if (activeStep === 2) {
             axios
                 .post(`${Config.API}/users`, data)
-                .then(() => console.log('success'))
-                .catch(error => console.log(error));
+                .then(() => {
+                    reset();
+                    setTimeout(() => setActiveStep(0), 500);
+                })
+                .catch(error => {
+                    if (error.response && error.response.status === 422) {
+                        const errorList = Object.values(error.response.data);
+                        setHasErrors(errorList.length ? true : false);
+                        setErrorsList(errorList);
+                    }
+                });
         }
     };
-    const [activeStep, setActiveStep] = React.useState(0);
 
     const handleNext = () => {
-        setActiveStep(activeStep + 1);
+        if (!errors) {
+            setActiveStep(activeStep + 1);
+        }
     };
 
     const handleBack = () => {
@@ -95,23 +108,36 @@ const Home = () => {
                         {activeStep === steps.length ? (
                             <React.Fragment>
                                 <Typography variant="h5" gutterBottom>
-                                    Thank you for your order.
+                                    {hasError ? 'Existem erros no cadastro!' : 'Registro salvo com sucesso!'}
                                 </Typography>
                                 <Typography variant="subtitle1">
-                                    Your order number is #2001539. We have emailed your order
-                                    confirmation, and will send you an update when your order has
-                                    shipped.
+                                    <List dense={false}>
+                                        {
+                                            errorsList.map((item, index) =>
+                                                <ListItem key={index}>
+                                                    <ListItemText
+                                                        primary={item}
+                                                    />
+                                                </ListItem>
+                                            )
+                                        }
+                                    </List>
                                 </Typography>
-                                <Button onClick={handleBack} sx={{ mt: 3, ml: 1 }}>
-                                    Back
-                                </Button>
+                                {
+                                    hasError ?
+                                        (
+                                            <Button onClick={handleBack} sx={{ mt: 3, ml: 1 }}>
+                                                Back
+                                            </Button>
+                                        ) : null
+                                }
                             </React.Fragment>
                         ) : (
                             <React.Fragment>
                                 <form onSubmit={handleSubmit(onSubmit)}>
                                     {getStepContent(activeStep, register, errors, setValue, clearErrors)}
                                     <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-                                        <Button type="submit">Submit</Button>
+                                        {/* <Button type="submit">Submit</Button> */}
                                         {activeStep !== 0 && (
                                             <Button onClick={handleBack} sx={{ mt: 3, ml: 1 }}>
                                                 Back
@@ -119,6 +145,7 @@ const Home = () => {
                                         )}
 
                                         <Button
+                                            type="submit"
                                             variant="contained"
                                             onClick={handleNext}
                                             sx={{ mt: 3, ml: 1 }}

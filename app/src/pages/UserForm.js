@@ -4,8 +4,19 @@ import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import { Box } from '@mui/system';
 import * as Config from './../config/config'
+import axios from 'axios';
 
 const UserForm = ({ register, errors }) => {
+
+    const emailIsUnique = async (email) => {
+        const val = await axios.get(`${Config.API}/users/emailIsUnique/${email}`);
+        return val.data;
+    };
+
+    const cpfIsValid = async (cpf) => {
+        const val = await axios.get(`${Config.API}/users/cpfIsValid/${cpf}`);
+        return val.data;
+    };
 
     return (
         <React.Fragment>
@@ -39,9 +50,10 @@ const UserForm = ({ register, errors }) => {
                         autoComplete="family-name"
                         variant="standard"
                         type="email"
-                        {...register('email', { required: true, maxLength: 20 })}
+                        {...register('email', { required: true, maxLength: 20, validate: emailIsUnique })}
                     />
                     {errors.email && errors.email.type === "required" && <Box component="div" sx={{ color: 'red' }}>{Config.requiredMessage('O E-mail')}</Box>}
+                    {errors.email && errors.email.type === "validate" && <Box component="div" sx={{ color: 'red' }}>O E-mail já existe</Box>}
                 </Grid>
                 <Grid item xs={12} sm={6}>
                     <TextField
@@ -52,9 +64,10 @@ const UserForm = ({ register, errors }) => {
                         fullWidth
                         variant="standard"
                         type="number"
-                        {...register('cpf', { required: true, length: 11 })} />
+                        {...register('cpf', { required: true, length: 11, validate: cpfIsValid })} />
 
                     {errors.cpf && errors.cpf.type === "required" && <Box component="div" sx={{ color: 'red' }}>{Config.requiredMessage('O CPF')}</Box>}
+                    {errors.cpf && errors.cpf.type === "validate" && <Box component="div" sx={{ color: 'red' }}>CPF inválido</Box>}
                 </Grid>
                 <Grid item xs={12} sm={6}>
                     <TextField
