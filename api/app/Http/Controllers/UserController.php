@@ -27,4 +27,16 @@ class UserController extends Controller
         $this->userService->create($request->all());
         return response()->json(Response::HTTP_CREATED);
     }
+
+    public function emailIsUnique(string $email): JsonResponse
+    {
+        $validation = $this->userService->emailIsUnique($email);
+        return response()->json($validation, Response::HTTP_OK);
+    }
+
+    public function cpfIsValid(string $cpf): JsonResponse
+    {
+        $validation = $this->userService->cpfIsValid($cpf);
+        return response()->json($validation, Response::HTTP_OK);
+    }
 }

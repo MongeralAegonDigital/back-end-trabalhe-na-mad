@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('/users', UserController::class);
+Route::post('/users', [UserController::class, 'store']);
+Route::get('/users', [UserController::class, 'index']);
+Route::get('/users/emailIsUnique/{email}', [UserController::class, 'emailIsUnique']);
+Route::get('/users/cpfIsValid/{cpf}', [UserController::class, 'cpfIsValid']);
 Route::get('/categories', [CategoryController::class, 'index']);
 Route::get('/cep/getAddress/{cep}', [CepController::class, 'getAddress']);

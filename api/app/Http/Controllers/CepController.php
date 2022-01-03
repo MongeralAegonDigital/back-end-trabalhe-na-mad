@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Services\CepService;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
@@ -15,7 +16,7 @@ class CepController extends Controller
         $this->cepService = $cepService;
     }
 
-    public function getAddress(int $cep)
+    public function getAddress(int $cep): JsonResponse
     {
         $address = $this->cepService->getAddress($cep);
         return response()->json($address, Response::HTTP_OK);
