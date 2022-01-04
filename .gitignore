@@ -1,0 +1,84 @@
+/api/node_modules
+/api/public/hot
+/api/public/storage
+/api/storage/*.key
+/api/vendor
+/api/.env
+/api/.env.backup
+/api/.phpunit.result.cache
+/api/docker-compose.override.yml
+/api/Homestead.json
+/api/Homestead.yaml
+/api/npm-debug.log
+/api/yarn-error.log
+/api/.idea
+/api/.vscode
+
+# compiled output
+/app/dist
+/app/tmp
+/app/out-tsc
+# Only exists if Bazel was run
+/app/bazel-out
+
+# dependencies
+/app/node_modules
+
+# profiling files
+/app/chrome-profiler-events*.json
+/app/speed-measure-plugin*.json
+
+# IDEs and editors
+/app/.idea
+/app/.project
+/app/.classpath
+/app/.c9/
+/app/*.launch
+/app/.settings/
+/app/*.sublime-workspace
+
+# IDE - VSCode
+/app/.vscode/*
+/app/!.vscode/settings.json
+/app/!.vscode/tasks.json
+/app/!.vscode/launch.json
+/app/!.vscode/extensions.json
+/app/.history/*
+
+# misc
+/app/.sass-cache
+/app/connect.lock
+/app/coverage
+/app/libpeerconnection.log
+/app/npm-debug.log
+/app/yarn-error.log
+/app/testem.log
+/app/typings
+
+# System Files
+/app/.DS_Store
+/app/Thumbs.db
+
+
+
+# dependencies
+/app/node_modules
+/app/.pnp
+/app/.pnp.js
+
+# testing
+/app/coverage
+
+# production
+/app/build
+
+# misc
+/app/.DS_Store
+/app/.env.local
+/app/.env.development.local
+/app/.env.test.local
+/app/.env.production.local
+
+/app/npm-debug.log*
+/app/yarn-debug.log*
+/app/yarn-error.log*
